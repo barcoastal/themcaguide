@@ -42,17 +42,44 @@ One of the most common points of confusion for business owners is the difference
 
 An interest rate, expressed as an APR, represents the annual cost of borrowing and compounds over time. If you pay off a traditional loan early, you pay less interest because the principal decreases. A factor rate, on the other hand, is a flat multiplier. The total cost is locked in from the start, regardless of how quickly you repay.
 
-<ComparisonTable
-  headers={["Feature", "Factor Rate", "Interest Rate"]}
-  rows={[
-    ["Format", "Decimal multiplier (e.g., 1.35)", "Percentage (e.g., 12% APR)"],
-    ["Compounds?", "No — fixed total cost", "Yes — cost increases over time"],
-    ["Early payoff benefit?", "Usually none — you pay the full amount", "Yes — less interest accrues"],
-    ["Transparency", "Can obscure true annual cost", "Standardized (APR)"],
-    ["Used by", "MCA providers", "Banks and traditional lenders"],
-  ]}
-  highlightFirst={true}
-/>
+<div className="overflow-x-auto my-6 -mx-4 sm:mx-0">
+<table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+<thead className="bg-gray-50">
+<tr>
+<th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Feature</th>
+<th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Factor Rate</th>
+<th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Interest Rate</th>
+</tr>
+</thead>
+<tbody className="divide-y divide-gray-200">
+<tr className="bg-white">
+<td className="px-4 py-3 text-sm font-semibold text-gray-900">Format</td>
+<td className="px-4 py-3 text-sm text-gray-600">Decimal multiplier (e.g., 1.35)</td>
+<td className="px-4 py-3 text-sm text-gray-600">Percentage (e.g., 12% APR)</td>
+</tr>
+<tr className="bg-gray-50">
+<td className="px-4 py-3 text-sm font-semibold text-gray-900">Compounds?</td>
+<td className="px-4 py-3 text-sm text-gray-600">No — fixed total cost</td>
+<td className="px-4 py-3 text-sm text-gray-600">Yes — cost increases over time</td>
+</tr>
+<tr className="bg-white">
+<td className="px-4 py-3 text-sm font-semibold text-gray-900">Early payoff benefit?</td>
+<td className="px-4 py-3 text-sm text-gray-600">Usually none — you pay the full amount</td>
+<td className="px-4 py-3 text-sm text-gray-600">Yes — less interest accrues</td>
+</tr>
+<tr className="bg-gray-50">
+<td className="px-4 py-3 text-sm font-semibold text-gray-900">Transparency</td>
+<td className="px-4 py-3 text-sm text-gray-600">Can obscure true annual cost</td>
+<td className="px-4 py-3 text-sm text-gray-600">Standardized (APR)</td>
+</tr>
+<tr className="bg-white">
+<td className="px-4 py-3 text-sm font-semibold text-gray-900">Used by</td>
+<td className="px-4 py-3 text-sm text-gray-600">MCA providers</td>
+<td className="px-4 py-3 text-sm text-gray-600">Banks and traditional lenders</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 This distinction matters most when you consider the effective annual cost. A factor rate of 1.30 on a six-month advance does not mean you are paying 30% per year. Because you are repaying 30% of the advance amount in just six months, the effective APR equivalent can be significantly higher — often 60% or more.
 
@@ -156,24 +183,49 @@ MCA providers typically review three to six months of bank statements. They look
 
 <h2 id="faq">Frequently Asked Questions</h2>
 
-<FAQ items={[
-  {
-    question: "Can I negotiate my MCA factor rate?",
-    answer: "Yes, in many cases you can negotiate. If you have strong revenue, good credit, or competing offers from other providers, use that as leverage. Some providers will lower your factor rate to win your business, especially if you have a solid repayment history with previous advances."
-  },
-  {
-    question: "Do I save money if I repay my MCA early?",
-    answer: "Usually not. Unlike traditional loans where early repayment reduces interest charges, most MCAs require you to pay the full predetermined amount regardless of how quickly you repay. Some providers offer a small discount for early payoff, but this is not standard. Always ask about early payoff terms before signing."
-  },
-  {
-    question: "How do I convert a factor rate to an APR?",
-    answer: "To estimate the APR, first calculate the total fee (funding amount multiplied by the factor rate, minus the funding amount). Then divide the fee by the funding amount to get the percentage cost. Finally, annualize it by dividing 365 by the number of days in the repayment term and multiplying by the percentage cost. For example, a 1.30 factor rate repaid over 180 days is roughly equivalent to a 60% APR."
-  },
-  {
-    question: "Is a factor rate of 1.40 too high?",
-    answer: "A factor rate of 1.40 means you are paying 40 cents for every dollar advanced, which is a significant cost. Whether it is 'too high' depends on your specific situation. If the funds will generate substantially more revenue than the $0.40 per dollar cost, it may still be worthwhile. However, if you can qualify for a lower rate or alternative funding, a 1.40 factor rate is generally considered expensive."
-  }
-]} />
+<script type="application/ld+json">{`
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Can I negotiate my MCA factor rate?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, in many cases you can negotiate. If you have strong revenue, good credit, or competing offers from other providers, use that as leverage. Some providers will lower your factor rate to win your business, especially if you have a solid repayment history with previous advances."}},
+    {"@type": "Question", "name": "Do I save money if I repay my MCA early?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not. Unlike traditional loans where early repayment reduces interest charges, most MCAs require you to pay the full predetermined amount regardless of how quickly you repay. Some providers offer a small discount for early payoff, but this is not standard. Always ask about early payoff terms before signing."}},
+    {"@type": "Question", "name": "How do I convert a factor rate to an APR?", "acceptedAnswer": {"@type": "Answer", "text": "To estimate the APR, first calculate the total fee (funding amount multiplied by the factor rate, minus the funding amount). Then divide the fee by the funding amount to get the percentage cost. Finally, annualize it by dividing 365 by the number of days in the repayment term and multiplying by the percentage cost. For example, a 1.30 factor rate repaid over 180 days is roughly equivalent to a 60% APR."}},
+    {"@type": "Question", "name": "Is a factor rate of 1.40 too high?", "acceptedAnswer": {"@type": "Answer", "text": "A factor rate of 1.40 means you are paying 40 cents for every dollar advanced, which is a significant cost. Whether it is 'too high' depends on your specific situation. If the funds will generate substantially more revenue than the $0.40 per dollar cost, it may still be worthwhile. However, if you can qualify for a lower rate or alternative funding, a 1.40 factor rate is generally considered expensive."}}
+  ]
+}
+`}</script>
+
+<div className="my-8 divide-y divide-gray-200 border border-gray-200 rounded-lg">
+<details className="group">
+<summary className="flex items-center justify-between px-4 py-4 cursor-pointer font-medium text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+Can I negotiate my MCA factor rate?
+<svg className="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<div className="px-4 pb-4 text-sm text-gray-600">Yes, in many cases you can negotiate. If you have strong revenue, good credit, or competing offers from other providers, use that as leverage. Some providers will lower your factor rate to win your business, especially if you have a solid repayment history with previous advances.</div>
+</details>
+<details className="group">
+<summary className="flex items-center justify-between px-4 py-4 cursor-pointer font-medium text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+Do I save money if I repay my MCA early?
+<svg className="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<div className="px-4 pb-4 text-sm text-gray-600">Usually not. Unlike traditional loans where early repayment reduces interest charges, most MCAs require you to pay the full predetermined amount regardless of how quickly you repay. Some providers offer a small discount for early payoff, but this is not standard. Always ask about early payoff terms before signing.</div>
+</details>
+<details className="group">
+<summary className="flex items-center justify-between px-4 py-4 cursor-pointer font-medium text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+How do I convert a factor rate to an APR?
+<svg className="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<div className="px-4 pb-4 text-sm text-gray-600">To estimate the APR, first calculate the total fee (funding amount multiplied by the factor rate, minus the funding amount). Then divide the fee by the funding amount to get the percentage cost. Finally, annualize it by dividing 365 by the number of days in the repayment term and multiplying by the percentage cost. For example, a 1.30 factor rate repaid over 180 days is roughly equivalent to a 60% APR.</div>
+</details>
+<details className="group">
+<summary className="flex items-center justify-between px-4 py-4 cursor-pointer font-medium text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+Is a factor rate of 1.40 too high?
+<svg className="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<div className="px-4 pb-4 text-sm text-gray-600">A factor rate of 1.40 means you are paying 40 cents for every dollar advanced, which is a significant cost. Whether it is 'too high' depends on your specific situation. If the funds will generate substantially more revenue than the $0.40 per dollar cost, it may still be worthwhile. However, if you can qualify for a lower rate or alternative funding, a 1.40 factor rate is generally considered expensive.</div>
+</details>
+</div>
 
 <h2 id="sources">Sources</h2>
 

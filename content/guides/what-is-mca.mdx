@@ -54,19 +54,54 @@ The holdback percentage typically ranges from 10% to 25% of daily revenue. The a
 
 Understanding how MCAs differ from traditional business loans is essential for making an informed financing decision. The [U.S. Small Business Administration (SBA)](https://www.sba.gov/funding-programs/loans) provides detailed information on traditional loan programs that serve as a useful benchmark.
 
-<ComparisonTable
-  headers={["Feature", "MCA", "Traditional Business Loan"]}
-  rows={[
-    ["Structure", "Purchase of future receivables", "Loan with interest"],
-    ["Repayment", "Daily/weekly % of revenue", "Fixed monthly payments"],
-    ["Speed", "1-3 business days", "2-12 weeks"],
-    ["Credit Requirements", "500+ credit score typical", "680+ credit score typical"],
-    ["Cost", "Factor rate 1.1-1.5 (APR 40-350%)", "APR 6-30%"],
-    ["Regulation", "Limited federal oversight", "Heavily regulated"],
-    ["Collateral", "Future receivables + UCC lien", "May require assets"],
-  ]}
-  highlightFirst={true}
-/>
+<div className="overflow-x-auto my-6 -mx-4 sm:mx-0">
+<table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+<thead className="bg-gray-50">
+<tr>
+<th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Feature</th>
+<th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">MCA</th>
+<th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Traditional Business Loan</th>
+</tr>
+</thead>
+<tbody className="divide-y divide-gray-200">
+<tr className="bg-white">
+<td className="px-4 py-3 text-sm font-semibold text-gray-900">Structure</td>
+<td className="px-4 py-3 text-sm text-gray-600">Purchase of future receivables</td>
+<td className="px-4 py-3 text-sm text-gray-600">Loan with interest</td>
+</tr>
+<tr className="bg-gray-50">
+<td className="px-4 py-3 text-sm font-semibold text-gray-900">Repayment</td>
+<td className="px-4 py-3 text-sm text-gray-600">Daily/weekly % of revenue</td>
+<td className="px-4 py-3 text-sm text-gray-600">Fixed monthly payments</td>
+</tr>
+<tr className="bg-white">
+<td className="px-4 py-3 text-sm font-semibold text-gray-900">Speed</td>
+<td className="px-4 py-3 text-sm text-gray-600">1-3 business days</td>
+<td className="px-4 py-3 text-sm text-gray-600">2-12 weeks</td>
+</tr>
+<tr className="bg-gray-50">
+<td className="px-4 py-3 text-sm font-semibold text-gray-900">Credit Requirements</td>
+<td className="px-4 py-3 text-sm text-gray-600">500+ credit score typical</td>
+<td className="px-4 py-3 text-sm text-gray-600">680+ credit score typical</td>
+</tr>
+<tr className="bg-white">
+<td className="px-4 py-3 text-sm font-semibold text-gray-900">Cost</td>
+<td className="px-4 py-3 text-sm text-gray-600">Factor rate 1.1-1.5 (APR 40-350%)</td>
+<td className="px-4 py-3 text-sm text-gray-600">APR 6-30%</td>
+</tr>
+<tr className="bg-gray-50">
+<td className="px-4 py-3 text-sm font-semibold text-gray-900">Regulation</td>
+<td className="px-4 py-3 text-sm text-gray-600">Limited federal oversight</td>
+<td className="px-4 py-3 text-sm text-gray-600">Heavily regulated</td>
+</tr>
+<tr className="bg-white">
+<td className="px-4 py-3 text-sm font-semibold text-gray-900">Collateral</td>
+<td className="px-4 py-3 text-sm text-gray-600">Future receivables + UCC lien</td>
+<td className="px-4 py-3 text-sm text-gray-600">May require assets</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 The most fundamental difference is structural. A traditional business loan is a debt obligation governed by lending laws, with clearly defined interest rates, repayment schedules, and borrower protections. An MCA is a commercial transaction — a sale of future receivables — and the "cost" is expressed as a factor rate rather than an interest rate.
 
@@ -161,19 +196,46 @@ Beyond the minimum requirements, MCA underwriters evaluate several factors when 
 
 Like any financial product, MCAs have genuine advantages and significant drawbacks. Here is an honest assessment.
 
-<ComparisonTable
-  headers={["Pros", "Cons"]}
-  rows={[
-    ["Fast funding (1-3 business days)", "Very high effective cost (APR 40-350%)"],
-    ["Flexible payments that adjust with revenue", "Daily deductions strain cash flow"],
-    ["No collateral required (beyond receivables)", "UCC liens filed on all business assets"],
-    ["Accessible with lower credit scores", "Not regulated like traditional loans"],
-    ["No fixed monthly payment schedule", "Can trap businesses in debt cycles"],
-    ["Simple application process", "Confusing pricing makes comparison difficult"],
-    ["No restriction on how funds are used", "Aggressive collections if payments are missed"],
-  ]}
-  highlightFirst={false}
-/>
+<div className="overflow-x-auto my-6 -mx-4 sm:mx-0">
+<table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+<thead className="bg-gray-50">
+<tr>
+<th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Pros</th>
+<th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Cons</th>
+</tr>
+</thead>
+<tbody className="divide-y divide-gray-200">
+<tr className="bg-white">
+<td className="px-4 py-3 text-sm text-gray-600">Fast funding (1-3 business days)</td>
+<td className="px-4 py-3 text-sm text-gray-600">Very high effective cost (APR 40-350%)</td>
+</tr>
+<tr className="bg-gray-50">
+<td className="px-4 py-3 text-sm text-gray-600">Flexible payments that adjust with revenue</td>
+<td className="px-4 py-3 text-sm text-gray-600">Daily deductions strain cash flow</td>
+</tr>
+<tr className="bg-white">
+<td className="px-4 py-3 text-sm text-gray-600">No collateral required (beyond receivables)</td>
+<td className="px-4 py-3 text-sm text-gray-600">UCC liens filed on all business assets</td>
+</tr>
+<tr className="bg-gray-50">
+<td className="px-4 py-3 text-sm text-gray-600">Accessible with lower credit scores</td>
+<td className="px-4 py-3 text-sm text-gray-600">Not regulated like traditional loans</td>
+</tr>
+<tr className="bg-white">
+<td className="px-4 py-3 text-sm text-gray-600">No fixed monthly payment schedule</td>
+<td className="px-4 py-3 text-sm text-gray-600">Can trap businesses in debt cycles</td>
+</tr>
+<tr className="bg-gray-50">
+<td className="px-4 py-3 text-sm text-gray-600">Simple application process</td>
+<td className="px-4 py-3 text-sm text-gray-600">Confusing pricing makes comparison difficult</td>
+</tr>
+<tr className="bg-white">
+<td className="px-4 py-3 text-sm text-gray-600">No restriction on how funds are used</td>
+<td className="px-4 py-3 text-sm text-gray-600">Aggressive collections if payments are missed</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 <h3 id="the-good">The Advantages in Detail</h3>
 
@@ -240,32 +302,65 @@ If you decide to proceed with an MCA, take these steps to protect your business:
 
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 
-<FAQ items={[
-  {
-    question: "Is a merchant cash advance a loan?",
-    answer: "No. A merchant cash advance is legally structured as a purchase of future receivables, not a loan. This distinction means MCAs are generally not subject to state usury laws or federal lending regulations that cap interest rates and require standardized disclosures. However, some states are beginning to pass legislation that requires MCA providers to disclose pricing in a format similar to the APR disclosures required for traditional loans."
-  },
-  {
-    question: "How fast can I get an MCA?",
-    answer: "Most MCA providers can fund your account within one to three business days after you submit a complete application. Some providers offer same-day or next-day funding for straightforward applications. The speed of funding is one of the main advantages of MCAs compared to traditional bank loans, which can take weeks or months to process."
-  },
-  {
-    question: "Can I pay off an MCA early?",
-    answer: "It depends on the provider and the terms of your agreement. Some MCA companies offer an early payoff discount, reducing the total amount owed if you repay ahead of schedule. Others require you to pay the full factor rate amount regardless of when you repay. A few even charge prepayment penalties. Always clarify the early payoff terms before signing the agreement."
-  },
-  {
-    question: "What credit score do I need for an MCA?",
-    answer: "Most MCA providers require a minimum personal credit score of around 500, though some will work with scores as low as 450. The credit score is only one factor in the approval decision — MCA companies place much more emphasis on your business revenue history, daily bank deposits, and time in business. A higher credit score may help you qualify for a lower factor rate."
-  },
-  {
-    question: "Are merchant cash advances legal?",
-    answer: "Yes, merchant cash advances are legal in the United States. Because they are structured as commercial transactions rather than loans, they are not subject to the same regulations as traditional lending products. However, the regulatory landscape is evolving. States like California, New York, Utah, and Virginia have passed or proposed disclosure requirements for commercial financing products including MCAs. The FTC has also taken enforcement action against MCA providers engaged in deceptive practices."
-  },
-  {
-    question: "What happens if my business cannot repay the MCA?",
-    answer: "If your business fails to make the required daily or weekly payments, the MCA provider may attempt to collect the remaining balance through several means: debiting your bank account directly, enforcing a confession of judgment clause (if included), pursuing your personal guarantee, or taking legal action. Defaulting on an MCA can damage your business credit, trigger UCC lien enforcement, and in cases with a personal guarantee, put your personal assets at risk. If you are struggling to make payments, contact the MCA provider to discuss options before you fall behind."
-  }
-]} />
+<script type="application/ld+json">{`
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is a merchant cash advance a loan?", "acceptedAnswer": {"@type": "Answer", "text": "No. A merchant cash advance is legally structured as a purchase of future receivables, not a loan. This distinction means MCAs are generally not subject to state usury laws or federal lending regulations that cap interest rates and require standardized disclosures. However, some states are beginning to pass legislation that requires MCA providers to disclose pricing in a format similar to the APR disclosures required for traditional loans."}},
+    {"@type": "Question", "name": "How fast can I get an MCA?", "acceptedAnswer": {"@type": "Answer", "text": "Most MCA providers can fund your account within one to three business days after you submit a complete application. Some providers offer same-day or next-day funding for straightforward applications. The speed of funding is one of the main advantages of MCAs compared to traditional bank loans, which can take weeks or months to process."}},
+    {"@type": "Question", "name": "Can I pay off an MCA early?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the provider and the terms of your agreement. Some MCA companies offer an early payoff discount, reducing the total amount owed if you repay ahead of schedule. Others require you to pay the full factor rate amount regardless of when you repay. A few even charge prepayment penalties. Always clarify the early payoff terms before signing the agreement."}},
+    {"@type": "Question", "name": "What credit score do I need for an MCA?", "acceptedAnswer": {"@type": "Answer", "text": "Most MCA providers require a minimum personal credit score of around 500, though some will work with scores as low as 450. The credit score is only one factor in the approval decision — MCA companies place much more emphasis on your business revenue history, daily bank deposits, and time in business. A higher credit score may help you qualify for a lower factor rate."}},
+    {"@type": "Question", "name": "Are merchant cash advances legal?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, merchant cash advances are legal in the United States. Because they are structured as commercial transactions rather than loans, they are not subject to the same regulations as traditional lending products. However, the regulatory landscape is evolving. States like California, New York, Utah, and Virginia have passed or proposed disclosure requirements for commercial financing products including MCAs. The FTC has also taken enforcement action against MCA providers engaged in deceptive practices."}},
+    {"@type": "Question", "name": "What happens if my business cannot repay the MCA?", "acceptedAnswer": {"@type": "Answer", "text": "If your business fails to make the required daily or weekly payments, the MCA provider may attempt to collect the remaining balance through several means: debiting your bank account directly, enforcing a confession of judgment clause (if included), pursuing your personal guarantee, or taking legal action. Defaulting on an MCA can damage your business credit, trigger UCC lien enforcement, and in cases with a personal guarantee, put your personal assets at risk. If you are struggling to make payments, contact the MCA provider to discuss options before you fall behind."}}
+  ]
+}
+`}</script>
+
+<div className="my-8 divide-y divide-gray-200 border border-gray-200 rounded-lg">
+<details className="group">
+<summary className="flex items-center justify-between px-4 py-4 cursor-pointer font-medium text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+Is a merchant cash advance a loan?
+<svg className="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<div className="px-4 pb-4 text-sm text-gray-600">No. A merchant cash advance is legally structured as a purchase of future receivables, not a loan. This distinction means MCAs are generally not subject to state usury laws or federal lending regulations that cap interest rates and require standardized disclosures. However, some states are beginning to pass legislation that requires MCA providers to disclose pricing in a format similar to the APR disclosures required for traditional loans.</div>
+</details>
+<details className="group">
+<summary className="flex items-center justify-between px-4 py-4 cursor-pointer font-medium text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+How fast can I get an MCA?
+<svg className="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<div className="px-4 pb-4 text-sm text-gray-600">Most MCA providers can fund your account within one to three business days after you submit a complete application. Some providers offer same-day or next-day funding for straightforward applications. The speed of funding is one of the main advantages of MCAs compared to traditional bank loans, which can take weeks or months to process.</div>
+</details>
+<details className="group">
+<summary className="flex items-center justify-between px-4 py-4 cursor-pointer font-medium text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+Can I pay off an MCA early?
+<svg className="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<div className="px-4 pb-4 text-sm text-gray-600">It depends on the provider and the terms of your agreement. Some MCA companies offer an early payoff discount, reducing the total amount owed if you repay ahead of schedule. Others require you to pay the full factor rate amount regardless of when you repay. A few even charge prepayment penalties. Always clarify the early payoff terms before signing the agreement.</div>
+</details>
+<details className="group">
+<summary className="flex items-center justify-between px-4 py-4 cursor-pointer font-medium text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+What credit score do I need for an MCA?
+<svg className="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<div className="px-4 pb-4 text-sm text-gray-600">Most MCA providers require a minimum personal credit score of around 500, though some will work with scores as low as 450. The credit score is only one factor in the approval decision — MCA companies place much more emphasis on your business revenue history, daily bank deposits, and time in business. A higher credit score may help you qualify for a lower factor rate.</div>
+</details>
+<details className="group">
+<summary className="flex items-center justify-between px-4 py-4 cursor-pointer font-medium text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+Are merchant cash advances legal?
+<svg className="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<div className="px-4 pb-4 text-sm text-gray-600">Yes, merchant cash advances are legal in the United States. Because they are structured as commercial transactions rather than loans, they are not subject to the same regulations as traditional lending products. However, the regulatory landscape is evolving. States like California, New York, Utah, and Virginia have passed or proposed disclosure requirements for commercial financing products including MCAs. The FTC has also taken enforcement action against MCA providers engaged in deceptive practices.</div>
+</details>
+<details className="group">
+<summary className="flex items-center justify-between px-4 py-4 cursor-pointer font-medium text-gray-900 list-none [&::-webkit-details-marker]:hidden">
+What happens if my business cannot repay the MCA?
+<svg className="w-5 h-5 text-gray-500 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<div className="px-4 pb-4 text-sm text-gray-600">If your business fails to make the required daily or weekly payments, the MCA provider may attempt to collect the remaining balance through several means: debiting your bank account directly, enforcing a confession of judgment clause (if included), pursuing your personal guarantee, or taking legal action. Defaulting on an MCA can damage your business credit, trigger UCC lien enforcement, and in cases with a personal guarantee, put your personal assets at risk. If you are struggling to make payments, contact the MCA provider to discuss options before you fall behind.</div>
+</details>
+</div>
 
 <h2 id="sources">Sources and Further Reading</h2>
 
