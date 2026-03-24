@@ -1,7 +1,17 @@
+import Hero from "@/components/home/Hero";
+import PillarCards from "@/components/home/PillarCards";
+import LatestArticles from "@/components/home/LatestArticles";
+import PopularTools from "@/components/home/PopularTools";
+import HomepageFAQ from "@/components/home/HomepageFAQ";
+
 export default function Home() {
   return (
-    <main className="flex-1 flex items-center justify-center">
-      <h1>The MCA Guide</h1>
-    </main>
+    <>
+      <Hero />
+      <PillarCards />
+      <LatestArticles />
+      <PopularTools />
+      <HomepageFAQ />
+    </>
   );
 }
