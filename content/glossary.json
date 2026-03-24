@@ -1,0 +1,18 @@
+[
+  { "term": "Accounts Receivable Financing", "definition": "A type of financing where a business uses its outstanding invoices as collateral to receive immediate cash.", "relatedArticle": "mca-alternatives", "articleType": "guide" },
+  { "term": "ACH (Automated Clearing House)", "definition": "An electronic funds transfer system used by MCA companies to withdraw daily or weekly payments directly from a business bank account." },
+  { "term": "Advance Amount", "definition": "The total cash amount provided to a business by an MCA provider, which must be repaid with the factor rate applied." },
+  { "term": "Annual Percentage Rate (APR)", "definition": "The annualized cost of borrowing expressed as a percentage. MCAs do not technically have an APR since they are not loans, but an equivalent APR can be calculated for comparison purposes.", "relatedArticle": "how-much-does-mca-cost" },
+  { "term": "Broker", "definition": "A third-party intermediary who connects businesses with MCA providers. Brokers earn commissions and may or may not disclose all available options.", "relatedArticle": "mca-broker-vs-direct-funder" },
+  { "term": "Confession of Judgment (COJ)", "definition": "A legal document signed by the business owner allowing the MCA company to obtain a court judgment without trial if the business defaults. Banned in some states.", "relatedArticle": "mca-confession-of-judgment" },
+  { "term": "Daily Holdback", "definition": "The fixed or percentage-based amount withheld from daily revenues to repay an MCA." },
+  { "term": "Default", "definition": "Failure to meet the repayment terms of an MCA agreement. Can trigger additional fees, legal action, or UCC lien enforcement.", "relatedArticle": "what-happens-if-you-default-on-mca" },
+  { "term": "Double Dipping", "definition": "When an MCA provider takes two payments in a single day, either intentionally or due to a processing error.", "relatedArticle": "double-dipping-mca" },
+  { "term": "Factor Rate", "definition": "A multiplier (typically 1.1 to 1.5) applied to the advance amount to determine the total repayment. A factor rate of 1.3 on a $50,000 advance means $65,000 total repayment.", "relatedArticle": "mca-factor-rates-explained" },
+  { "term": "Holdback Percentage", "definition": "The percentage of daily credit card sales or revenue retained by the MCA company as repayment. Typically ranges from 10% to 25%.", "relatedArticle": "mca-holdback-percentage" },
+  { "term": "MCA (Merchant Cash Advance)", "definition": "A financing option where a business receives a lump sum in exchange for a percentage of future credit card sales or revenue. Technically a purchase of future receivables, not a loan.", "relatedArticle": "what-is-mca", "articleType": "guide" },
+  { "term": "Retrieval Rate", "definition": "The percentage of daily sales that is automatically deducted to repay the MCA. Same as holdback percentage." },
+  { "term": "Reverse Consolidation", "definition": "A strategy where a new MCA is used to pay off multiple existing MCAs, consolidating them into a single payment." },
+  { "term": "Stacking", "definition": "Taking out multiple MCAs simultaneously from different providers. Considered high-risk as it multiplies daily payment obligations.", "relatedArticle": "mca-stacking-risks" },
+  { "term": "UCC Filing (Uniform Commercial Code)", "definition": "A legal filing that gives the MCA provider a lien on business assets. Used as collateral and recorded publicly.", "relatedArticle": "mca-ucc-filing" }
+]
