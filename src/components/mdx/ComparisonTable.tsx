@@ -4,7 +4,9 @@ interface ComparisonTableProps {
   highlightFirst?: boolean;
 }
 
-export default function ComparisonTable({ headers, rows, highlightFirst = false }: ComparisonTableProps) {
+export default function ComparisonTable({ headers = [], rows = [], highlightFirst = false }: ComparisonTableProps) {
+  if (!headers?.length || !rows?.length) return null;
+
   return (
     <div className="overflow-x-auto my-6 -mx-4 sm:mx-0">
       <div className="inline-block min-w-full align-middle">

@@ -11,8 +11,10 @@ interface FAQProps {
   items: FAQItem[];
 }
 
-export default function FAQ({ items }: FAQProps) {
+export default function FAQ({ items = [] }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  if (!items?.length) return null;
 
   const jsonLd = {
     "@context": "https://schema.org",
