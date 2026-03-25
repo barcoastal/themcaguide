@@ -19,7 +19,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <img src="/images/logo-v3.png" alt="The MCA Guide" className="h-10 w-auto" />
+            <img src="/images/logo-v3.png" alt="The MCA Guide" className="h-10 w-10 object-contain" />
+            <span className="text-xl font-bold text-blue-800">The MCA Guide</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
