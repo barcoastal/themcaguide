@@ -5,6 +5,7 @@ export interface ArticleFrontmatter {
   updatedAt?: string;
   author: string;
   pillar?: string;
+  category?: "before-mca" | "choosing-lender" | "getting-out" | "mca-basics" | "legal";
   tags?: string[];
   readNext?: string;
   affiliateDisclosure?: boolean;

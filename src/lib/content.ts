@@ -56,3 +56,9 @@ export function getArticlesByPillar(pillarSlug: string): Article[] {
     (a) => a.frontmatter.pillar === pillarSlug
   );
 }
+
+export function getArticlesByCategory(category: string): Article[] {
+  return getAllArticles("article").filter(
+    (a) => a.frontmatter.category === category
+  );
+}
