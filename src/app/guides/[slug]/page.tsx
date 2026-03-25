@@ -70,6 +70,7 @@ export default async function GuidePage({ params }: Props) {
               publishedAt={guide.frontmatter.publishedAt}
               updatedAt={guide.frontmatter.updatedAt}
               author={guide.frontmatter.author}
+              heroImage={guide.frontmatter.heroImage}
             />
 
             <MDXRemote source={guide.content} components={mdxComponents} />

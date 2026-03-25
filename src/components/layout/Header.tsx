@@ -5,11 +5,10 @@ import { useState } from "react";
 import MobileNav from "./MobileNav";
 
 const navLinks = [
-  { href: "/step/need-cash", label: "I Need Cash" },
-  { href: "/step/what-is-mca", label: "What's an MCA?" },
-  { href: "/step/choosing", label: "Choosing an MCA" },
-  { href: "/step/stuck-in-debt", label: "I'm in MCA Debt" },
+  { href: "/guides", label: "Guides" },
+  { href: "/articles", label: "Articles" },
   { href: "/tools", label: "Tools" },
+  { href: "/glossary", label: "Glossary" },
 ];
 
 export default function Header() {

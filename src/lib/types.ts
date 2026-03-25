@@ -9,6 +9,7 @@ export interface ArticleFrontmatter {
   tags?: string[];
   readNext?: string;
   affiliateDisclosure?: boolean;
+  heroImage?: string;
 }
 
 export interface Article {

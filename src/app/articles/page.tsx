@@ -95,6 +95,11 @@ export default function ArticlesPage() {
                   href={`/articles/${article.slug}`}
                   className={`group block bg-white border-2 ${cat.borderColor} rounded-2xl p-5 hover:shadow-lg transition-all`}
                 >
+                  {article.frontmatter.heroImage && (
+                    <div className="rounded-xl overflow-hidden mb-3 bg-gray-50">
+                      <img src={article.frontmatter.heroImage} alt="" className="w-full h-36 object-cover" />
+                    </div>
+                  )}
                   <h3 className="font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     {article.frontmatter.title}
                   </h3>
@@ -126,6 +131,11 @@ export default function ArticlesPage() {
                   href={`/articles/${article.slug}`}
                   className="group block bg-white border-2 border-gray-200 rounded-2xl p-5 hover:shadow-lg transition-all"
                 >
+                  {article.frontmatter.heroImage && (
+                    <div className="rounded-xl overflow-hidden mb-3 bg-gray-50">
+                      <img src={article.frontmatter.heroImage} alt="" className="w-full h-36 object-cover" />
+                    </div>
+                  )}
                   <h3 className="font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
                     {article.frontmatter.title}
                   </h3>

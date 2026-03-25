@@ -9,10 +9,11 @@ interface ArticleHeaderProps {
   authorImage?: string;
   pillarLabel?: string;
   pillarHref?: string;
+  heroImage?: string;
 }
 
 export default function ArticleHeader({
-  title, readingTime, publishedAt, updatedAt, author, authorImage, pillarLabel, pillarHref,
+  title, readingTime, publishedAt, updatedAt, author, authorImage, pillarLabel, pillarHref, heroImage,
 }: ArticleHeaderProps) {
   return (
     <header className="mb-10 not-prose">
@@ -21,6 +22,13 @@ export default function ArticleHeader({
           ← Part of the {pillarLabel} Guide
         </a>
       )}
+
+      {heroImage && (
+        <div className="rounded-2xl overflow-hidden mb-6 bg-gray-50">
+          <img src={heroImage} alt="" className="w-full h-64 md:h-80 object-cover" />
+        </div>
+      )}
+
       <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2 leading-tight">{title}</h1>
       <div className="flex flex-wrap items-center gap-4 mt-6 text-sm text-gray-500">
         <div className="flex items-center gap-2">

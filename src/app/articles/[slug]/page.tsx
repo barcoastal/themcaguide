@@ -80,6 +80,7 @@ export default async function ArticlePage({ params }: Props) {
               author={article.frontmatter.author}
               pillarLabel={pillarGuide?.frontmatter.title}
               pillarHref={pillarSlug ? `/guides/${pillarSlug}` : undefined}
+              heroImage={article.frontmatter.heroImage}
             />
 
             <MDXRemote source={article.content} components={mdxComponents} />
