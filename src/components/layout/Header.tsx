@@ -17,9 +17,13 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-2">
-          <Link href="/" className="flex items-center gap-2">
-            <img src="/images/logo-v3.png" alt="The MCA Guide" className="h-[150px] w-[150px] object-contain" />
+        <div className="flex items-center justify-between h-20">
+          <Link href="/" className="flex items-center gap-3">
+            <img src="/images/logo-v3.png" alt="" className="h-12 w-12 object-contain" />
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold text-blue-800 leading-tight">The MCA Guide</span>
+              <span className="text-xs text-gray-400 hidden sm:block">For Small Business Owners</span>
+            </div>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
