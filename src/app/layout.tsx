@@ -43,6 +43,32 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "The MCA Guide",
+  url: "https://themcaguide.com",
+  logo: "https://themcaguide.com/images/logo.png",
+  founder: {
+    "@type": "Person",
+    name: "Bar Alezrah",
+  },
+  description: "Free MCA education for small business owners.",
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "The MCA Guide",
+  url: "https://themcaguide.com",
+  description:
+    "Free MCA education for small business owners. Learn how merchant cash advances work, what they really cost, and how to protect your business.",
+  author: {
+    "@type": "Person",
+    name: "Bar Alezrah",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -51,6 +77,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${sourceSerif.variable}`}>
       <body className="font-sans min-h-screen flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

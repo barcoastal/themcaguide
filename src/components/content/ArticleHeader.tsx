@@ -25,7 +25,7 @@ export default function ArticleHeader({
 
       {heroImage && (
         <div className="rounded-2xl overflow-hidden mb-6 bg-gray-50">
-          <img src={heroImage} alt="" className="w-full h-64 md:h-80 object-cover" />
+          <img src={heroImage} alt={title} className="w-full h-64 md:h-80 object-cover" />
         </div>
       )}
 

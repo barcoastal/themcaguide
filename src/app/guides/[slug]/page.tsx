@@ -32,6 +32,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: guide.frontmatter.publishedAt,
       modifiedTime: guide.frontmatter.updatedAt,
+      images: guide.frontmatter.heroImage
+        ? [{ url: guide.frontmatter.heroImage }]
+        : [],
     },
   };
 }
@@ -50,8 +53,26 @@ export default async function GuidePage({ params }: Props) {
     description: guide.frontmatter.description,
     datePublished: guide.frontmatter.publishedAt,
     dateModified: guide.frontmatter.updatedAt || guide.frontmatter.publishedAt,
-    author: { "@type": "Person", name: guide.frontmatter.author },
-    publisher: { "@type": "Organization", name: "The MCA Guide" },
+    author: {
+      "@type": "Person",
+      name: guide.frontmatter.author,
+      url: "https://themcaguide.com/about",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "The MCA Guide",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://themcaguide.com/images/logo.png",
+      },
+    },
+    image: guide.frontmatter.heroImage
+      ? `https://themcaguide.com${guide.frontmatter.heroImage}`
+      : undefined,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://themcaguide.com/guides/${slug}`,
+    },
   };
 
   return (

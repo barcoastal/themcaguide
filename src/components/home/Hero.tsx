@@ -23,7 +23,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="hidden md:flex justify-center">
-            <img src="/images/hero-illustration.png" alt="Small business owner learning about MCA" className="w-96 h-auto" />
+            <img src="/images/hero-illustration.png" alt="Small business owner learning about merchant cash advances" className="w-96 h-auto" />
           </div>
         </div>
       </div>
