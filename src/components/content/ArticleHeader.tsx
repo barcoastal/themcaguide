@@ -1,3 +1,5 @@
+import { Clock, Calendar, User } from "lucide-react";
+
 interface ArticleHeaderProps {
   title: string;
   readingTime: string;
@@ -13,23 +15,28 @@ export default function ArticleHeader({
   title, readingTime, publishedAt, updatedAt, author, authorImage, pillarLabel, pillarHref,
 }: ArticleHeaderProps) {
   return (
-    <header className="mb-8">
+    <header className="mb-10 not-prose">
       {pillarLabel && pillarHref && (
-        <a href={pillarHref} className="text-sm text-blue-700 hover:text-blue-900 font-medium">
-          Part of the {pillarLabel} Guide
+        <a href={pillarHref} className="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800 font-medium mb-3 bg-blue-50 px-3 py-1 rounded-full">
+          ← Part of the {pillarLabel} Guide
         </a>
       )}
-      <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 leading-tight">{title}</h1>
-      <div className="flex items-center gap-4 mt-4 text-sm text-gray-500">
-        {authorImage && (
-          <img src={authorImage} alt={author} className="w-10 h-10 rounded-full" />
-        )}
-        <div>
-          <p className="font-medium text-gray-700">{author}</p>
-          <p>
-            {readingTime} &middot; Published {new Date(publishedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+      <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2 leading-tight">{title}</h1>
+      <div className="flex flex-wrap items-center gap-4 mt-6 text-sm text-gray-500">
+        <div className="flex items-center gap-2">
+          <User className="w-4 h-4" />
+          <span className="font-medium text-gray-700">{author}</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <Clock className="w-4 h-4" />
+          <span>{readingTime}</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <Calendar className="w-4 h-4" />
+          <span>
+            {new Date(publishedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
             {updatedAt && ` · Updated ${new Date(updatedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`}
-          </p>
+          </span>
         </div>
       </div>
     </header>
