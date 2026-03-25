@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | The MCA Guide",
   },
   description:
-    "The complete guide to merchant cash advances, debt settlement, and small business financing alternatives.",
+    "Free MCA education for small business owners. Learn how merchant cash advances work, what they really cost, and how to protect your business. By Bar Alezrah.",
   metadataBase: new URL("https://themcaguide.com"),
   openGraph: {
     type: "website",
