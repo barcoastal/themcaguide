@@ -7,6 +7,10 @@ import DidYouKnow from "../content/DidYouKnow";
 import RiskMeter from "../content/RiskMeter";
 import PullQuote from "../content/PullQuote";
 import StepByStep from "../content/StepByStep";
+import Slideshow from "../content/Slideshow";
+import HowMcaWorks from "../slideshows/HowMcaWorks";
+import McaCosts from "../slideshows/McaCosts";
+import HowTheyPullMoney from "../slideshows/HowTheyPullMoney";
 
 export const mdxComponents = {
   CalloutBox,
@@ -18,4 +22,8 @@ export const mdxComponents = {
   RiskMeter,
   PullQuote,
   StepByStep,
+  Slideshow,
+  HowMcaWorks,
+  McaCosts,
+  HowTheyPullMoney,
 };
