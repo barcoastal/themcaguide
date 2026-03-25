@@ -1,11 +1,13 @@
 import Link from "next/link";
+import { Lightbulb, Scale, Handshake, ArrowLeftRight, DoorOpen } from "lucide-react";
+import { ReactNode } from "react";
 
-const pillars = [
-  { href: "/guides/what-is-mca", icon: "💡", title: "What is an MCA?", description: "Plain English explanation of how merchant cash advances work." },
-  { href: "/guides/mca-vs-business-loans", icon: "⚖️", title: "MCA vs Real Loans", description: "See the difference between MCAs and actual business loans." },
-  { href: "/guides/mca-debt-settlement", icon: "🤝", title: "Settling MCA Debt", description: "Options if you're already stuck with MCA payments." },
-  { href: "/guides/mca-alternatives", icon: "🔄", title: "Better Alternatives", description: "Financing options that won't cost you an arm and a leg." },
-  { href: "/guides/how-to-get-out-of-mca-debt", icon: "🚪", title: "Escape MCA Debt", description: "Step-by-step guide to getting out of the MCA cycle." },
+const pillars: { href: string; icon: ReactNode; title: string; description: string }[] = [
+  { href: "/guides/what-is-mca", icon: <Lightbulb className="w-6 h-6 text-blue-600" />, title: "What is an MCA?", description: "Plain English explanation of how merchant cash advances work." },
+  { href: "/guides/mca-vs-business-loans", icon: <Scale className="w-6 h-6 text-blue-600" />, title: "MCA vs Real Loans", description: "See the difference between MCAs and actual business loans." },
+  { href: "/guides/mca-debt-settlement", icon: <Handshake className="w-6 h-6 text-blue-600" />, title: "Settling MCA Debt", description: "Options if you're already stuck with MCA payments." },
+  { href: "/guides/mca-alternatives", icon: <ArrowLeftRight className="w-6 h-6 text-blue-600" />, title: "Better Alternatives", description: "Financing options that won't cost you an arm and a leg." },
+  { href: "/guides/how-to-get-out-of-mca-debt", icon: <DoorOpen className="w-6 h-6 text-blue-600" />, title: "Escape MCA Debt", description: "Step-by-step guide to getting out of the MCA cycle." },
 ];
 
 export default function PillarCards() {
@@ -22,7 +24,9 @@ export default function PillarCards() {
             href={p.href}
             className="group bg-white border-2 border-gray-100 rounded-2xl p-6 hover:border-blue-300 hover:shadow-lg transition-all"
           >
-            <p className="text-4xl mb-4">{p.icon}</p>
+            <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-4">
+              {p.icon}
+            </div>
             <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{p.title}</h3>
             <p className="text-sm text-gray-500 mt-2">{p.description}</p>
           </Link>

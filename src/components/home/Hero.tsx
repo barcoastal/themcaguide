@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Store, Lightbulb, Shield } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -26,17 +27,17 @@ export default function Hero() {
             <div className="relative">
               <div className="w-80 h-80 bg-blue-100 rounded-full flex items-center justify-center">
                 <div className="text-center">
-                  <p className="text-6xl mb-3">🏪</p>
+                  <Store className="w-16 h-16 text-blue-600 mx-auto mb-3" />
                   <p className="text-xl font-bold text-blue-800">Your Business</p>
                   <p className="text-sm text-blue-600 mt-1">Deserves Clear Answers</p>
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-lg p-4 border border-gray-100">
-                <p className="text-2xl">💡</p>
+                <Lightbulb className="w-7 h-7 text-blue-600" />
                 <p className="text-xs font-semibold text-gray-700 mt-1">Know Before<br/>You Sign</p>
               </div>
               <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-lg p-4 border border-gray-100">
-                <p className="text-2xl">🛡️</p>
+                <Shield className="w-7 h-7 text-blue-600" />
                 <p className="text-xs font-semibold text-gray-700 mt-1">Protect Your<br/>Business</p>
               </div>
             </div>

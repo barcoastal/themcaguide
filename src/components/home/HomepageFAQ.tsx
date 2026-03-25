@@ -1,4 +1,5 @@
 import FAQ from "@/components/mdx/FAQ";
+import { HelpCircle } from "lucide-react";
 
 const faqItems = [
   { question: "What is a merchant cash advance?", answer: "A merchant cash advance (MCA) is a type of business financing where a company receives a lump sum of cash in exchange for a percentage of future credit card sales or revenue. It is technically a purchase of future receivables, not a loan." },
@@ -11,7 +12,10 @@ const faqItems = [
 export default function HomepageFAQ() {
   return (
     <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
+      <div className="flex items-center justify-center gap-3 mb-8">
+        <HelpCircle className="w-8 h-8 text-blue-600" />
+        <h2 className="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
+      </div>
       <FAQ items={faqItems} />
     </section>
   );

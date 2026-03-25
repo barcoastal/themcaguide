@@ -1,3 +1,5 @@
+import { Building2 } from "lucide-react";
+
 export default function TopLenders() {
   const lenders = [
     { name: "OnDeck", type: "Direct Lender", minRevenue: "$100K/year", speed: "1-3 days", factorRate: "1.09-1.43", note: "One of the largest MCA providers" },
@@ -20,7 +22,7 @@ export default function TopLenders() {
             <div key={lender.name} className="bg-white rounded-2xl p-6 border border-gray-200 hover:shadow-md transition-shadow">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                  <span className="text-xl font-bold text-blue-700">{lender.name[0]}</span>
+                  <Building2 className="w-6 h-6 text-blue-700" />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900">{lender.name}</h3>
