@@ -21,7 +21,7 @@ export default function PrivacyPage() {
         <p>We use the following third-party services:</p>
         <ul>
           <li><strong>Google Analytics:</strong> For website traffic analysis</li>
-          <li><strong>Vercel:</strong> For website hosting</li>
+          <li><strong>Cloudflare:</strong> For website hosting</li>
         </ul>
         <h2>Contact</h2>
         <p>If you have questions about this privacy policy, contact us at <a href="mailto:hello@themcaguide.com">hello@themcaguide.com</a>.</p>
