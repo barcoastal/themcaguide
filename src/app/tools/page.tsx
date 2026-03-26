@@ -4,7 +4,10 @@ import { Calculator, CalendarCheck, TrendingUp, Target, Scale } from "lucide-rea
 
 export const metadata: Metadata = {
   title: "Free Business Tools & Calculators",
-  description: "Free calculators and tools for small business owners. MCA cost calculator, payoff estimator, cash flow planner, break-even analysis, and loan comparison. No sign-up required.",
+  description: "Free MCA calculators for small business owners: cost calculator, payoff estimator, cash flow planner, break-even analysis, and loan comparison.",
+  alternates: {
+    canonical: "https://themcaguide.com/tools",
+  },
 };
 
 const tools = [

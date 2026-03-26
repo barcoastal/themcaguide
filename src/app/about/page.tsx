@@ -3,7 +3,10 @@ import { Heart, Target, Shield, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About The MCA Guide",
-  description: "The MCA Guide was created by Bar Alezrah, a small business owner helping other owners understand merchant cash advances. Free, honest education with no sales pitches.",
+  description: "Created by Bar Alezrah, a small business owner helping others understand merchant cash advances. Free, honest MCA education.",
+  alternates: {
+    canonical: "https://themcaguide.com/about",
+  },
 };
 
 export default function AboutPage() {

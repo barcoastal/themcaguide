@@ -6,6 +6,9 @@ import { LifeBuoy, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Getting Out of MCA Debt. Your Options Explained",
   description: "Stuck in MCA debt? Here's every option: negotiation, settlement, legal help, and how to protect your business.",
+  alternates: {
+    canonical: "https://themcaguide.com/blog/getting-out",
+  },
 };
 
 export default function GettingOutPage() {

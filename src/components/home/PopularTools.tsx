@@ -1,5 +1,63 @@
 import Link from "next/link";
-import { Calculator, CalendarCheck } from "lucide-react";
+import { Calculator, CalendarCheck, TrendingUp, Target, Scale } from "lucide-react";
+
+const tools = [
+  {
+    href: "/tools/mca-calculator",
+    icon: Calculator,
+    title: "MCA Cost Calculator",
+    description: <>Enter your deal terms and see the <span className="font-semibold text-red-600">true cost</span></>,
+    gradient: "from-blue-50 to-blue-100",
+    border: "border-blue-200",
+    iconColor: "text-blue-600",
+    hoverColor: "group-hover:text-blue-700",
+    ctaColor: "text-blue-600",
+  },
+  {
+    href: "/tools/mca-payoff-calculator",
+    icon: CalendarCheck,
+    title: "MCA Payoff Calculator",
+    description: <>Find out exactly <span className="font-semibold text-green-600">when you&apos;ll be free</span></>,
+    gradient: "from-green-50 to-green-100",
+    border: "border-green-200",
+    iconColor: "text-green-600",
+    hoverColor: "group-hover:text-green-700",
+    ctaColor: "text-green-600",
+  },
+  {
+    href: "/tools/debt-comparison",
+    icon: Scale,
+    title: "MCA vs Loan Comparison",
+    description: <>Compare MCA and loan offers <span className="font-semibold text-purple-600">side by side</span></>,
+    gradient: "from-purple-50 to-purple-100",
+    border: "border-purple-200",
+    iconColor: "text-purple-600",
+    hoverColor: "group-hover:text-purple-700",
+    ctaColor: "text-purple-600",
+  },
+  {
+    href: "/tools/cashflow-calculator",
+    icon: TrendingUp,
+    title: "Cash Flow Calculator",
+    description: <>See where your money goes <span className="font-semibold text-amber-600">each month</span></>,
+    gradient: "from-amber-50 to-amber-100",
+    border: "border-amber-200",
+    iconColor: "text-amber-600",
+    hoverColor: "group-hover:text-amber-700",
+    ctaColor: "text-amber-600",
+  },
+  {
+    href: "/tools/break-even-calculator",
+    icon: Target,
+    title: "Break-Even Calculator",
+    description: <>How many sales to <span className="font-semibold text-red-600">cover your costs</span></>,
+    gradient: "from-red-50 to-red-100",
+    border: "border-red-200",
+    iconColor: "text-red-600",
+    hoverColor: "group-hover:text-red-700",
+    ctaColor: "text-red-600",
+  },
+];
 
 export default function PopularTools() {
   return (
@@ -8,19 +66,18 @@ export default function PopularTools() {
         <h2 className="text-3xl font-bold text-gray-900">Free Calculators</h2>
         <p className="mt-3 text-lg text-gray-500">See the numbers before you commit</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <Link href="/tools/mca-calculator" className="group bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200 rounded-2xl p-8 hover:shadow-xl transition-all text-center">
-          <Calculator className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-700">MCA Cost Calculator</h3>
-          <p className="text-gray-500 mt-2">Enter your deal terms and see the <span className="font-semibold text-red-600">true cost</span></p>
-          <p className="mt-4 text-blue-600 font-semibold text-sm">Try it free &rarr;</p>
-        </Link>
-        <Link href="/tools/mca-payoff-calculator" className="group bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200 rounded-2xl p-8 hover:shadow-xl transition-all text-center">
-          <CalendarCheck className="w-12 h-12 text-green-600 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-gray-900 group-hover:text-green-700">MCA Payoff Calculator</h3>
-          <p className="text-gray-500 mt-2">Find out exactly <span className="font-semibold text-green-600">when you&apos;ll be free</span></p>
-          <p className="mt-4 text-green-600 font-semibold text-sm">Try it free &rarr;</p>
-        </Link>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        {tools.map((tool) => {
+          const Icon = tool.icon;
+          return (
+            <Link key={tool.href} href={tool.href} className={`group bg-gradient-to-br ${tool.gradient} border-2 ${tool.border} rounded-2xl p-8 hover:shadow-xl transition-all text-center`}>
+              <Icon className={`w-12 h-12 ${tool.iconColor} mx-auto mb-4`} />
+              <h3 className={`text-xl font-bold text-gray-900 ${tool.hoverColor}`}>{tool.title}</h3>
+              <p className="text-gray-500 mt-2">{tool.description}</p>
+              <p className={`mt-4 ${tool.ctaColor} font-semibold text-sm`}>Try it free &rarr;</p>
+            </Link>
+          );
+        })}
       </div>
     </section>
   );

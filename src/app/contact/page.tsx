@@ -3,6 +3,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us",
   description: "Have a question about merchant cash advances? Contact The MCA Guide team. We respond within 2 business days to help small business owners.",
+  alternates: {
+    canonical: "https://themcaguide.com/contact",
+  },
 };
 
 export default function ContactPage() {

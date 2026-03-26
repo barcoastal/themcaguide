@@ -6,6 +6,9 @@ import { ShieldCheck, Search, DoorOpen, BookOpen, Scale, LifeBuoy } from "lucide
 export const metadata: Metadata = {
   title: "Articles",
   description: "Simple, clear guides about MCA loans organized by what you need right now. whether you're exploring options, choosing a lender, or getting out of debt.",
+  alternates: {
+    canonical: "https://themcaguide.com/articles",
+  },
 };
 
 const categories = [

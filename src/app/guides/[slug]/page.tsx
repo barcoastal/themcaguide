@@ -30,6 +30,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description: guide.frontmatter.description,
+    alternates: {
+      canonical: `https://themcaguide.com/guides/${slug}`,
+    },
     openGraph: {
       title: guide.frontmatter.title,
       description: guide.frontmatter.description,
@@ -70,9 +73,7 @@ export default async function GuidePage({ params }: Props) {
         url: "https://themcaguide.com/images/logo.png",
       },
     },
-    image: guide.frontmatter.heroImage
-      ? `https://themcaguide.com${guide.frontmatter.heroImage}`
-      : undefined,
+    ...(guide.frontmatter.heroImage ? { image: `https://themcaguide.com${guide.frontmatter.heroImage}` } : {}),
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://themcaguide.com/guides/${slug}`,

@@ -6,6 +6,9 @@ import { getGlossaryTerms, getGlossaryLetters } from "@/lib/glossary";
 export const metadata: Metadata = {
   title: "MCA Glossary. Merchant Cash Advance Terms A-Z",
   description: "Complete glossary of merchant cash advance terms. Understand factor rates, holdbacks, UCC filings, and more.",
+  alternates: {
+    canonical: "https://themcaguide.com/glossary",
+  },
 };
 
 export default function GlossaryPage() {

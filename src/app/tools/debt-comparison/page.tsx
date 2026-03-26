@@ -6,6 +6,9 @@ import CalloutBox from "@/components/mdx/CalloutBox";
 export const metadata: Metadata = {
   title: "MCA vs Loan Comparison Calculator",
   description: "Compare the true cost of an MCA versus a business loan side by side. See how much you could save with a traditional loan.",
+  alternates: {
+    canonical: "https://themcaguide.com/tools/debt-comparison",
+  },
 };
 
 export default function DebtComparisonPage() {

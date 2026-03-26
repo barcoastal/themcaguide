@@ -6,6 +6,9 @@ import CalloutBox from "@/components/mdx/CalloutBox";
 export const metadata: Metadata = {
   title: "Cash Flow Calculator for Small Business",
   description: "Free cash flow calculator. Enter your monthly revenue and expenses to see your net cash flow and find areas to cut costs.",
+  alternates: {
+    canonical: "https://themcaguide.com/tools/cashflow-calculator",
+  },
 };
 
 export default function CashFlowPage() {

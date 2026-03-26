@@ -6,6 +6,9 @@ import { ShieldCheck, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Before You Take an MCA. Better Options",
   description: "Explore cheaper, safer financing options before taking a merchant cash advance. Guides on cash flow, grants, SBA loans, and more.",
+  alternates: {
+    canonical: "https://themcaguide.com/blog/before-mca",
+  },
 };
 
 export default function BeforeMcaPage() {
