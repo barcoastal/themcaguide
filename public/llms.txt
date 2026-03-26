@@ -1,0 +1,55 @@
+# The MCA Guide
+# https://themcaguide.com
+# Free MCA education for small business owners
+
+## About
+The MCA Guide is a free educational website created by Bar Alezrah, a small business owner, to help other business owners understand merchant cash advances (MCAs), avoid common mistakes, and find better financing options.
+
+## Content Structure
+
+### Guides (Pillar Pages)
+- /guides/what-is-mca - What is a Merchant Cash Advance? The Complete Guide
+- /guides/mca-vs-business-loans - MCA vs Business Loans: What's the Real Difference?
+- /guides/mca-debt-settlement - MCA Debt Settlement: A Complete Guide for Business Owners
+- /guides/mca-alternatives - MCA Alternatives: 8 Better Ways to Fund Your Small Business
+- /guides/how-to-get-out-of-mca-debt - How to Get Out of MCA Debt: A Step-by-Step Survival Guide
+
+### Blog: Before Taking an MCA
+- /articles/fix-cashflow-before-mca - 10 Ways to Fix Your Cash Flow
+- /articles/emergency-business-funding-not-mca - 7 Emergency Funding Options That Aren't an MCA
+- /articles/small-business-grants-guide - Free Money: A Small Business Owner's Guide to Grants
+- /articles/invoice-factoring-guide - Invoice Factoring: Get Paid Now Without an MCA
+- /articles/sba-loan-guide-small-business - SBA Loans Explained
+
+### Blog: If You Really Need an MCA
+- /articles/best-mca-companies - Best MCA Companies in 2026: An Honest Review
+- /articles/mca-contract-red-flags - 8 Red Flags in MCA Contracts
+- /articles/mca-broker-vs-direct-funder - MCA Broker vs Direct Funder
+- /articles/hidden-fees-in-mca - Hidden Fees in MCA Contracts
+- /articles/how-to-negotiate-mca-terms - How to Negotiate Better MCA Terms
+
+### Blog: Getting Out of MCA Debt
+- /articles/can-you-negotiate-mca-debt - Can You Negotiate MCA Debt? Yes, Here's How
+- /articles/mca-debt-relief-options - MCA Debt Relief: All Your Options Explained
+- /articles/what-happens-default-on-mca - What Really Happens If You Default on an MCA
+- /articles/mca-confession-of-judgment - Confession of Judgment: The Most Dangerous Clause
+- /articles/mca-ucc-filing-explained - MCA UCC Filings: What They Are and Why They Matter
+- /articles/mca-stacking-risks - MCA Stacking: The Dangerous Trap of Multiple Cash Advances
+
+### MCA Basics
+- /articles/mca-factor-rates-explained - MCA Factor Rates Explained
+- /articles/how-much-does-mca-cost - How Much Does an MCA Really Cost?
+- /articles/double-dipping-mca - MCA Double Dipping Explained
+- /articles/mca-holdback-percentage-explained - MCA Holdback Percentage Explained
+
+### Tools
+- /tools/mca-calculator - MCA Cost Calculator
+- /tools/mca-payoff-calculator - MCA Payoff Calculator
+- /tools/cashflow-calculator - Cash Flow Calculator
+- /tools/break-even-calculator - Break-Even Calculator
+- /tools/debt-comparison - MCA vs Loan Comparison Calculator
+
+### Other
+- /glossary - MCA Glossary: Merchant Cash Advance Terms A-Z
+- /about - About The MCA Guide
+- /contact - Contact Us
