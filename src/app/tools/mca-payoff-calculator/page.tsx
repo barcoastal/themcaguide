@@ -4,8 +4,8 @@ import McaPayoffCalculator from "@/components/tools/McaPayoffCalculator";
 import CalloutBox from "@/components/mdx/CalloutBox";
 
 export const metadata: Metadata = {
-  title: "MCA Payoff Calculator. When Will You Be MCA-Free?",
-  description: "Calculate how long it will take to pay off your remaining MCA balance.",
+  title: "MCA Payoff Calculator. When Will You Be Free?",
+  description: "Free MCA payoff calculator. Enter your remaining balance and daily payments to find out when you will be MCA-free and how much you still owe in total.",
 };
 
 export default function McaPayoffCalculatorPage() {

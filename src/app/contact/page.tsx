@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with The MCA Guide editorial team.",
+  description: "Have a question about merchant cash advances? Contact The MCA Guide team. We respond within 2 business days to help small business owners.",
 };
 
 export default function ContactPage() {

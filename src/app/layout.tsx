@@ -20,7 +20,7 @@ const sourceSerif = Source_Serif_4({
 export const metadata: Metadata = {
   title: {
     default: "The MCA Guide. Merchant Cash Advance Education",
-    template: "%s | The MCA Guide",
+    template: "%s | MCA Guide",
   },
   description:
     "Free MCA education for small business owners. Learn how merchant cash advances work, what they really cost, and how to protect your business. By Bar Alezrah.",

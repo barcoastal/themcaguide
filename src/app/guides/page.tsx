@@ -4,7 +4,7 @@ import { getAllArticles } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Guides",
-  description: "Comprehensive guides on merchant cash advances, debt settlement, and small business financing.",
+  description: "Comprehensive guides on merchant cash advances, debt settlement, and small business financing. Written in plain English by a real business owner. Always free.",
 };
 
 export default function GuidesPage() {

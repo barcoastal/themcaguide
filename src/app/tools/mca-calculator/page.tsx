@@ -4,7 +4,7 @@ import McaCostCalculator from "@/components/tools/McaCostCalculator";
 import CalloutBox from "@/components/mdx/CalloutBox";
 
 export const metadata: Metadata = {
-  title: "MCA Cost Calculator. Calculate Your True MCA Cost",
+  title: "MCA Cost Calculator. True Cost of Your MCA",
   description: "Free MCA calculator. Enter your funding amount, factor rate, and holdback percentage to see total cost, effective APR, and daily payments.",
 };
 

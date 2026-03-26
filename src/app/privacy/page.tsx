@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy policy for The MCA Guide website.",
+  description: "Privacy policy for The MCA Guide. Learn how we use cookies, analytics, and affiliate links. We do not collect personal information unless you contact us.",
 };
 
 export default function PrivacyPage() {

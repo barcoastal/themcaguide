@@ -22,8 +22,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticleBySlug(slug, "article");
   if (!article) return {};
 
+  const title = article.frontmatter.title.length > 48
+    ? article.frontmatter.title.substring(0, 45) + "..."
+    : article.frontmatter.title;
+
   return {
-    title: article.frontmatter.title,
+    title,
     description: article.frontmatter.description,
     openGraph: {
       title: article.frontmatter.title,
@@ -33,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       modifiedTime: article.frontmatter.updatedAt,
       images: article.frontmatter.heroImage
         ? [{ url: article.frontmatter.heroImage }]
-        : [],
+        : [{ url: "/images/og-image.png", width: 1200, height: 630, alt: "The MCA Guide" }],
     },
   };
 }

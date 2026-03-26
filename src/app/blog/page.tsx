@@ -4,7 +4,7 @@ import { ShieldCheck, Search, LifeBuoy } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "MCA Blog. Guides for Small Business Owners",
-  description: "Free guides organized into 3 categories: alternatives before MCA, choosing the right MCA, and getting out of MCA debt.",
+  description: "Free guides organized into 3 categories: alternatives before taking an MCA, how to choose the right MCA lender, and how to get out of MCA debt. Written for small business owners.",
 };
 
 const categories = [

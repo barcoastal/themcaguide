@@ -5,7 +5,7 @@ import CalloutBox from "@/components/mdx/CalloutBox";
 
 export const metadata: Metadata = {
   title: "Break-Even Calculator for Small Business",
-  description: "Find out how many sales you need to cover your costs. Free break-even calculator for small business owners.",
+  description: "Free break-even calculator for small business owners. Enter your fixed costs, variable costs, and price per unit to find out how many sales you need each month to cover expenses.",
 };
 
 export default function BreakEvenPage() {
