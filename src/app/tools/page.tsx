@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Calculator, CalendarCheck, TrendingUp, Target, Scale } from "lucide-react";
+import { Calculator, CalendarCheck, TrendingUp, Target, Scale, Percent, DollarSign } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Free Business Tools & Calculators",
@@ -16,6 +16,9 @@ const tools = [
   { href: "/tools/debt-comparison", icon: Scale, title: "MCA vs Loan Comparison", description: "Compare an MCA offer against a traditional business loan side by side.", color: "bg-purple-50 border-purple-200 hover:border-purple-400", iconColor: "text-purple-600" },
   { href: "/tools/cashflow-calculator", icon: TrendingUp, title: "Cash Flow Calculator", description: "Track your monthly revenue and expenses. Find out if you have a cash flow problem.", color: "bg-amber-50 border-amber-200 hover:border-amber-400", iconColor: "text-amber-600" },
   { href: "/tools/break-even-calculator", icon: Target, title: "Break-Even Calculator", description: "How many sales do you need each month to cover your costs?", color: "bg-red-50 border-red-200 hover:border-red-400", iconColor: "text-red-600" },
+  { href: "/tools/profit-margin-calculator", icon: Percent, title: "Profit Margin Calculator", description: "See your gross margin, net margin, and markup. Know if your margins can handle MCA payments.", color: "bg-amber-50 border-amber-200 hover:border-amber-400", iconColor: "text-amber-600" },
+  { href: "/tools/loan-payment-calculator", icon: Calculator, title: "Loan Payment Calculator", description: "Calculate monthly payments, total interest, and total cost on any business loan.", color: "bg-indigo-50 border-indigo-200 hover:border-indigo-400", iconColor: "text-indigo-600" },
+  { href: "/tools/daily-revenue-calculator", icon: DollarSign, title: "Daily Revenue Impact Calculator", description: "See what your MCA holdback really costs you per day, per month, and how long until payoff.", color: "bg-pink-50 border-pink-200 hover:border-pink-400", iconColor: "text-pink-600" },
 ];
 
 export default function ToolsPage() {

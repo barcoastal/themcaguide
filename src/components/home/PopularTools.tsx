@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Calculator, CalendarCheck, TrendingUp, Target, Scale } from "lucide-react";
+import { Calculator, CalendarCheck, TrendingUp, Percent, Scale, DollarSign } from "lucide-react";
 
 const tools = [
   {
@@ -36,10 +36,10 @@ const tools = [
     ctaColor: "text-purple-600",
   },
   {
-    href: "/tools/cashflow-calculator",
-    icon: TrendingUp,
-    title: "Cash Flow Calculator",
-    description: <>See where your money goes <span className="font-semibold text-amber-600">each month</span></>,
+    href: "/tools/profit-margin-calculator",
+    icon: Percent,
+    title: "Profit Margin Calculator",
+    description: <>Know your <span className="font-semibold text-amber-600">gross and net margin</span></>,
     gradient: "from-amber-50 to-amber-100",
     border: "border-amber-200",
     iconColor: "text-amber-600",
@@ -47,15 +47,26 @@ const tools = [
     ctaColor: "text-amber-600",
   },
   {
-    href: "/tools/break-even-calculator",
-    icon: Target,
-    title: "Break-Even Calculator",
-    description: <>How many sales to <span className="font-semibold text-red-600">cover your costs</span></>,
-    gradient: "from-red-50 to-red-100",
-    border: "border-red-200",
-    iconColor: "text-red-600",
-    hoverColor: "group-hover:text-red-700",
-    ctaColor: "text-red-600",
+    href: "/tools/loan-payment-calculator",
+    icon: TrendingUp,
+    title: "Loan Payment Calculator",
+    description: <>See your <span className="font-semibold text-indigo-600">monthly payment and total cost</span></>,
+    gradient: "from-indigo-50 to-indigo-100",
+    border: "border-indigo-200",
+    iconColor: "text-indigo-600",
+    hoverColor: "group-hover:text-indigo-700",
+    ctaColor: "text-indigo-600",
+  },
+  {
+    href: "/tools/daily-revenue-calculator",
+    icon: DollarSign,
+    title: "Daily Revenue Impact",
+    description: <>See what your MCA <span className="font-semibold text-pink-600">really takes daily</span></>,
+    gradient: "from-pink-50 to-pink-100",
+    border: "border-pink-200",
+    iconColor: "text-pink-600",
+    hoverColor: "group-hover:text-pink-700",
+    ctaColor: "text-pink-600",
   },
 ];
 
