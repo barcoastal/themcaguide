@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { getAllArticles } from "@/lib/content";
-import { ShieldCheck, Search, DoorOpen, BookOpen, Scale } from "lucide-react";
+import { ShieldCheck, Search, DoorOpen, BookOpen, Scale, LifeBuoy } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Articles",
@@ -66,6 +66,25 @@ export default function ArticlesPage() {
         <p className="text-lg text-gray-500 max-w-2xl mx-auto">
           Clear, simple articles organized by what you need right now. Pick your situation below.
         </p>
+      </div>
+
+      {/* Blog Categories */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <Link href="/blog/before-mca" className="group block bg-green-50 border-2 border-green-200 rounded-2xl p-6 hover:shadow-lg hover:border-green-400 transition-all">
+          <ShieldCheck className="w-8 h-8 text-green-600 mb-3" />
+          <h2 className="text-xl font-bold text-gray-900 group-hover:text-green-700">Before You Take an MCA</h2>
+          <p className="text-sm text-gray-500 mt-1">Better options for your business</p>
+        </Link>
+        <Link href="/blog/choosing-mca" className="group block bg-blue-50 border-2 border-blue-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-400 transition-all">
+          <Search className="w-8 h-8 text-blue-600 mb-3" />
+          <h2 className="text-xl font-bold text-gray-900 group-hover:text-blue-700">Choosing an MCA</h2>
+          <p className="text-sm text-gray-500 mt-1">Pick the best deal, avoid traps</p>
+        </Link>
+        <Link href="/blog/getting-out" className="group block bg-red-50 border-2 border-red-200 rounded-2xl p-6 hover:shadow-lg hover:border-red-400 transition-all">
+          <LifeBuoy className="w-8 h-8 text-red-600 mb-3" />
+          <h2 className="text-xl font-bold text-gray-900 group-hover:text-red-700">Getting Out of MCA Debt</h2>
+          <p className="text-sm text-gray-500 mt-1">Settlement, negotiation, recovery</p>
+        </Link>
       </div>
 
       {categories.map((cat) => {
