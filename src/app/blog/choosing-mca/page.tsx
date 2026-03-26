@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getAllArticles } from "@/lib/content";
 import { Search, ArrowRight } from "lucide-react";
+import TopLenders from "@/components/home/TopLenders";
 
 export const metadata: Metadata = {
   title: "Choosing an MCA — How to Pick the Best Deal",
@@ -48,6 +49,8 @@ export default function ChoosingMcaPage() {
           ))}
         </div>
       </section>
+
+      <TopLenders />
     </div>
   );
 }
