@@ -5,6 +5,9 @@ import { useState } from "react";
 import MobileNav from "./MobileNav";
 
 const navLinks = [
+  { href: "/blog/before-mca", label: "Before MCA" },
+  { href: "/blog/choosing-mca", label: "If You're Taking One" },
+  { href: "/blog/getting-out", label: "Stuck in MCA Debt" },
   { href: "/guides", label: "Guides" },
   { href: "/articles", label: "Articles" },
   { href: "/tools", label: "Tools" },
