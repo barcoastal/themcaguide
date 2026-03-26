@@ -29,9 +29,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "The MCA Guide",
+    images: [{ url: "/images/og-image.png", width: 1200, height: 630, alt: "The MCA Guide. Free MCA Education for Small Business Owners" }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/og-image.png"],
   },
   robots: {
     index: true,
