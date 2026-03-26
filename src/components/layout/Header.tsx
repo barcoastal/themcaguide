@@ -6,7 +6,7 @@ import MobileNav from "./MobileNav";
 
 const navLinks = [
   { href: "/blog/before-mca", label: "Before Taking MCA" },
-  { href: "/blog/choosing-mca", label: "If You Already Took One" },
+  { href: "/blog/choosing-mca", label: "If You Really Need One" },
   { href: "/blog/getting-out", label: "Stuck in MCA Debt" },
   { href: "/tools", label: "Tools" },
 ];
