@@ -85,10 +85,10 @@ export default async function GuidePage({ params }: Props) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs items={[{ label: "Guides", href: "/guides" }, { label: guide.frontmatter.title }]} />
 
-        <div className="flex gap-12">
+        <div className="lg:flex lg:gap-12">
           <TableOfContents />
 
-          <article className="flex-1 min-w-0 prose prose-lg prose-blue max-w-none">
+          <article className="flex-1 min-w-0 prose prose-sm md:prose-lg prose-blue max-w-none">
             <ArticleHeader
               title={guide.frontmatter.title}
               readingTime={guide.readingTime}

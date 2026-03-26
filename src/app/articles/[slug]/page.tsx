@@ -93,10 +93,10 @@ export default async function ArticlePage({ params }: Props) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs items={breadcrumbs} />
 
-        <div className="flex gap-12">
+        <div className="lg:flex lg:gap-12">
           <TableOfContents />
 
-          <article className="flex-1 min-w-0 prose prose-lg prose-blue max-w-none">
+          <article className="flex-1 min-w-0 prose prose-sm md:prose-lg prose-blue max-w-none">
             <ArticleHeader
               title={article.frontmatter.title}
               readingTime={article.readingTime}
