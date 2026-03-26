@@ -5,14 +5,14 @@ import { ShieldCheck, Search, DoorOpen, BookOpen, Scale, LifeBuoy } from "lucide
 
 export const metadata: Metadata = {
   title: "Articles",
-  description: "Simple, clear guides about MCA loans organized by what you need right now — whether you're exploring options, choosing a lender, or getting out of debt.",
+  description: "Simple, clear guides about MCA loans organized by what you need right now. whether you're exploring options, choosing a lender, or getting out of debt.",
 };
 
 const categories = [
   {
     id: "before-mca",
     title: "Before You Take an MCA",
-    subtitle: "Fix your cash flow first — you might not need one",
+    subtitle: "Fix your cash flow first. you might not need one",
     icon: ShieldCheck,
     iconColor: "text-green-600",
     iconBg: "bg-green-100",

@@ -10,7 +10,7 @@ export default function Footer() {
               The MCA Guide
             </h3>
             <p className="mt-2 text-sm text-gray-500">
-              Created by Bar Alezrah — a small business owner helping other owners understand MCAs.
+              Created by Bar Alezrah. a small business owner helping other owners understand MCAs.
             </p>
           </div>
           <div>

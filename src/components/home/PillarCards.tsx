@@ -25,7 +25,7 @@ const steps = [
     icon: Search,
     number: "3",
     title: "Choosing an MCA",
-    description: "If it's your only option — how to pick the best deal and avoid the worst traps.",
+    description: "If it's your only option. how to pick the best deal and avoid the worst traps.",
     color: "bg-amber-100 text-amber-700",
     border: "border-amber-200 hover:border-amber-400",
   },
@@ -45,7 +45,7 @@ export default function PillarCards() {
     <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-gray-900">Where Are You Right Now?</h2>
-        <p className="mt-3 text-lg text-gray-500">Pick your situation — we'll guide you from there</p>
+        <p className="mt-3 text-lg text-gray-500">Pick your situation. we'll guide you from there</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {steps.map((step) => {

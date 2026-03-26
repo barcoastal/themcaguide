@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Search, ArrowRight, ArrowLeft, FileText, AlertTriangle, CheckCircle2, XCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Choosing an MCA — How to Pick the Best Deal",
+  title: "Choosing an MCA. How to Pick the Best Deal",
   description: "If you're going with an MCA, here's how to pick the best lender, spot red flags, and protect your business.",
 };
 
@@ -80,7 +80,7 @@ export default function ChoosingPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-8">
             <AlertTriangle className="w-8 h-8 text-red-600" />
-            <h2 className="text-3xl font-bold text-gray-900">Red Flags — Walk Away If You See These</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Red Flags. Walk Away If You See These</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[

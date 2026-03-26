@@ -37,7 +37,7 @@ export default function RealCost() {
           <div className="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-200 flex items-start gap-3">
             <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
             <p className="text-sm text-amber-800">
-              <span className="font-bold">Did you know?</span> On a $50,000 MCA with a 1.35 factor rate, you pay back $67,500 — that&apos;s $17,500 in fees. The same $50K through an SBA loan could cost just $3,500 in interest.
+              <span className="font-bold">Did you know?</span> On a $50,000 MCA with a 1.35 factor rate, you pay back $67,500. that&apos;s $17,500 in fees. The same $50K through an SBA loan could cost just $3,500 in interest.
             </p>
           </div>
         </div>

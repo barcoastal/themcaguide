@@ -7,18 +7,11 @@ export default function Hero() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <img src="/images/authors/bar-alezrah.jpg" alt="Bar Alezrah" className="w-14 h-14 rounded-full object-cover border-2 border-blue-200" />
-              <div>
-                <p className="font-bold text-gray-900">Bar Alezrah</p>
-                <p className="text-sm text-gray-500">Small Business Owner</p>
-              </div>
-            </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
               From One Business Owner <span className="text-blue-600">to Another</span>
             </h1>
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-              I created this guide so you don&apos;t make the same mistakes I&apos;ve seen too many business owners make. MCAs can cost you everything if you don&apos;t understand them. This site gives you all the tools and knowledge — <strong>for free</strong>.
+              I created this guide so you don&apos;t make the same mistakes I&apos;ve seen too many business owners make. MCAs can cost you everything if you don&apos;t understand them. This site gives you all the tools and knowledge, <strong>for free</strong>.
             </p>
             <p className="mt-4 text-lg text-gray-600 leading-relaxed">
               No sales pitches. No jargon. Just honest information from someone who&apos;s been in your shoes.
@@ -52,7 +45,7 @@ export default function Hero() {
               <LifeBuoy className="w-6 h-6 text-red-700" />
             </div>
             <h2 className="text-xl font-bold text-gray-900 group-hover:text-red-700 transition-colors">Stuck in MCA Debt</h2>
-            <p className="text-sm text-gray-500 mt-2">Settlement, negotiation, legal options — your way out</p>
+            <p className="text-sm text-gray-500 mt-2">Settlement, negotiation, legal options. Your way out</p>
             <p className="text-sm font-semibold text-red-600 mt-4">Find help →</p>
           </Link>
         </div>

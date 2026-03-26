@@ -6,7 +6,7 @@ import McaCosts from "@/components/slideshows/McaCosts";
 import HowTheyPullMoney from "@/components/slideshows/HowTheyPullMoney";
 
 export const metadata: Metadata = {
-  title: "What's an MCA? — Simple Explanation for Business Owners",
+  title: "What's an MCA?. Simple Explanation for Business Owners",
   description: "Learn how merchant cash advances actually work in plain English. Slideshows explain the process, costs, and how they take your money.",
 };
 

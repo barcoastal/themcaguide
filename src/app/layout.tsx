@@ -19,7 +19,7 @@ const sourceSerif = Source_Serif_4({
 
 export const metadata: Metadata = {
   title: {
-    default: "The MCA Guide — Merchant Cash Advance Education",
+    default: "The MCA Guide. Merchant Cash Advance Education",
     template: "%s | The MCA Guide",
   },
   description:

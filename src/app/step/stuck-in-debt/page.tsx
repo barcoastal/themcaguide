@@ -4,14 +4,14 @@ import { LifeBuoy, ArrowRight, ArrowLeft, FileText, Phone, Scale, Handshake, Dol
 
 export const metadata: Metadata = {
   title: "Stuck in MCA Debt? Here's How to Get Out",
-  description: "If you're drowning in MCA payments, you have options. Negotiation, settlement, legal help — here's your step-by-step escape plan.",
+  description: "If you're drowning in MCA payments, you have options. Negotiation, settlement, legal help. here's your step-by-step escape plan.",
 };
 
 const steps = [
   {
     icon: ShieldCheck,
     number: "1",
-    title: "STOP — Don't Take Another MCA",
+    title: "STOP. Don't Take Another MCA",
     description: "The #1 mistake business owners make is taking a second MCA to pay the first. This is called 'stacking' and it will make everything worse. No matter how bad things feel, don't stack.",
     color: "bg-red-100 text-red-700",
   },
@@ -26,7 +26,7 @@ const steps = [
     icon: Phone,
     number: "3",
     title: "Call Your MCA Company",
-    description: "Yes, really. Ask for a lower holdback percentage or a payment pause. Many will negotiate — they'd rather get some money than none if you default.",
+    description: "Yes, really. Ask for a lower holdback percentage or a payment pause. Many will negotiate. they'd rather get some money than none if you default.",
     color: "bg-green-100 text-green-700",
   },
   {
@@ -40,7 +40,7 @@ const steps = [
     icon: Scale,
     number: "5",
     title: "Get Legal Help If Needed",
-    description: "If you signed a Confession of Judgment, have UCC liens, or are being threatened — talk to a lawyer who knows MCA contracts. Some states have laws that protect you.",
+    description: "If you signed a Confession of Judgment, have UCC liens, or are being threatened. talk to a lawyer who knows MCA contracts. Some states have laws that protect you.",
     color: "bg-amber-100 text-amber-700",
   },
   {

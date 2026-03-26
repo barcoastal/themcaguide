@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Wallet, TrendingUp, FileText, Building2, Gift, CreditCard, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "I Need Cash — Alternatives Before Taking an MCA",
+  title: "I Need Cash. Alternatives Before Taking an MCA",
   description: "Before you take a merchant cash advance, try these options first. They're cheaper, safer, and better for your business.",
 };
 
@@ -11,7 +11,7 @@ const options = [
   {
     icon: TrendingUp,
     title: "Speed Up Your Invoicing",
-    description: "Send invoices immediately. Offer 2% discount for early payment. Switch to online invoicing. Most businesses wait too long to bill — fix this first.",
+    description: "Send invoices immediately. Offer 2% discount for early payment. Switch to online invoicing. Most businesses wait too long to bill. fix this first.",
     color: "bg-green-100 text-green-700",
   },
   {

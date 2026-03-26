@@ -7,7 +7,7 @@ const slides = [
   {
     icon: <DollarSign className="w-14 h-14 text-blue-600" />,
     title: "Understanding MCA Costs",
-    body: <p>MCAs don&apos;t use interest rates like regular loans. They use something called a <strong>factor rate</strong>. This makes it hard to compare to other financing — and that&apos;s by design. Let&apos;s break it down simply.</p>,
+    body: <p>MCAs don&apos;t use interest rates like regular loans. They use something called a <strong>factor rate</strong>. This makes it hard to compare to other financing. and that&apos;s by design. Let&apos;s break it down simply.</p>,
   },
   {
     icon: <Percent className="w-14 h-14 text-blue-600" />,
@@ -52,7 +52,7 @@ const slides = [
   {
     icon: <AlertTriangle className="w-14 h-14 text-amber-600" />,
     title: "No Early Payoff Benefit",
-    body: <p>With a regular loan, paying early saves you money on interest. With most MCAs, <strong>you owe the full amount no matter what</strong>. Pay it off in 30 days or 120 days — the total cost is the same. Some MCAs offer a small discount for early payoff, but this is rare.</p>,
+    body: <p>With a regular loan, paying early saves you money on interest. With most MCAs, <strong>you owe the full amount no matter what</strong>. Pay it off in 30 days or 120 days. the total cost is the same. Some MCAs offer a small discount for early payoff, but this is rare.</p>,
   },
   {
     icon: <CheckCircle2 className="w-14 h-14 text-green-600" />,
@@ -62,12 +62,12 @@ const slides = [
         <p><strong>Always calculate the effective APR</strong> before signing anything.</p>
         <p><strong>Use our free calculator</strong> to see the real cost of any MCA offer.</p>
         <p><strong>Compare with at least 2-3 other financing options</strong> before deciding.</p>
-        <p><strong>Ask:</strong> &quot;What is the total amount I will pay back?&quot; — if they dodge this question, walk away.</p>
+        <p><strong>Ask:</strong> &quot;What is the total amount I will pay back?&quot;. if they dodge this question, walk away.</p>
       </div>
     ),
   },
 ];
 
 export default function McaCosts() {
-  return <Slideshow title="The Real Cost of an MCA — Explained Simply" slides={slides} />;
+  return <Slideshow title="The Real Cost of an MCA. Explained Simply" slides={slides} />;
 }

@@ -3,7 +3,7 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import McaPayoffCalculator from "@/components/tools/McaPayoffCalculator";
 
 export const metadata: Metadata = {
-  title: "MCA Payoff Calculator — When Will You Be MCA-Free?",
+  title: "MCA Payoff Calculator. When Will You Be MCA-Free?",
   description: "Calculate how long it will take to pay off your remaining MCA balance.",
 };
 
@@ -21,7 +21,7 @@ export default function McaPayoffCalculatorPage() {
         <ul>
           <li>Negotiate a lower holdback percentage if your business revenue has decreased.</li>
           <li>Consider refinancing to a lower factor rate if you have been making consistent payments.</li>
-          <li>Avoid stacking multiple MCAs — this compounds your daily payment obligations.</li>
+          <li>Avoid stacking multiple MCAs. this compounds your daily payment obligations.</li>
           <li>Explore MCA debt settlement if your balance feels unmanageable.</li>
         </ul>
       </article>

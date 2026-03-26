@@ -3,7 +3,7 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import McaCostCalculator from "@/components/tools/McaCostCalculator";
 
 export const metadata: Metadata = {
-  title: "MCA Cost Calculator — Calculate Your True MCA Cost",
+  title: "MCA Cost Calculator. Calculate Your True MCA Cost",
   description: "Free MCA calculator. Enter your funding amount, factor rate, and holdback percentage to see total cost, effective APR, and daily payments.",
 };
 

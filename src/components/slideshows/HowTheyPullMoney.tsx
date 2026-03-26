@@ -7,7 +7,7 @@ const slides = [
   {
     icon: <CreditCard className="w-14 h-14 text-blue-600" />,
     title: "How MCA Companies Take Your Money",
-    body: <p>When you sign an MCA agreement, you give the company <strong>legal permission to pull money from your business</strong> every day. Here&apos;s exactly how it works — and what you can and can&apos;t do about it.</p>,
+    body: <p>When you sign an MCA agreement, you give the company <strong>legal permission to pull money from your business</strong> every day. Here&apos;s exactly how it works. and what you can and can&apos;t do about it.</p>,
   },
   {
     icon: <FileText className="w-14 h-14 text-blue-600" />,
@@ -35,7 +35,7 @@ const slides = [
         <p><strong>How it works:</strong> Your credit card processor is instructed to send a percentage of every card transaction directly to the MCA company.</p>
         <p><strong>When:</strong> In real time, with every card sale.</p>
         <p><strong>Amount:</strong> Usually 10-25% of each transaction.</p>
-        <p><strong>You never see this money</strong> — it&apos;s diverted before it hits your account.</p>
+        <p><strong>You never see this money</strong>. it&apos;s diverted before it hits your account.</p>
       </div>
     ),
     highlight: { label: "Typical Split", value: "10-25% of card sales", color: "amber" as const },
@@ -45,8 +45,8 @@ const slides = [
     title: "What If Business Is Slow?",
     body: (
       <div className="text-left space-y-2">
-        <p><strong>With percentage-based holdbacks:</strong> If you make less, they take less. This sounds fair — but you still owe the full amount, it just takes longer.</p>
-        <p><strong>With fixed ACH withdrawals:</strong> They take the same amount regardless of your revenue. Bad month? Doesn&apos;t matter — the withdrawal still hits.</p>
+        <p><strong>With percentage-based holdbacks:</strong> If you make less, they take less. This sounds fair. but you still owe the full amount, it just takes longer.</p>
+        <p><strong>With fixed ACH withdrawals:</strong> They take the same amount regardless of your revenue. Bad month? Doesn&apos;t matter. the withdrawal still hits.</p>
       </div>
     ),
   },
@@ -69,7 +69,7 @@ const slides = [
     body: (
       <div className="text-left space-y-2">
         <p><strong>Before signing:</strong> Understand exactly how payments will be taken.</p>
-        <p><strong>Ask for percentage-based holdbacks</strong> instead of fixed ACH — it&apos;s safer when business is slow.</p>
+        <p><strong>Ask for percentage-based holdbacks</strong> instead of fixed ACH. it&apos;s safer when business is slow.</p>
         <p><strong>Never sign a Confession of Judgment</strong> if you can avoid it.</p>
         <p><strong>If you&apos;re struggling:</strong> Talk to the MCA company about modifying terms BEFORE you miss payments.</p>
         <p><strong>Get legal help</strong> from an attorney who specializes in MCA contracts before blocking payments.</p>

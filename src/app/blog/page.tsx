@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ShieldCheck, Search, LifeBuoy } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "MCA Blog — Guides for Small Business Owners",
+  title: "MCA Blog. Guides for Small Business Owners",
   description: "Free guides organized into 3 categories: alternatives before MCA, choosing the right MCA, and getting out of MCA debt.",
 };
 

@@ -5,11 +5,11 @@ import { ReactNode } from "react";
 export default function TopRisks() {
   const risks: { icon: ReactNode; title: string; description: string }[] = [
     { icon: <Calendar className="w-6 h-6 text-red-600" />, title: "Daily Payments", description: "Money is taken from your account every single day, even when business is slow." },
-    { icon: <TrendingUp className="w-6 h-6 text-red-600" />, title: "Sky-High Costs", description: "Effective APR can be 40% to 350% — way more than any bank loan." },
+    { icon: <TrendingUp className="w-6 h-6 text-red-600" />, title: "Sky-High Costs", description: "Effective APR can be 40% to 350%. way more than any bank loan." },
     { icon: <RefreshCw className="w-6 h-6 text-red-600" />, title: "Debt Stacking", description: "Many businesses take a second MCA to pay the first. This is a dangerous spiral." },
     { icon: <Scale className="w-6 h-6 text-red-600" />, title: "Confession of Judgment", description: "Some MCAs make you sign away your right to fight in court if there's a dispute." },
     { icon: <Building2 className="w-6 h-6 text-red-600" />, title: "Bank Account Freeze", description: "Default on an MCA and they may freeze your business bank account." },
-    { icon: <FileWarning className="w-6 h-6 text-red-600" />, title: "UCC Liens", description: "MCAs file liens on your business assets — this can block you from getting other funding." },
+    { icon: <FileWarning className="w-6 h-6 text-red-600" />, title: "UCC Liens", description: "MCAs file liens on your business assets. this can block you from getting other funding." },
   ];
 
   return (

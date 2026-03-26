@@ -5,7 +5,7 @@ import { Search, ArrowRight } from "lucide-react";
 import TopLenders from "@/components/home/TopLenders";
 
 export const metadata: Metadata = {
-  title: "Choosing an MCA — How to Pick the Best Deal",
+  title: "Choosing an MCA. How to Pick the Best Deal",
   description: "If an MCA is your only option, here's how to choose the best lender, spot red flags, and protect your business.",
 };
 

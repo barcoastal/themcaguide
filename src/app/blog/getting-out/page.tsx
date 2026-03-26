@@ -4,7 +4,7 @@ import { getAllArticles } from "@/lib/content";
 import { LifeBuoy, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Getting Out of MCA Debt — Your Options Explained",
+  title: "Getting Out of MCA Debt. Your Options Explained",
   description: "Stuck in MCA debt? Here's every option: negotiation, settlement, legal help, and how to protect your business.",
 };
 
@@ -22,7 +22,7 @@ export default function GettingOutPage() {
             You Have Options. Let's Find Yours.
           </h1>
           <p className="mt-6 text-xl text-gray-500 max-w-2xl">
-            Take a deep breath. MCA debt is stressful, but it's fixable. Here are your options — from negotiation to settlement to legal help.
+            Take a deep breath. MCA debt is stressful, but it's fixable. Here are your options. from negotiation to settlement to legal help.
           </p>
         </div>
       </section>

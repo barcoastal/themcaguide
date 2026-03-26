@@ -25,7 +25,7 @@ export default function AboutPage() {
           Hey, I'm Bar. I'm a small business owner, just like you. I created The MCA Guide because I believe every business owner deserves to understand exactly what they're signing before they take on a merchant cash advance.
         </p>
         <p>
-          The MCA industry is full of confusing terms, hidden costs, and high-pressure sales tactics. I wanted to build a resource that cuts through all of that and gives you the <strong>straight facts</strong> — written in plain English, by someone who actually runs a business.
+          The MCA industry is full of confusing terms, hidden costs, and high-pressure sales tactics. I wanted to build a resource that cuts through all of that and gives you the <strong>straight facts</strong>. written in plain English, by someone who actually runs a business.
         </p>
 
         <h2>What You'll Find Here</h2>
@@ -54,7 +54,7 @@ export default function AboutPage() {
 
         <h2 id="affiliate-disclosure">Affiliate Disclosure</h2>
         <p>
-          Some links on The MCA Guide are affiliate links. This means I may earn a small commission if you click through and take action, at no extra cost to you. This helps keep the site running. My recommendations are never influenced by affiliate partnerships — I only link to products and services I believe genuinely help small business owners.
+          Some links on The MCA Guide are affiliate links. This means I may earn a small commission if you click through and take action, at no extra cost to you. This helps keep the site running. My recommendations are never influenced by affiliate partnerships. I only link to products and services I believe genuinely help small business owners.
         </p>
 
         <h2>Contact Me</h2>
