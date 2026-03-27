@@ -8,6 +8,7 @@ import ArticleHeader from "@/components/content/ArticleHeader";
 import TableOfContents from "@/components/content/TableOfContents";
 import RelatedArticles from "@/components/content/RelatedArticles";
 import ShareButtons from "@/components/content/ShareButtons";
+import ArticleLayout from "@/components/content/ArticleLayout";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -81,7 +82,7 @@ export default async function GuidePage({ params }: Props) {
   };
 
   return (
-    <>
+    <ArticleLayout>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs items={[{ label: "Guides", href: "/guides" }, { label: guide.frontmatter.title }]} />
@@ -89,7 +90,7 @@ export default async function GuidePage({ params }: Props) {
         <div className="lg:flex lg:gap-12">
           <TableOfContents />
 
-          <article className="flex-1 min-w-0 prose prose-sm md:prose-lg prose-blue max-w-none">
+          <article className="flex-1 min-w-0 prose prose-base md:prose-lg max-w-none">
             <ArticleHeader
               title={guide.frontmatter.title}
               readingTime={guide.readingTime}
@@ -107,6 +108,6 @@ export default async function GuidePage({ params }: Props) {
 
         <RelatedArticles articles={relatedArticles} />
       </div>
-    </>
+    </ArticleLayout>
   );
 }

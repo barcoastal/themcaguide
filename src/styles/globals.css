@@ -23,3 +23,104 @@
     @apply text-xl font-semibold;
   }
 }
+
+@layer components {
+  /* Article visual enhancements */
+  .prose h2 {
+    @apply mt-16 mb-6 pb-3 border-b-2 border-blue-100 text-gray-900;
+  }
+
+  .prose h3 {
+    @apply mt-10 mb-4 text-gray-800;
+  }
+
+  /* Make paragraphs more readable */
+  .prose p {
+    @apply text-gray-600 leading-8;
+  }
+
+  /* Style lists with more space */
+  .prose ul, .prose ol {
+    @apply my-6 space-y-3;
+  }
+
+  .prose li {
+    @apply text-gray-600 leading-7;
+  }
+
+  /* Make strong text pop */
+  .prose strong {
+    @apply text-gray-900 font-bold;
+  }
+
+  /* Style links */
+  .prose a {
+    @apply text-blue-600 font-medium no-underline hover:underline;
+  }
+
+  /* Style tables to look modern */
+  .prose table {
+    @apply w-full my-8 rounded-xl overflow-hidden border border-gray-200 text-sm;
+  }
+
+  .prose thead {
+    @apply bg-blue-50;
+  }
+
+  .prose thead th {
+    @apply px-4 py-3 text-left font-semibold text-blue-900 text-xs uppercase tracking-wider;
+  }
+
+  .prose tbody tr {
+    @apply border-t border-gray-100;
+  }
+
+  .prose tbody tr:nth-child(even) {
+    @apply bg-gray-50;
+  }
+
+  .prose tbody td {
+    @apply px-4 py-3 text-gray-600;
+  }
+
+  /* Style blockquotes as pull quotes */
+  .prose blockquote {
+    @apply my-8 px-6 py-4 bg-blue-50 border-l-4 border-blue-500 rounded-r-xl text-blue-900 font-medium text-lg italic not-italic;
+  }
+
+  /* Style horizontal rules as section breaks */
+  .prose hr {
+    @apply my-12 border-none h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent;
+  }
+
+  /* Style details/summary (FAQ) */
+  .prose details {
+    @apply my-3 bg-white border border-gray-200 rounded-xl overflow-hidden;
+  }
+
+  .prose details summary {
+    @apply px-5 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none;
+  }
+
+  .prose details summary::-webkit-details-marker {
+    @apply hidden;
+  }
+
+  .prose details[open] summary {
+    @apply border-b border-gray-200 bg-gray-50;
+  }
+
+  .prose details > :not(summary) {
+    @apply px-5 py-4;
+  }
+
+  /* Style code blocks */
+  .prose code {
+    @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-gray-800;
+  }
+
+  /* Image styling in articles */
+  .prose img {
+    @apply rounded-xl shadow-sm my-8;
+  }
+}
