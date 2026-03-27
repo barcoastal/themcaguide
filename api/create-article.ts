@@ -146,4 +146,5 @@ async function deleteArticle(slug: string, type: "article" | "guide" = "article"
   return { success: true };
 }
 
-export { createArticle, listArticles, deleteArticle, ArticleData, buildMdx };
+export { createArticle, listArticles, deleteArticle, buildMdx };
+export type { ArticleData };

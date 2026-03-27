@@ -31,6 +31,7 @@ export default function Footer() {
             </h3>
             <ul className="mt-2 space-y-2">
               <li><Link href="/about" className="text-sm text-gray-500 hover:text-blue-800">About</Link></li>
+              <li><Link href="/editorial-policy" className="text-sm text-gray-500 hover:text-blue-800">Editorial Policy</Link></li>
               <li><Link href="/contact" className="text-sm text-gray-500 hover:text-blue-800">Contact</Link></li>
               <li><Link href="/privacy" className="text-sm text-gray-500 hover:text-blue-800">Privacy Policy</Link></li>
               <li><a href="/sitemap.xml" className="text-sm text-gray-500 hover:text-blue-800">Sitemap</a></li>

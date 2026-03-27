@@ -57,6 +57,10 @@ const organizationJsonLd = {
   founder: {
     "@type": "Person",
     name: "Bar Alezrah",
+    url: "https://themcaguide.com/about/bar-alezrah",
+    sameAs: [
+      "https://www.linkedin.com/in/bar-elezra-647573153/",
+    ],
   },
   description: "Free MCA education for small business owners.",
 };

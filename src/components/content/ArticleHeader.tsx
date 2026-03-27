@@ -1,4 +1,4 @@
-import { Clock, Calendar, User } from "lucide-react";
+import { Clock, Calendar, User, CheckCircle2 } from "lucide-react";
 
 interface ArticleHeaderProps {
   title: string;
@@ -46,6 +46,10 @@ export default function ArticleHeader({
             {updatedAt && ` · Updated ${new Date(updatedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`}
           </span>
         </div>
+      </div>
+      <div className="flex items-center gap-2 mt-4 text-xs text-green-700 bg-green-50 px-3 py-1.5 rounded-full w-fit">
+        <CheckCircle2 className="w-3.5 h-3.5" />
+        <span>Reviewed for accuracy. Based on real experience.</span>
       </div>
     </header>
   );
