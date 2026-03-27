@@ -37,6 +37,17 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://themcaguide.com",
+    languages: {
+      "en-US": "https://themcaguide.com",
+    },
+  },
+  other: {
+    "Content-Security-Policy": "upgrade-insecure-requests",
+  },
+  verification: {
+    other: {
+      "indexnow-key": "mca-guide-indexnow-2026",
+    },
   },
   robots: {
     index: true,
