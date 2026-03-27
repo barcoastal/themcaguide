@@ -1,0 +1,8 @@
+name = "mca-guide-webhook"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+[vars]
+REPO_OWNER = "barcoastal"
+REPO_NAME = "themcaguide"
+BRANCH = "main"
