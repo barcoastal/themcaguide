@@ -130,17 +130,21 @@ export default {
       return new Response(JSON.stringify({ error: "POST only" }), { status: 405 });
     }
 
-    // Auth check
-    const token = request.headers.get("Authorization")?.replace("Bearer ", "")
-      || request.headers.get("X-Access-Token")
-      || new URL(request.url).searchParams.get("token");
-
-    if (!token || token !== env.ACCESS_TOKEN) {
-      return new Response(JSON.stringify({ error: "Unauthorized" }), { status: 401 });
-    }
-
     try {
       const payload = await request.json() as Record<string, unknown>;
+
+      // Auth check - check headers, query params, AND body
+      const token = request.headers.get("Authorization")?.replace("Bearer ", "")
+        || request.headers.get("X-Access-Token")
+        || request.headers.get("x-access-token")
+        || new URL(request.url).searchParams.get("token")
+        || (payload.access_token as string)
+        || (payload.accessToken as string)
+        || (payload.token as string);
+
+      if (!token || token !== env.ACCESS_TOKEN) {
+        return new Response(JSON.stringify({ error: "Unauthorized", received_headers: Object.fromEntries(request.headers) }), { status: 401 });
+      }
 
       // Log the raw payload for debugging
       console.log("Incoming webhook payload:", JSON.stringify(payload, null, 2));
@@ -152,6 +156,15 @@ export default {
       const slug = (payload.slug || payload.url_slug || slugify(title)) as string;
       const tags = (payload.tags || payload.keywords || []) as string[];
       const status = (payload.status || "published") as string;
+
+      // If no title or content, treat as a test ping
+      if (!title && !rawContent) {
+        return new Response(JSON.stringify({
+          success: true,
+          message: "Webhook connected successfully. Send an article with title and content to publish.",
+          received_fields: Object.keys(payload),
+        }), { status: 200 });
+      }
 
       if (!title) {
         return new Response(JSON.stringify({ error: "title is required", received_fields: Object.keys(payload) }), { status: 400 });
