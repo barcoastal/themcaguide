@@ -1,12 +1,9 @@
-import { FileText, Banknote, TrendingDown, CircleDollarSign } from "lucide-react";
-import { ReactNode } from "react";
-
 export default function HowItWorks() {
-  const steps: { icon: ReactNode; title: string; description: string }[] = [
-    { icon: <FileText className="w-7 h-7 text-blue-600" />, title: "You Apply", description: "Quick application, minimal paperwork. Sounds easy, right?" },
-    { icon: <Banknote className="w-7 h-7 text-blue-600" />, title: "Get Funded Fast", description: "Money in your account in 1-3 days. That speed comes at a cost." },
-    { icon: <TrendingDown className="w-7 h-7 text-blue-600" />, title: "Daily Payments Taken", description: "10-25% of your daily sales are automatically withdrawn. Every. Single. Day." },
-    { icon: <CircleDollarSign className="w-7 h-7 text-blue-600" />, title: "You Pay Back Way More", description: "A $50K advance can cost you $67,500 or more. That's $17,500 in fees." },
+  const steps = [
+    { title: "You Apply", description: "Quick application, minimal paperwork. Sounds easy, right?" },
+    { title: "Get Funded Fast", description: "Money in your account in 1-3 days. That speed comes at a cost." },
+    { title: "Daily Payments Taken", description: "10-25% of your daily sales are automatically withdrawn. Every. Single. Day." },
+    { title: "You Pay Back Way More", description: "A $50K advance can cost you $67,500 or more. That's $17,500 in fees." },
   ];
 
   return (
@@ -20,10 +17,7 @@ export default function HowItWorks() {
           {steps.map((step, i) => (
             <div key={i} className="relative">
               <div className="bg-gray-50 rounded-2xl p-6 text-center h-full border-2 border-gray-100 hover:border-blue-200 transition-colors">
-                <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mb-4 mx-auto">
-                  {step.icon}
-                </div>
-                <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold text-sm mb-3">
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white font-bold text-lg mb-4">
                   {i + 1}
                 </div>
                 <h3 className="font-bold text-gray-900 text-lg">{step.title}</h3>
