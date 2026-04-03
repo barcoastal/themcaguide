@@ -23,9 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticleBySlug(slug, "article");
   if (!article) return {};
 
-  const title = article.frontmatter.title.length > 48
-    ? article.frontmatter.title.substring(0, 45) + "..."
-    : article.frontmatter.title;
+  const title = article.frontmatter.title;
 
   return {
     title,

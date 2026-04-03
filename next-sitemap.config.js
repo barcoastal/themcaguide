@@ -6,6 +6,7 @@ module.exports = {
   sitemapSize: 7000,
   changefreq: "weekly",
   priority: 0.7,
+  exclude: ["/articles/test-article", "/icon.png", "/icon"],
   robotsTxtOptions: {
     policies: [
       { userAgent: "*", allow: "/" },
