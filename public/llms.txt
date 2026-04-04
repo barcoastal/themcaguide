@@ -20,6 +20,7 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/small-business-grants-guide - Free Money: A Small Business Owner's Guide to Grants
 - /articles/invoice-factoring-guide - Invoice Factoring: Get Paid Now Without an MCA
 - /articles/sba-loan-guide-small-business - SBA Loans Explained
+- /articles/revenue-based-financing - Revenue Based Financing: A Smarter Alternative to MCAs
 
 ### Blog: If You Really Need an MCA
 - /articles/best-mca-companies - Best MCA Companies in 2026: An Honest Review
@@ -27,14 +28,29 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/mca-broker-vs-direct-funder - MCA Broker vs Direct Funder
 - /articles/hidden-fees-in-mca - Hidden Fees in MCA Contracts
 - /articles/how-to-negotiate-mca-terms - How to Negotiate Better MCA Terms
+- /articles/mca-for-bad-credit - MCA for Bad Credit: What You Need to Know
+- /articles/mca-pros-and-cons - MCA Pros and Cons: The Honest Truth
+- /articles/is-mca-a-loan - Is an MCA a Loan?
+
+### MCA Company Reviews
+- /articles/ondeck-mca-review - OnDeck Review 2026
+- /articles/kabbage-amex-review - Kabbage (American Express Business Blueprint) Review 2026
+- /articles/fundbox-review - Fundbox Review 2026
+- /articles/can-capital-review - CAN Capital Review 2026
+- /articles/rapid-finance-review - Rapid Finance Review 2026
+- /articles/credibly-review - Credibly Review 2026
 
 ### Blog: Getting Out of MCA Debt
 - /articles/can-you-negotiate-mca-debt - Can You Negotiate MCA Debt? Yes, Here's How
-- /articles/mca-debt-relief-options - MCA Debt Relief: All Your Options Explained
+- /articles/mca-debt-relief - MCA Debt Relief: Every Option Explained Simply
+- /articles/mca-debt-relief-options - MCA Debt Relief Options Compared
 - /articles/what-happens-default-on-mca - What Really Happens If You Default on an MCA
 - /articles/mca-confession-of-judgment - Confession of Judgment: The Most Dangerous Clause
 - /articles/mca-ucc-filing-explained - MCA UCC Filings: What They Are and Why They Matter
 - /articles/mca-stacking-risks - MCA Stacking: The Dangerous Trap of Multiple Cash Advances
+- /articles/mca-consolidation - MCA Consolidation: Can You Combine Multiple MCAs?
+- /articles/mca-lawsuit - MCA Lawsuit: What to Do When an MCA Company Sues You
+- /articles/mca-attorney - When Do You Need an MCA Attorney?
 
 ### MCA Basics
 - /articles/mca-factor-rates-explained - MCA Factor Rates Explained
@@ -42,14 +58,92 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/double-dipping-mca - MCA Double Dipping Explained
 - /articles/mca-holdback-percentage-explained - MCA Holdback Percentage Explained
 
-### Tools
+### MCA Laws by State
+- /mca-laws-by-state - MCA Laws by State: All 50 States Compared
+- /articles/mca-laws-alabama - MCA Laws in Alabama
+- /articles/mca-laws-alaska - MCA Laws in Alaska
+- /articles/mca-laws-arizona - MCA Laws in Arizona
+- /articles/mca-laws-arkansas - MCA Laws in Arkansas
+- /articles/mca-laws-california - MCA Laws in California
+- /articles/mca-laws-colorado - MCA Laws in Colorado
+- /articles/mca-laws-connecticut - MCA Laws in Connecticut
+- /articles/mca-laws-delaware - MCA Laws in Delaware
+- /articles/mca-laws-florida - MCA Laws in Florida
+- /articles/mca-laws-georgia - MCA Laws in Georgia
+- /articles/mca-laws-hawaii - MCA Laws in Hawaii
+- /articles/mca-laws-idaho - MCA Laws in Idaho
+- /articles/mca-laws-illinois - MCA Laws in Illinois
+- /articles/mca-laws-indiana - MCA Laws in Indiana
+- /articles/mca-laws-iowa - MCA Laws in Iowa
+- /articles/mca-laws-kansas - MCA Laws in Kansas
+- /articles/mca-laws-kentucky - MCA Laws in Kentucky
+- /articles/mca-laws-louisiana - MCA Laws in Louisiana
+- /articles/mca-laws-maine - MCA Laws in Maine
+- /articles/mca-laws-maryland - MCA Laws in Maryland
+- /articles/mca-laws-massachusetts - MCA Laws in Massachusetts
+- /articles/mca-laws-michigan - MCA Laws in Michigan
+- /articles/mca-laws-minnesota - MCA Laws in Minnesota
+- /articles/mca-laws-mississippi - MCA Laws in Mississippi
+- /articles/mca-laws-missouri - MCA Laws in Missouri
+- /articles/mca-laws-montana - MCA Laws in Montana
+- /articles/mca-laws-nebraska - MCA Laws in Nebraska
+- /articles/mca-laws-nevada - MCA Laws in Nevada
+- /articles/mca-laws-new-hampshire - MCA Laws in New Hampshire
+- /articles/mca-laws-new-jersey - MCA Laws in New Jersey
+- /articles/mca-laws-new-mexico - MCA Laws in New Mexico
+- /articles/mca-laws-new-york - MCA Laws in New York
+- /articles/mca-laws-north-carolina - MCA Laws in North Carolina
+- /articles/mca-laws-north-dakota - MCA Laws in North Dakota
+- /articles/mca-laws-ohio - MCA Laws in Ohio
+- /articles/mca-laws-oklahoma - MCA Laws in Oklahoma
+- /articles/mca-laws-oregon - MCA Laws in Oregon
+- /articles/mca-laws-pennsylvania - MCA Laws in Pennsylvania
+- /articles/mca-laws-rhode-island - MCA Laws in Rhode Island
+- /articles/mca-laws-south-carolina - MCA Laws in South Carolina
+- /articles/mca-laws-south-dakota - MCA Laws in South Dakota
+- /articles/mca-laws-tennessee - MCA Laws in Tennessee
+- /articles/mca-laws-texas - MCA Laws in Texas
+- /articles/mca-laws-utah - MCA Laws in Utah
+- /articles/mca-laws-vermont - MCA Laws in Vermont
+- /articles/mca-laws-virginia - MCA Laws in Virginia
+- /articles/mca-laws-washington - MCA Laws in Washington
+- /articles/mca-laws-west-virginia - MCA Laws in West Virginia
+- /articles/mca-laws-wisconsin - MCA Laws in Wisconsin
+- /articles/mca-laws-wyoming - MCA Laws in Wyoming
+
+### Tools (28 Free Calculators)
 - /tools/mca-calculator - MCA Cost Calculator
 - /tools/mca-payoff-calculator - MCA Payoff Calculator
+- /tools/debt-comparison - MCA vs Loan Comparison
 - /tools/cashflow-calculator - Cash Flow Calculator
 - /tools/break-even-calculator - Break-Even Calculator
-- /tools/debt-comparison - MCA vs Loan Comparison Calculator
+- /tools/profit-margin-calculator - Profit Margin Calculator
+- /tools/loan-payment-calculator - Loan Payment Calculator
+- /tools/daily-revenue-calculator - Daily Revenue Impact Calculator
+- /tools/mca-stacking-calculator - MCA Stacking Calculator
+- /tools/mca-refinance-calculator - MCA Refinance Calculator
+- /tools/mca-vs-factoring-calculator - MCA vs Invoice Factoring Calculator
+- /tools/mca-affordability-calculator - MCA Affordability Calculator
+- /tools/mca-early-payoff-calculator - MCA Early Payoff Calculator
+- /tools/factor-rate-to-apr - Factor Rate to APR Converter
+- /tools/mca-payment-schedule - MCA Payment Schedule Generator
+- /tools/loan-eligibility-checker - Loan Eligibility Checker
+- /tools/debt-to-revenue-calculator - Debt-to-Revenue Calculator
+- /tools/working-capital-calculator - Working Capital Calculator
+- /tools/credit-score-estimator - Business Credit Score Estimator
+- /tools/emergency-fund-calculator - Emergency Fund Calculator
+- /tools/revenue-forecast-calculator - Revenue Forecast Calculator
+- /tools/business-valuation-estimator - Business Valuation Estimator
+- /tools/invoice-aging-calculator - Invoice Aging Calculator
+- /tools/payroll-burden-calculator - Payroll Burden Calculator
+- /tools/rent-affordability-calculator - Rent Affordability Calculator
+- /tools/sales-tax-calculator - Sales Tax Calculator
+- /tools/startup-cost-estimator - Startup Cost Estimator
+- /tools/should-i-take-mca-quiz - Should I Take an MCA? Quiz
 
 ### Other
 - /glossary - MCA Glossary: Merchant Cash Advance Terms A-Z
 - /about - About The MCA Guide
+- /about/bar-alezrah - About Bar Alezrah
 - /contact - Contact Us
+- /editorial-policy - Editorial Policy
