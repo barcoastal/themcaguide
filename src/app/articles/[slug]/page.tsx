@@ -111,6 +111,10 @@ export default async function ArticlePage({ params }: Props) {
             <MDXRemote source={article.content} components={mdxComponents} />
 
             <ShareButtons title={article.frontmatter.title} url={`https://themcaguide.com/articles/${slug}`} />
+
+            <div className="not-prose mt-8 p-4 bg-gray-50 border border-gray-200 rounded-lg text-xs text-gray-500 leading-relaxed">
+              <strong className="text-gray-700">Disclaimer:</strong> The MCA Guide provides free educational content about merchant cash advances. We are not a lender, broker, or financial advisor. This content is for informational purposes only and does not constitute financial, legal, or tax advice. Some links may be affiliate links. Always consult a qualified professional before making business financing decisions.
+            </div>
           </article>
         </div>
       </div>

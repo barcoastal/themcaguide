@@ -13,14 +13,15 @@ export default function BarAlezrahPage() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Bar Alezrah",
-    jobTitle: "Small Business Owner & MCA Educator",
+    jobTitle: "Small Business Owner, MCA Debt Survivor & Financial Educator",
     url: "https://themcaguide.com/about/bar-alezrah",
     sameAs: [
       "https://www.linkedin.com/in/bar-elezra-647573153/",
     ],
     image: "https://themcaguide.com/images/authors/bar-alezrah.jpg",
     description: "Small business owner who survived MCA debt and created The MCA Guide to help other business owners avoid the same mistakes.",
-    knowsAbout: ["Merchant Cash Advances", "Small Business Financing", "MCA Debt Settlement", "Business Cash Flow Management"],
+    knowsAbout: ["Merchant Cash Advances", "Small Business Financing", "MCA Debt Settlement", "Business Cash Flow Management", "MCA Regulations", "Commercial Financing Disclosure", "Business Debt Relief"],
+    alumniOf: { "@type": "Organization", name: "Coastal Debt" },
   };
 
   return (
