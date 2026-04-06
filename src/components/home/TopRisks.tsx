@@ -30,9 +30,13 @@ export default function TopRisks() {
             </div>
           ))}
         </div>
-        <div className="text-center mt-8">
-          <Link href="/guides/how-to-get-out-of-mca-debt" className="text-blue-600 font-semibold hover:underline">
-            Already in MCA debt? Here&apos;s how to get out &rarr;
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+          <Link href="/guides/mca-alternatives" className="text-green-700 font-semibold hover:underline">
+            Explore 8 cheaper alternatives to MCAs &rarr;
+          </Link>
+          <span className="text-gray-300 hidden sm:inline">|</span>
+          <Link href="/guides/how-to-get-out-of-mca-debt" className="text-gray-500 font-medium hover:underline">
+            Already in MCA debt? Get help
           </Link>
         </div>
       </div>

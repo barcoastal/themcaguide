@@ -58,10 +58,10 @@ const tools = [
     ctaColor: "text-indigo-600",
   },
   {
-    href: "/tools/daily-revenue-calculator",
+    href: "/tools/loan-eligibility-checker",
     icon: DollarSign,
-    title: "Daily Revenue Impact",
-    description: <>See what your MCA <span className="font-semibold text-pink-600">really takes daily</span></>,
+    title: "Loan Eligibility Checker",
+    description: <>Find out what <span className="font-semibold text-pink-600">financing you qualify for</span></>,
     gradient: "from-pink-50 to-pink-100",
     border: "border-pink-200",
     iconColor: "text-pink-600",

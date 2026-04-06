@@ -14,7 +14,7 @@ export default function Hero() {
               I created this guide so you don&apos;t make the same mistakes I&apos;ve seen too many business owners make. MCAs can cost you everything if you don&apos;t understand them. This site gives you all the tools and knowledge, <strong>for free</strong>.
             </p>
             <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-              No sales pitches. No jargon. Just honest information from someone who&apos;s been in your shoes.
+              No sales pitches. No jargon. We are not a lender or broker. Just honest, independent education from someone who&apos;s been in your shoes.
             </p>
           </div>
           <div className="hidden md:block">
