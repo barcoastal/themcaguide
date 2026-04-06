@@ -33,6 +33,7 @@ export default function Footer() {
               <li><Link href="/about" className="text-sm text-gray-500 hover:text-blue-800">About</Link></li>
               <li><Link href="/editorial-policy" className="text-sm text-gray-500 hover:text-blue-800">Editorial Policy</Link></li>
               <li><Link href="/contact" className="text-sm text-gray-500 hover:text-blue-800">Contact</Link></li>
+              <li><Link href="/how-we-make-money" className="text-sm text-gray-500 hover:text-blue-800">How We Make Money</Link></li>
               <li><Link href="/privacy" className="text-sm text-gray-500 hover:text-blue-800">Privacy Policy</Link></li>
               <li><a href="/sitemap.xml" className="text-sm text-gray-500 hover:text-blue-800">Sitemap</a></li>
             </ul>
@@ -44,7 +45,7 @@ export default function Footer() {
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Some links on this site are affiliate links. We may earn a commission at no extra cost to you.{" "}
-            <Link href="/about#affiliate-disclosure" className="underline hover:text-blue-800">
+            <Link href="/how-we-make-money" className="underline hover:text-blue-800">
               Learn more
             </Link>
           </p>
