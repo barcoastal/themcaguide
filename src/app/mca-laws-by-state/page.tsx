@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Find merchant cash advance laws and regulations for your state. All 50 states covered with specific protections, disclosure requirements, and resources.",
     type: "website",
-    images: [{ url: "/images/og-image.png", width: 1200, height: 630, alt: "The MCA Guide" }],
+    images: [{ url: "/images/og-image.webp", width: 1200, height: 630, alt: "The MCA Guide" }],
   },
 };
 

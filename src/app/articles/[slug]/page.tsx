@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       modifiedTime: article.frontmatter.updatedAt,
       images: article.frontmatter.heroImage
         ? [{ url: article.frontmatter.heroImage }]
-        : [{ url: "/images/og-image.png", width: 1200, height: 630, alt: "The MCA Guide" }],
+        : [{ url: "/images/og-image.webp", width: 1200, height: 630, alt: "The MCA Guide" }],
     },
   };
 }

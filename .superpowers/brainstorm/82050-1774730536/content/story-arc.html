@@ -1,0 +1,86 @@
+<h2>Maria's MCA Story - Slide Breakdown</h2>
+<p class="subtitle">A restaurant owner's cautionary tale in 10-12 slides, with real numbers. Two approaches for the visual style.</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Enhanced Slideshow (extend existing component)</h3>
+      <p>Use the current <code>Slideshow</code> component but add new features: a <strong>bank balance tracker</strong> that updates each slide, a <strong>timeline bar</strong> showing where we are in the story (Month 1, Month 3, etc.), and <strong>color-coded highlight boxes</strong> for the financials. Same card-based UI, but richer data per slide.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul><li>Consistent with existing slideshows</li><li>Faster to build</li><li>Reusable for future story slideshows</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>Still centered text layout</li><li>Limited visual storytelling</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Story Component (new dedicated component)</h3>
+      <p>A brand new <code>McaStory</code> component designed specifically for narrative + numbers. Each slide has: a <strong>chapter title</strong>, <strong>narrative text</strong> on the left, a <strong>financial dashboard</strong> on the right showing bank balance, daily payment, total owed. The dashboard updates with each slide, numbers animate in red/green.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul><li>Purpose-built for the story format</li><li>Financial dashboard makes numbers visceral</li><li>More engaging, magazine-style layout</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>More code to build</li><li>Only used once (for now)</li></ul></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 style="margin-top: 32px;">The Story Arc (both approaches use this)</h3>
+
+<div class="mockup" style="max-width: 800px; margin: 0 auto;">
+  <div class="mockup-header">Maria's Story - 11 Slides</div>
+  <div class="mockup-body" style="padding: 20px; font-size: 13px; line-height: 1.8;">
+    <div style="display: grid; grid-template-columns: auto 1fr auto; gap: 8px 16px; align-items: start;">
+
+      <div style="background: #dbeafe; color: #1e40af; font-weight: 700; padding: 2px 10px; border-radius: 12px; font-size: 11px; text-align: center;">1</div>
+      <div><strong>Meet Maria</strong> - Owns a family restaurant in Miami, 12 years. Revenue: $38K/month. Equipment is aging, needs a new walk-in cooler + kitchen renovation.</div>
+      <div style="color: #059669; font-size: 12px; white-space: nowrap;">Bank: $47,200</div>
+
+      <div style="background: #dbeafe; color: #1e40af; font-weight: 700; padding: 2px 10px; border-radius: 12px; font-size: 11px; text-align: center;">2</div>
+      <div><strong>The Search</strong> - Bank says no (credit score 620, no collateral). SBA loan: 8 weeks minimum. She Googles "fast business funding" and gets 6 calls within an hour.</div>
+      <div style="color: #059669; font-size: 12px; white-space: nowrap;">Bank: $47,200</div>
+
+      <div style="background: #fef3c7; color: #92400e; font-weight: 700; padding: 2px 10px; border-radius: 12px; font-size: 11px; text-align: center;">3</div>
+      <div><strong>The Offer</strong> - $75,000 advance. Factor rate 1.35. Holdback 15% of daily revenue. Total payback: $101,250. She signs. Money hits in 2 days.</div>
+      <div style="color: #059669; font-size: 12px; white-space: nowrap;">Bank: $122,200</div>
+
+      <div style="background: #fef3c7; color: #92400e; font-weight: 700; padding: 2px 10px; border-radius: 12px; font-size: 11px; text-align: center;">4</div>
+      <div><strong>Month 1 - Feels Good</strong> - New cooler installed, renovation underway. $40K spent on upgrades. Daily ACH pulls $190/day (15% of ~$1,267 daily revenue). She barely notices.</div>
+      <div style="color: #059669; font-size: 12px; white-space: nowrap;">Bank: $76,300</div>
+
+      <div style="background: #fed7aa; color: #9a3412; font-weight: 700; padding: 2px 10px; border-radius: 12px; font-size: 11px; text-align: center;">5</div>
+      <div><strong>Month 3 - The Squeeze</strong> - Summer slows down. Revenue drops to $28K/month. Daily pulls are now $140 but she's also paying staff, rent ($6,500), food costs. Cash gets tight.</div>
+      <div style="color: #d97706; font-size: 12px; white-space: nowrap;">Bank: $22,400</div>
+
+      <div style="background: #fecaca; color: #991b1b; font-weight: 700; padding: 2px 10px; border-radius: 12px; font-size: 11px; text-align: center;">6</div>
+      <div><strong>Month 4 - The Call</strong> - Another MCA company calls: "We can get you $50K to help with cash flow." She's stressed. She takes it. Factor rate 1.40. Now two MCAs pulling daily.</div>
+      <div style="color: #dc2626; font-size: 12px; white-space: nowrap;">Bank: $58,900</div>
+
+      <div style="background: #fecaca; color: #991b1b; font-weight: 700; padding: 2px 10px; border-radius: 12px; font-size: 11px; text-align: center;">7</div>
+      <div><strong>Month 5 - Stacking Hits</strong> - Two daily pulls totaling $330/day. That's $6,600/month just in MCA payments. Rent is $6,500. Food costs $11K. Payroll $14K. Revenue: $32K. The math doesn't work.</div>
+      <div style="color: #dc2626; font-size: 12px; white-space: nowrap;">Bank: $8,100</div>
+
+      <div style="background: #fecaca; color: #991b1b; font-weight: 700; padding: 2px 10px; border-radius: 12px; font-size: 11px; text-align: center;">8</div>
+      <div><strong>Month 6 - Overdraft</strong> - Bank account dips below zero twice. ACH pulls bounce. MCA company #1 calls threatening legal action. She's not sleeping.</div>
+      <div style="color: #dc2626; font-size: 12px; white-space: nowrap;">Bank: -$1,200</div>
+
+      <div style="background: #e5e7eb; color: #374151; font-weight: 700; padding: 2px 10px; border-radius: 12px; font-size: 11px; text-align: center;">9</div>
+      <div><strong>Month 7 - The Reckoning</strong> - She adds it up. Borrowed $125K total. Owes $171,250 total. Has paid back $46,200 so far. Still owes $125,050. Her 12-year-old restaurant is at risk.</div>
+      <div style="color: #dc2626; font-size: 12px; white-space: nowrap;">Bank: $3,400</div>
+
+      <div style="background: #e5e7eb; color: #374151; font-weight: 700; padding: 2px 10px; border-radius: 12px; font-size: 11px; text-align: center;">10</div>
+      <div><strong>Finding Help</strong> - Maria contacts an MCA debt settlement firm. They negotiate both advances down to 65 cents on the dollar. She enters a structured repayment plan.</div>
+      <div style="color: #d97706; font-size: 12px; white-space: nowrap;">Bank: $3,400</div>
+
+      <div style="background: #d1fae5; color: #065f46; font-weight: 700; padding: 2px 10px; border-radius: 12px; font-size: 11px; text-align: center;">11</div>
+      <div><strong>The Lesson</strong> - Total cost of the "quick fix": $171,250 for $125K in funding. She could have waited 8 weeks for an SBA loan at $131,000 total. The $40,250 difference nearly cost her everything.</div>
+      <div style="color: #059669; font-size: 12px; white-space: nowrap;">Rebuilding...</div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 24px; text-align: center; color: #6b7280; font-size: 14px;">
+  Pick <strong>A</strong> (enhanced slideshow) or <strong>B</strong> (new story component), and let me know if the story arc looks right.
+</div>

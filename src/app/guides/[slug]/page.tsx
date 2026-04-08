@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       modifiedTime: guide.frontmatter.updatedAt,
       images: guide.frontmatter.heroImage
         ? [{ url: guide.frontmatter.heroImage }]
-        : [{ url: "/images/og-image.png", width: 1200, height: 630, alt: "The MCA Guide" }],
+        : [{ url: "/images/og-image.webp", width: 1200, height: 630, alt: "The MCA Guide" }],
     },
   };
 }

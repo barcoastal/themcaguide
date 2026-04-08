@@ -18,7 +18,7 @@ export default function Hero() {
             </p>
           </div>
           <div className="hidden md:block">
-            <img src="/images/hero-illustration.png" alt="Small business owner learning about merchant cash advances" className="w-full h-auto rounded-2xl" />
+            <img src="/images/hero-illustration.webp" alt="Small business owner learning about merchant cash advances" className="w-full h-auto rounded-2xl" />
           </div>
         </div>
 
