@@ -98,7 +98,7 @@ export default async function GuidePage({ params }: Props) {
               heroImage={guide.frontmatter.heroImage}
             />
 
-            <MDXRemote source={guide.content} components={mdxComponents} />
+            <MDXRemote source={guide.content} components={mdxComponents} options={{ blockJS: false }} />
 
             <ShareButtons title={guide.frontmatter.title} url={`https://themcaguide.com/guides/${slug}`} />
 

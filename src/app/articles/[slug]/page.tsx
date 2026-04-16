@@ -108,7 +108,7 @@ export default async function ArticlePage({ params }: Props) {
               heroImage={article.frontmatter.heroImage}
             />
 
-            <MDXRemote source={article.content} components={mdxComponents} />
+            <MDXRemote source={article.content} components={mdxComponents} options={{ blockJS: false }} />
 
             <ShareButtons title={article.frontmatter.title} url={`https://themcaguide.com/articles/${slug}`} />
 
