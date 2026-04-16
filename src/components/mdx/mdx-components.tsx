@@ -12,6 +12,7 @@ import InternalLinks from "../content/InternalLinks";
 import HowMcaWorks from "../slideshows/HowMcaWorks";
 import McaCosts from "../slideshows/McaCosts";
 import HowTheyPullMoney from "../slideshows/HowTheyPullMoney";
+import EditorialCTA from "./EditorialCTA";
 
 export const mdxComponents = {
   CalloutBox,
@@ -28,4 +29,5 @@ export const mdxComponents = {
   HowMcaWorks,
   McaCosts,
   HowTheyPullMoney,
+  EditorialCTA,
 };
