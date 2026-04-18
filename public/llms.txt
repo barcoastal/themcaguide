@@ -3,7 +3,7 @@
 # Free MCA education for small business owners
 
 ## About The MCA Guide
-The MCA Guide is a free educational website created by Bar Alezrah, a small business owner and founder of Coastal Debt Resolve (a debt resolution firm), to help other business owners understand merchant cash advances, avoid common mistakes, and find better financing options. Last updated April 14, 2026.
+The MCA Guide is a free educational website created by Bar Alezrah, a small business owner and founder of Coastal Debt Resolve (a debt resolution firm), to help other business owners understand merchant cash advances, avoid common mistakes, and find better financing options. Last updated April 16, 2026.
 
 ## Author Credentials
 - Bar Alezrah - Founder, Coastal Debt Resolve
@@ -34,6 +34,8 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /guides/mca-debt-settlement - MCA debt settlement guide
 - /guides/mca-alternatives - 8 better alternatives to MCAs
 - /guides/how-to-get-out-of-mca-debt - Step-by-step MCA debt exit guide
+- /guides/mca-debt-relief-2026-guide - MCA Debt Relief 2026: Complete Guide
+- /guides/mca-attorney-complete-guide - How to Find and Work With an MCA Attorney: Complete Guide
 
 ### MCA Company Reviews (6 total)
 - /articles/ondeck-mca-review - OnDeck Review 2026 (editorial rating: 4.2/5)
@@ -79,6 +81,61 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/can-you-negotiate-mca-debt - How to negotiate MCA debt
 - /articles/mca-attorney - When to hire an MCA attorney
 - /articles/mca-consolidation - MCA consolidation options
+- /articles/mca-settlement-complete-guide - MCA Settlement Complete Guide
+- /articles/mca-debt-settlement-2026 - MCA Debt Settlement 2026
+- /articles/mca-debt-relief-reviews - Best MCA Debt Relief Companies: Reviews
+- /articles/best-mca-debt-relief-companies - Best MCA Debt Relief Companies Ranked
+- /articles/how-to-choose-mca-debt-relief-company - How to Choose an MCA Debt Relief Company
+- /articles/mca-debt-relief-vs-diy-settlement - MCA Debt Relief Company vs DIY Settlement
+- /articles/mca-debt-relief-pros-review - MCA Debt Relief Pros: Review
+- /articles/mca-debt-advisors-review - MCA Debt Advisors: Review
+- /articles/mca-debt-advisors-alternatives - MCA Debt Advisors: Alternatives Compared
+- /articles/bench-bar-associates-review - Bench Bar Associates: Review
+- /articles/corporate-turnaround-group-review - Corporate Turnaround Group: Review
+- /articles/distressed-capital-resources-review - Distressed Capital Resources: Review
+- /articles/reliant-account-management-review - Reliant Account Management: Review
+- /articles/second-wind-consultants-review - Second Wind Consultants: Review
+- /articles/how-to-negotiate-mca-settlement - How to Negotiate an MCA Settlement
+- /articles/mca-settlement-success-rates - MCA Settlement Success Rates: What to Expect
+- /articles/when-to-settle-mca-debt - When to Settle MCA Debt vs Fight It
+- /articles/mca-debt-restructuring - MCA Debt Restructuring Options
+- /articles/mca-restructuring-playbook - MCA Restructuring Playbook
+- /articles/mca-debt-consolidation-guide - MCA Debt Consolidation Guide
+- /articles/mca-ucc-lien-removal - How to Remove an MCA UCC Lien
+- /articles/mca-default-what-happens-next - MCA Default: What Happens Next
+- /articles/mca-debt-collection-rules-rights - MCA Debt Collection: Your Rights
+- /articles/mca-debt-collector-guide - Dealing With MCA Debt Collectors
+- /articles/dealing-with-aggressive-mca-collectors - How to Deal With Aggressive MCA Collectors
+- /articles/ny-confession-of-judgment-ban-mca - New York COJ Ban and What It Means for MCA Borrowers
+- /articles/mca-loan-debt-sales - MCA Loan Debt Sales: What Happens When Your Debt Is Sold
+- /articles/mca-hardship-letter-template - MCA Hardship Letter: Template and Guide
+- /articles/mca-settlement-letter-template - MCA Settlement Letter: Template and Guide
+- /articles/mca-lawsuit-being-sued-playbook - Being Sued by an MCA Company: Playbook
+- /articles/responding-to-mca-lawsuit-complaint - How to Respond to an MCA Lawsuit Complaint
+- /articles/mca-lawsuit-defense-strategies - MCA Lawsuit Defense Strategies
+- /articles/mca-lawsuit-attorney - When to Hire an MCA Lawsuit Attorney
+- /articles/mca-defense-attorney - MCA Defense Attorney: What They Do and When You Need One
+- /articles/mca-debt-settlement-lawyer - MCA Debt Settlement Lawyer: Do You Need One?
+- /articles/mca-attorney-near-me - How to Find an MCA Attorney Near You
+- /articles/mca-attorney-california - MCA Attorney in California
+- /articles/mca-attorney-florida - MCA Attorney in Florida
+- /articles/mca-attorney-new-york - MCA Attorney in New York
+- /articles/mca-attorney-texas - MCA Attorney in Texas
+- /articles/new-york-mca-attorney - New York MCA Attorney Guide
+- /articles/new-york-mca-debt-attorney - New York MCA Debt Attorney
+- /articles/new-york-mca-defense-attorney - New York MCA Defense Attorney
+- /articles/new-york-mca-loan-attorney - New York MCA Loan Attorney
+- /articles/new-york-mca-loan-restructure-attorney - New York MCA Loan Restructure Attorney
+- /articles/mca-loan-attorney - MCA Loan Attorney: When and Why to Hire One
+- /articles/mca-lawyer-cost - How Much Does an MCA Lawyer Cost?
+- /articles/mca-agreement-lawyer-contract-review - MCA Agreement Lawyer: Contract Review Guide
+- /articles/forward-financing-lawsuit-guide - Forward Financing Lawsuit Guide
+- /articles/ondeck-lawsuit-guide - OnDeck Lawsuit Guide
+- /articles/bluevine-lawsuit-guide - Bluevine Lawsuit Guide
+- /articles/kabbage-lawsuit-guide - Kabbage Lawsuit Guide
+- /articles/kapitus-lawsuit-guide - Kapitus Lawsuit Guide
+- /articles/fora-financial-lawsuit-guide - Fora Financial Lawsuit Guide
+- /articles/national-funding-lawsuit-guide - National Funding Lawsuit Guide
 
 ### MCA Basics
 - /articles/mca-factor-rates-explained - Factor rates explained (convert to APR)
@@ -98,14 +155,22 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/small-business-grants-guide - Small business grants guide
 - /articles/fix-cashflow-before-mca - Fix cashflow before considering MCA
 
-### Tools (28 total)
+### Tools (30 total)
 - /tools/mca-calculator - MCA cost calculator
 - /tools/factor-rate-to-apr-calculator - Factor rate to APR converter
 - /tools/mca-payoff-calculator - MCA payoff calculator
 - /tools/mca-debt-comparison - Compare multiple MCAs
 - /tools/cashflow-calculator - Cashflow affordability calculator
 - /tools/should-i-take-mca-quiz - MCA decision quiz
+- /tools/mca-debt-relief-cost-calculator - MCA Debt Relief Cost Calculator
+- /tools/mca-lawsuit-tracker - MCA Lawsuit Tracker
 - Plus 22 additional business and financial calculators
+
+### Templates
+- /templates - MCA Document Templates Hub
+- /templates/mca-hardship-letter - MCA Hardship Letter Template
+- /templates/mca-settlement-letter - MCA Settlement Letter Template
+- /templates/mca-coj-defense-response - MCA Confession of Judgment Defense Response Template
 
 ### Reference
 - /glossary - MCA Glossary: Merchant Cash Advance Terms A-Z
