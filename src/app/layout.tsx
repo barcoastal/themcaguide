@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Source_Serif_4, Playfair_Display } from "next/font/google";
 import "@/styles/globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import ChromeGate from "@/components/layout/ChromeGate";
+import BroadsheetMasthead from "@/components/layout/BroadsheetMasthead";
+import BroadsheetFooter from "@/components/layout/BroadsheetFooter";
 import Analytics from "@/components/seo/Analytics";
 
 const inter = Inter({
@@ -114,9 +113,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
-        <ChromeGate><Header /></ChromeGate>
+        <BroadsheetMasthead />
         <main className="flex-1">{children}</main>
-        <ChromeGate><Footer /></ChromeGate>
+        <BroadsheetFooter />
         <Analytics />
       </body>
     </html>
