@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Inter, Source_Serif_4, Playfair_Display } from "next/font/google";
 import "@/styles/globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import ChromeGate from "@/components/layout/ChromeGate";
 import Analytics from "@/components/seo/Analytics";
 
 const inter = Inter({
@@ -14,6 +15,14 @@ const inter = Inter({
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
   variable: "--font-serif",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  weight: ["700", "800", "900"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -95,7 +104,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${sourceSerif.variable}`}>
+    <html lang="en" className={`${inter.variable} ${sourceSerif.variable} ${playfair.variable}`}>
       <body className="font-sans min-h-screen flex flex-col">
         <script
           type="application/ld+json"
@@ -105,9 +114,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
-        <Header />
+        <ChromeGate><Header /></ChromeGate>
         <main className="flex-1">{children}</main>
-        <Footer />
+        <ChromeGate><Footer /></ChromeGate>
         <Analytics />
       </body>
     </html>
