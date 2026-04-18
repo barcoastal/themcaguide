@@ -58,14 +58,16 @@ tags: ["{tag1}", "{tag2}", "{tag3}"]
 ...
 
 <FAQ items={[
-  { q: "{Question matching People Also Ask}", a: "{Direct answer}" },
-  { q: "...", a: "..." },
-  { q: "...", a: "..." },
-  { q: "...", a: "..." }
+  { question: "{Question matching People Also Ask}", answer: "{Direct answer}" },
+  { question: "...", answer: "..." },
+  { question: "...", answer: "..." },
+  { question: "...", answer: "..." }
 ]} />
 
 <EditorialCTA variant="{diy-first|attorney-first|review-roundup|collection-default}" />
 ```
+
+**Infrastructure note (added post-Task 4):** `src/app/articles/[slug]/page.tsx` and `src/app/guides/[slug]/page.tsx` now pass `options={{ blockJS: false }}` to `MDXRemote`. This lets MDX files use JSX array props like `items={[...]}` on `FAQ` and `AuthorityCitations`. `blockDangerousJS` continues to protect the render pipeline from `eval`/`Function`/etc. Trust boundary: all MDX is authored and committed to git, never user-submitted.
 
 **Rules enforced every page:**
 - Word count ≥ 1,500 (pillars ≥ 2,500)
@@ -129,7 +131,7 @@ const VARIANTS: Record<Variant, { heading: string; intro: string; options: Array
     intro: "If you're dealing with MCA debt, these are the three paths that actually work. Start with the cheapest option that fits your situation.",
     options: [
       { label: "DIY negotiation", body: "Free and the most common starting point. Use our negotiation playbook first.", href: "/articles/how-to-negotiate-mca-settlement" },
-      { label: "MCA debt relief company", body: "Paid service that handles negotiation for you. See our side-by-side comparison. Our disclosure: we work with Coastal Debt Resolve — details on /how-we-make-money.", href: "/articles/best-mca-debt-relief-companies" },
+      { label: "MCA debt relief company", body: "Paid service that handles negotiation for you. See our side-by-side comparison. Our disclosure: we work with Coastal Debt Resolve, details on /how-we-make-money.", href: "/articles/best-mca-debt-relief-companies" },
       { label: "MCA attorney", body: "Needed when lawsuits are filed or contracts are legally defective. See the attorney guide.", href: "/guides/mca-attorney-complete-guide" },
     ],
   },
