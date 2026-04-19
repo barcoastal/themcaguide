@@ -21,10 +21,10 @@ export default function ArticleLayout({ children }: { children: React.ReactNode 
   return (
     <>
       {/* Reading progress bar */}
-      <div className="fixed top-0 left-0 right-0 z-[60] h-1 bg-gray-100">
+      <div className="fixed top-0 left-0 right-0 z-[60] h-1" style={{ background: "var(--rule-soft)" }}>
         <div
-          className="h-1 bg-blue-600 transition-all duration-150"
-          style={{ width: `${progress}%` }}
+          className="h-1 transition-all duration-150"
+          style={{ width: `${progress}%`, background: "var(--red)" }}
         />
       </div>
       {children}

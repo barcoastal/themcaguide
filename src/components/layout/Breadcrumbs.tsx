@@ -27,18 +27,46 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <nav aria-label="Breadcrumb" className="text-sm text-gray-500 mb-4 overflow-x-auto">
-        <ol className="flex items-center gap-1.5 whitespace-nowrap">
+      <nav
+        aria-label="Breadcrumb"
+        className="overflow-x-auto"
+        style={{
+          fontFamily: "var(--font-inter), system-ui, sans-serif",
+          fontSize: "11px",
+          textTransform: "uppercase",
+          letterSpacing: "0.18em",
+          color: "var(--ink-mute)",
+          marginBottom: "20px",
+          paddingBottom: "14px",
+          borderBottom: "1px solid var(--rule)",
+        }}
+      >
+        <ol className="flex items-center gap-3 whitespace-nowrap">
           <li>
-            <Link href="/" className="hover:text-blue-800">Home</Link>
+            <Link href="/" style={{ color: "var(--ink-mute)", textDecoration: "none" }}>
+              Home
+            </Link>
           </li>
           {items.map((item, i) => (
-            <li key={i} className="flex items-center gap-1.5">
-              <span aria-hidden="true">/</span>
+            <li key={i} className="flex items-center gap-3">
+              <span aria-hidden="true" style={{ color: "var(--rule)" }}>
+                /
+              </span>
               {item.href ? (
-                <Link href={item.href} className="hover:text-blue-800 max-w-[200px] truncate">{item.label}</Link>
+                <Link
+                  href={item.href}
+                  className="truncate"
+                  style={{ color: "var(--ink-mute)", textDecoration: "none", maxWidth: "200px" }}
+                >
+                  {item.label}
+                </Link>
               ) : (
-                <span className="text-gray-900 max-w-[200px] truncate">{item.label}</span>
+                <span
+                  className="truncate"
+                  style={{ color: "var(--ink)", maxWidth: "200px", fontWeight: 600 }}
+                >
+                  {item.label}
+                </span>
               )}
             </li>
           ))}

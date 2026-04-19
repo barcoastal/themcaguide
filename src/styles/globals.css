@@ -317,5 +317,116 @@
     border-radius: 0 !important;
   }
 
-  /* Sticky header override: we no longer have a blue bar header, but if anything else relied on it */
+  /* Global card/border neutrals on warm paper */
+  body.broadsheet .border-gray-200,
+  body.broadsheet .border-gray-100,
+  body.broadsheet .border-slate-200,
+  body.broadsheet .border-slate-300 {
+    border-color: var(--rule) !important;
+  }
+  body.broadsheet .bg-white {
+    background-color: #fffdf8 !important;
+  }
+  body.broadsheet .bg-slate-50,
+  body.broadsheet .bg-gray-50 {
+    background-color: var(--paper-deep) !important;
+  }
+  body.broadsheet .bg-slate-100,
+  body.broadsheet .bg-gray-100 {
+    background-color: var(--accent-bg) !important;
+  }
+  body.broadsheet .divide-gray-200 > * + *,
+  body.broadsheet .divide-slate-200 > * + * {
+    border-color: var(--rule) !important;
+  }
+
+  /* Inline text color normalization */
+  body.broadsheet .text-gray-900,
+  body.broadsheet .text-slate-900 {
+    color: var(--ink) !important;
+  }
+  body.broadsheet .text-gray-800,
+  body.broadsheet .text-slate-800,
+  body.broadsheet .text-gray-700,
+  body.broadsheet .text-slate-700 {
+    color: var(--ink-soft) !important;
+  }
+  body.broadsheet .text-gray-600,
+  body.broadsheet .text-slate-600,
+  body.broadsheet .text-gray-500,
+  body.broadsheet .text-slate-500 {
+    color: var(--ink-mute) !important;
+  }
+  body.broadsheet .text-green-700,
+  body.broadsheet .text-green-800,
+  body.broadsheet .text-green-900 {
+    color: var(--ink) !important;
+  }
+  body.broadsheet .bg-green-50,
+  body.broadsheet .bg-green-100 {
+    background-color: var(--accent-bg) !important;
+  }
+  body.broadsheet .border-green-200,
+  body.broadsheet .border-green-400,
+  body.broadsheet .border-amber-400,
+  body.broadsheet .border-red-200,
+  body.broadsheet .border-red-500 {
+    border-color: var(--rule) !important;
+  }
+
+  /* Red/warning accents preserved to editorial red */
+  body.broadsheet .bg-red-50,
+  body.broadsheet .bg-red-100 {
+    background-color: #fceae8 !important;
+  }
+  body.broadsheet .border-red-400,
+  body.broadsheet .border-red-600 {
+    border-color: var(--red) !important;
+  }
+  body.broadsheet .text-red-600,
+  body.broadsheet .text-red-700,
+  body.broadsheet .text-red-800,
+  body.broadsheet .text-red-900 {
+    color: var(--red) !important;
+  }
+  body.broadsheet .bg-red-500,
+  body.broadsheet .bg-red-600,
+  body.broadsheet .bg-red-700 {
+    background-color: var(--red) !important;
+  }
+
+  /* Amber kept as editorial gold */
+  body.broadsheet .bg-amber-50 {
+    background-color: #fbf3df !important;
+  }
+  body.broadsheet .text-amber-700,
+  body.broadsheet .text-amber-800 {
+    color: var(--red-deep) !important;
+  }
+
+  /* RelatedArticles / card hover emphasis */
+  body.broadsheet .hover\:shadow-md:hover,
+  body.broadsheet .hover\:shadow-lg:hover {
+    box-shadow: 6px 6px 0 var(--rule-soft) !important;
+  }
+  body.broadsheet .shadow,
+  body.broadsheet .shadow-sm,
+  body.broadsheet .shadow-md {
+    box-shadow: 6px 6px 0 var(--rule-soft) !important;
+  }
+
+  /* Font family restoration for headings inside not-prose wrappers on article pages */
+  body.broadsheet .not-prose h1,
+  body.broadsheet .not-prose h2,
+  body.broadsheet .not-prose h3,
+  body.broadsheet .not-prose h4 {
+    font-family: var(--font-playfair), 'Times New Roman', serif !important;
+    color: var(--ink);
+  }
+
+  /* Article body wrapper: ensure sits on paper */
+  body.broadsheet article {
+    background: transparent;
+  }
 }
+
