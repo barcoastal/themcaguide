@@ -6,6 +6,7 @@ import { mdxComponents } from "@/components/mdx/mdx-components";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ArticleHeader from "@/components/content/ArticleHeader";
 import TableOfContents from "@/components/content/TableOfContents";
+import EditorialSidebar from "@/components/content/EditorialSidebar";
 import RelatedArticles from "@/components/content/RelatedArticles";
 import ShareButtons from "@/components/content/ShareButtons";
 import ArticleLayout from "@/components/content/ArticleLayout";
@@ -85,7 +86,7 @@ export default async function GuidePage({ params }: Props) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs items={[{ label: "Guides", href: "/guides" }, { label: guide.frontmatter.title }]} />
 
-        <div className="lg:flex lg:gap-12">
+        <div className="lg:flex lg:gap-10 xl:gap-12">
           <TableOfContents />
 
           <article className="flex-1 min-w-0 prose prose-base md:prose-lg max-w-none">
@@ -103,10 +104,18 @@ export default async function GuidePage({ params }: Props) {
 
             <ShareButtons title={guide.frontmatter.title} url={`https://themcaguide.com/guides/${slug}`} />
 
-            <div className="not-prose mt-8 p-4 bg-gray-50 border border-gray-200 rounded-lg text-xs text-gray-500 leading-relaxed">
-              <strong className="text-gray-700">Disclaimer:</strong> The MCA Guide provides free educational content about merchant cash advances. We are not a lender, broker, or financial advisor. This content is for informational purposes only and does not constitute financial, legal, or tax advice. Some links may be affiliate links. Always consult a qualified professional before making business financing decisions.
+            <div className="not-prose mt-8 p-4 text-xs leading-relaxed" style={{ background: "var(--paper-deep)", border: "1px solid var(--rule)", color: "var(--ink-mute)" }}>
+              <strong style={{ color: "var(--ink)" }}>Disclaimer:</strong> The MCA Guide provides free educational content about merchant cash advances. We are not a lender, broker, or financial advisor. This content is for informational purposes only and does not constitute financial, legal, or tax advice. Some links may be affiliate links. Always consult a qualified professional before making business financing decisions.
             </div>
           </article>
+
+          <EditorialSidebar
+            readingTime={guide.readingTime}
+            publishedAt={guide.frontmatter.publishedAt}
+            updatedAt={guide.frontmatter.updatedAt}
+            author={guide.frontmatter.author}
+            tags={guide.frontmatter.tags}
+          />
         </div>
 
         <RelatedArticles articles={relatedArticles} />
