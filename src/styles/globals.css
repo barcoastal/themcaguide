@@ -503,74 +503,8 @@
     border-bottom: 1px solid var(--ink);
   }
 
-  /* ——— Universal page hero editorial treatment ——— */
-  /* Targets the first <section> on a page whose heading is an h1. Flattens
-     gradient backgrounds, editorializes the pill chip, enlarges the heading
-     to Playfair display weight, and caps with a double-line rule. */
-  body.broadsheet main > div > section:first-child:has(h1),
-  body.broadsheet main > section:first-child:has(h1) {
-    background: transparent !important;
-    padding: 40px 0 36px !important;
-    border-bottom: 3px double var(--ink);
-    margin-bottom: 40px;
-  }
-
-  body.broadsheet main > div > section:first-child:has(h1) h1,
-  body.broadsheet main > section:first-child:has(h1) h1 {
-    font-family: var(--font-playfair), 'Times New Roman', serif !important;
-    font-size: clamp(40px, 5.5vw, 72px) !important;
-    font-weight: 900 !important;
-    line-height: 0.98 !important;
-    letter-spacing: -0.028em !important;
-    color: var(--ink) !important;
-    margin-top: 14px !important;
-  }
-
-  body.broadsheet main > div > section:first-child:has(h1) p,
-  body.broadsheet main > section:first-child:has(h1) p {
-    font-family: var(--font-serif), Georgia, serif !important;
-    font-style: italic !important;
-    font-size: 20px !important;
-    line-height: 1.4 !important;
-    color: var(--ink-soft) !important;
-    margin-top: 16px !important;
-  }
-
-  /* Pill chip above hero h1 → editorial small-caps kicker with red accent */
-  body.broadsheet main > div > section:first-child:has(h1) .rounded-full,
-  body.broadsheet main > section:first-child:has(h1) .rounded-full,
-  body.broadsheet main > div > section:first-child:has(h1) .inline-flex[class*="rounded"],
-  body.broadsheet main > section:first-child:has(h1) .inline-flex[class*="rounded"] {
-    background: transparent !important;
-    border: 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-    font-family: var(--font-inter), system-ui, sans-serif !important;
-    font-size: 11px !important;
-    font-weight: 700 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.24em !important;
-    color: var(--red) !important;
-    margin-bottom: 0 !important;
-  }
-
-  /* Hide inline icons inside hero pill chips (square icons don't fit small caps) */
-  body.broadsheet main > div > section:first-child:has(h1) .rounded-full svg,
-  body.broadsheet main > section:first-child:has(h1) .rounded-full svg,
-  body.broadsheet main > div > section:first-child:has(h1) .inline-flex[class*="rounded"] svg,
-  body.broadsheet main > section:first-child:has(h1) .inline-flex[class*="rounded"] svg {
-    display: none !important;
-  }
-
-  /* Center-aligned heroes (step pages use text-center) keep alignment */
-  body.broadsheet main > div > section:first-child:has(h1.text-center),
-  body.broadsheet main > section:first-child:has(h1.text-center) {
-    text-align: center;
-  }
-
   /* Newspaper-style image treatment: desaturate + sepia tint so colorful
-     illustrations read as editorial rather than pastel cartoon. Applies
-     sitewide to article hero images, card thumbnails, and MDX images. */
+     illustrations read as editorial rather than pastel cartoon. */
   body.broadsheet article img,
   body.broadsheet a[class*="border"] img {
     filter: grayscale(0.85) contrast(0.92) sepia(0.18);
