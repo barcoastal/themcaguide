@@ -104,7 +104,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${sourceSerif.variable} ${playfair.variable}`}>
-      <body className="font-sans min-h-screen flex flex-col">
+      <body className="broadsheet font-sans min-h-screen flex flex-col">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}

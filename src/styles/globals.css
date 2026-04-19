@@ -2,125 +2,320 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Broadsheet palette for site-wide reach (see broadsheet.css for component-scoped styles) */
+:root {
+  --paper: #f5f0e6;
+  --paper-deep: #ebe3d2;
+  --ink: #1a1a1a;
+  --ink-soft: #3d3d3d;
+  --ink-mute: #6b6558;
+  --rule: #c9bea5;
+  --rule-soft: #d9d0bc;
+  --red: #a8251a;
+  --red-deep: #7a1a12;
+  --accent-bg: #ede4cf;
+}
+
 @layer base {
-  body {
-    @apply text-gray-900 antialiased;
+  body.broadsheet {
+    background: var(--paper);
+    background-image:
+      radial-gradient(rgba(0,0,0,0.015) 1px, transparent 1px),
+      radial-gradient(rgba(0,0,0,0.01) 1px, transparent 1px);
+    background-size: 3px 3px, 7px 7px;
+    background-position: 0 0, 1px 1px;
+    color: var(--ink);
+    font-family: var(--font-serif), Georgia, serif;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 
-  h1 {
+  body.broadsheet h1,
+  body.broadsheet h2,
+  body.broadsheet h3,
+  body.broadsheet h4 {
+    font-family: var(--font-playfair), 'Times New Roman', serif;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+
+  body.broadsheet h1 {
     @apply text-4xl font-bold tracking-tight;
+    font-weight: 900;
   }
 
-  h2 {
+  body.broadsheet h2 {
     @apply text-3xl font-bold tracking-tight;
+    font-weight: 800;
   }
 
-  h3 {
+  body.broadsheet h3 {
     @apply text-2xl font-semibold;
+    font-weight: 800;
   }
 
-  h4 {
+  body.broadsheet h4 {
     @apply text-xl font-semibold;
+    font-weight: 700;
+  }
+
+  body.broadsheet main {
+    background: var(--paper);
   }
 }
 
 @layer components {
-  /* Article visual enhancements */
-  .prose h2 {
-    @apply mt-16 mb-6 pb-3 border-b-2 border-blue-100 text-gray-900;
+  /* Prose (article/guide MDX) — editorial serif reskin */
+  body.broadsheet .prose {
+    color: var(--ink);
+    font-family: var(--font-serif), Georgia, serif;
   }
 
-  .prose h3 {
-    @apply mt-10 mb-4 text-gray-800;
+  body.broadsheet .prose h1,
+  body.broadsheet .prose h2,
+  body.broadsheet .prose h3,
+  body.broadsheet .prose h4 {
+    font-family: var(--font-playfair), 'Times New Roman', serif;
+    color: var(--ink);
+    letter-spacing: -0.015em;
   }
 
-  /* Make paragraphs more readable */
-  .prose p {
-    @apply text-gray-600 leading-8;
+  body.broadsheet .prose h1 {
+    font-size: clamp(40px, 5vw, 64px);
+    font-weight: 900;
+    line-height: 0.98;
+    margin: 0 0 18px;
   }
 
-  /* Style lists with more space */
-  .prose ul, .prose ol {
-    @apply my-6 space-y-3;
+  body.broadsheet .prose h2 {
+    font-family: var(--font-playfair), 'Times New Roman', serif;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 1.8em 0 0.4em;
+    padding-bottom: 0;
+    border-bottom: 0;
+    color: var(--ink);
   }
 
-  .prose li {
-    @apply text-gray-600 leading-7;
+  body.broadsheet .prose h3 {
+    font-family: var(--font-serif), Georgia, serif;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 1.6em 0 0.3em;
+    color: var(--ink);
   }
 
-  /* Make strong text pop */
-  .prose strong {
-    @apply text-gray-900 font-bold;
+  body.broadsheet .prose p {
+    color: var(--ink);
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 1.1em;
   }
 
-  /* Style links */
-  .prose a {
-    @apply text-blue-600 font-medium no-underline hover:underline;
+  body.broadsheet .prose p:first-of-type::first-letter {
+    font-family: var(--font-playfair), 'Times New Roman', serif;
+    font-weight: 900;
+    float: left;
+    font-size: 76px;
+    line-height: 0.85;
+    padding: 6px 10px 0 0;
+    color: var(--ink);
   }
 
-  /* Style tables to look modern */
-  .prose table {
-    @apply w-full my-8 rounded-xl overflow-hidden border border-gray-200 text-sm;
+  body.broadsheet .prose ul,
+  body.broadsheet .prose ol {
+    color: var(--ink);
+    font-size: 18px;
+    line-height: 1.7;
   }
 
-  .prose thead {
-    @apply bg-blue-50;
+  body.broadsheet .prose li {
+    color: var(--ink);
+    margin-bottom: 0.5em;
   }
 
-  .prose thead th {
-    @apply px-4 py-3 text-left font-semibold text-blue-900 text-xs uppercase tracking-wider;
+  body.broadsheet .prose strong {
+    color: var(--ink);
+    font-weight: 700;
   }
 
-  .prose tbody tr {
-    @apply border-t border-gray-100;
+  body.broadsheet .prose a {
+    color: var(--red);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  body.broadsheet .prose a:hover {
+    color: var(--red-deep);
   }
 
-  .prose tbody tr:nth-child(even) {
-    @apply bg-gray-50;
+  body.broadsheet .prose blockquote {
+    font-family: var(--font-playfair), 'Times New Roman', serif;
+    font-size: 28px;
+    line-height: 1.25;
+    font-style: italic;
+    font-weight: 600;
+    margin: 1.8em 0;
+    padding: 0 0 0 24px;
+    border-left: 3px solid var(--red);
+    border-radius: 0;
+    background: transparent;
+    color: var(--ink);
   }
 
-  .prose tbody td {
-    @apply px-4 py-3 text-gray-600;
+  body.broadsheet .prose hr {
+    margin: 60px 0;
+    border: 0;
+    border-top: 3px double var(--ink);
+    background: none;
+    height: auto;
   }
 
-  /* Style blockquotes as pull quotes */
-  .prose blockquote {
-    @apply my-8 px-6 py-4 bg-blue-50 border-l-4 border-blue-500 rounded-r-xl text-blue-900 font-medium text-lg italic not-italic;
+  body.broadsheet .prose table {
+    width: 100%;
+    margin: 32px 0;
+    border: 1px solid var(--ink);
+    border-radius: 0;
+    overflow: hidden;
+    font-size: 15px;
+    background: #fffdf8;
   }
 
-  /* Style horizontal rules as section breaks */
-  .prose hr {
-    @apply my-12 border-none h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent;
+  body.broadsheet .prose thead {
+    background: var(--ink);
   }
 
-  /* Style details/summary (FAQ) */
-  .prose details {
-    @apply my-3 bg-white border border-gray-200 rounded-xl overflow-hidden;
+  body.broadsheet .prose thead th {
+    padding: 12px 16px;
+    color: var(--paper);
+    font-family: var(--font-inter), system-ui, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    text-align: left;
   }
 
-  .prose details summary {
-    @apply px-5 py-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-50 transition-colors list-none;
+  body.broadsheet .prose tbody tr {
+    border-top: 1px dotted var(--rule);
+    background: transparent;
   }
 
-  .prose details summary::-webkit-details-marker {
-    @apply hidden;
+  body.broadsheet .prose tbody tr:nth-child(even) {
+    background: var(--accent-bg);
   }
 
-  .prose details[open] summary {
-    @apply border-b border-gray-200 bg-gray-50;
+  body.broadsheet .prose tbody td {
+    padding: 12px 16px;
+    color: var(--ink);
+    font-family: var(--font-serif), Georgia, serif;
   }
 
-  .prose details > :not(summary) {
-    @apply px-5 py-4;
+  body.broadsheet .prose code {
+    background: var(--accent-bg);
+    color: var(--ink);
+    padding: 1px 6px;
+    border-radius: 0;
+    border: 1px solid var(--rule);
+    font-size: 14px;
   }
 
-  /* Style code blocks */
-  .prose code {
-    @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-gray-800;
+  body.broadsheet .prose img {
+    border-radius: 0;
+    border: 1px solid var(--ink);
+    box-shadow: 6px 6px 0 var(--rule-soft);
+    margin: 28px 0;
   }
 
-  /* Image styling in articles */
-  .prose img {
-    @apply rounded-xl shadow-sm my-8;
+  /* Details / FAQ reskin */
+  body.broadsheet .prose details {
+    background: #fffdf8;
+    border: 1px solid var(--ink);
+    border-radius: 0;
+    margin: 10px 0;
+    overflow: hidden;
   }
+
+  body.broadsheet .prose details summary {
+    padding: 14px 18px;
+    font-family: var(--font-serif), Georgia, serif;
+    font-weight: 700;
+    color: var(--ink);
+    cursor: pointer;
+    list-style: none;
+    transition: background 0.15s;
+  }
+  body.broadsheet .prose details summary:hover {
+    background: var(--accent-bg);
+  }
+  body.broadsheet .prose details[open] summary {
+    background: var(--accent-bg);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* Key Takeaways box in MDX uses bg-blue-50/border-blue-200 — remap to editorial paper */
+  body.broadsheet .prose .bg-blue-50 {
+    background: #fffdf8 !important;
+    border-color: var(--ink) !important;
+    border-width: 1px !important;
+    border-radius: 0 !important;
+    box-shadow: 6px 6px 0 var(--rule-soft);
+  }
+
+  /* Editorial CTA / card neutrals — keep functional feel */
+  body.broadsheet .prose .not-prose .bg-slate-50,
+  body.broadsheet .not-prose .bg-slate-50 {
+    background: var(--paper-deep);
+  }
+
+  /* Main content wrapper gets a subtle paper bg */
+  body.broadsheet article {
+    background: var(--paper);
+  }
+
+  /* Disclaimer chip */
+  body.broadsheet .prose .bg-gray-50 {
+    background: var(--paper-deep) !important;
+    border-color: var(--rule) !important;
+  }
+
+  /* Breadcrumbs and inline buttons use blue Tailwind — soften to ink/red */
+  body.broadsheet a.text-blue-700,
+  body.broadsheet a.text-blue-600,
+  body.broadsheet .text-blue-700,
+  body.broadsheet .text-blue-600,
+  body.broadsheet .text-blue-800,
+  body.broadsheet .text-blue-900 {
+    color: var(--red) !important;
+  }
+  body.broadsheet .bg-blue-600,
+  body.broadsheet .bg-blue-700,
+  body.broadsheet .bg-blue-800 {
+    background-color: var(--ink) !important;
+  }
+  body.broadsheet .bg-blue-600:hover,
+  body.broadsheet .bg-blue-700:hover,
+  body.broadsheet .bg-blue-800:hover {
+    background-color: var(--red) !important;
+  }
+  body.broadsheet .border-blue-200,
+  body.broadsheet .border-blue-500 {
+    border-color: var(--rule) !important;
+  }
+  body.broadsheet .hover\:bg-blue-50:hover {
+    background-color: var(--accent-bg) !important;
+  }
+
+  /* Global card radii: editorial = squared */
+  body.broadsheet .rounded-xl,
+  body.broadsheet .rounded-2xl {
+    border-radius: 0 !important;
+  }
+
+  /* Sticky header override: we no longer have a blue bar header, but if anything else relied on it */
 }
