@@ -99,6 +99,7 @@ export default async function ArticlePage({ params }: Props) {
           <article className="flex-1 min-w-0 prose prose-base md:prose-lg max-w-none">
             <ArticleHeader
               title={article.frontmatter.title}
+              description={article.frontmatter.description}
               readingTime={article.readingTime}
               publishedAt={article.frontmatter.publishedAt}
               updatedAt={article.frontmatter.updatedAt}

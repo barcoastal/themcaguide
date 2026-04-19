@@ -1,7 +1,6 @@
-import { Clock, Calendar, User, CheckCircle2 } from "lucide-react";
-
 interface ArticleHeaderProps {
   title: string;
+  description?: string;
   readingTime: string;
   publishedAt: string;
   updatedAt?: string;
@@ -12,44 +11,130 @@ interface ArticleHeaderProps {
   heroImage?: string;
 }
 
+const fmtDate = (iso: string) =>
+  new Date(iso).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+
 export default function ArticleHeader({
-  title, readingTime, publishedAt, updatedAt, author, authorImage, pillarLabel, pillarHref, heroImage,
+  title,
+  description,
+  readingTime,
+  publishedAt,
+  updatedAt,
+  author,
+  pillarLabel,
+  pillarHref,
+  heroImage,
 }: ArticleHeaderProps) {
   return (
-    <header className="mb-10 not-prose">
+    <header
+      className="not-prose"
+      style={{
+        borderBottom: "3px double var(--ink)",
+        padding: "8px 0 32px",
+        marginBottom: "40px",
+      }}
+    >
       {pillarLabel && pillarHref && (
-        <a href={pillarHref} className="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800 font-medium mb-3 bg-blue-50 px-3 py-1 rounded-full">
-          ← Part of the {pillarLabel} Guide
+        <a
+          href={pillarHref}
+          style={{
+            display: "inline-block",
+            fontFamily: "var(--font-inter), system-ui, sans-serif",
+            fontSize: "11px",
+            fontWeight: 700,
+            textTransform: "uppercase",
+            letterSpacing: "0.2em",
+            color: "var(--red)",
+            textDecoration: "none",
+            marginBottom: "18px",
+            borderBottom: "1px solid var(--red)",
+            paddingBottom: "2px",
+          }}
+        >
+          ← {pillarLabel}
         </a>
       )}
 
+      <h1
+        style={{
+          fontFamily: "var(--font-playfair), 'Times New Roman', serif",
+          fontWeight: 900,
+          fontSize: "clamp(40px, 5.5vw, 72px)",
+          lineHeight: 0.97,
+          letterSpacing: "-0.028em",
+          color: "var(--ink)",
+          margin: "12px 0 18px",
+          maxWidth: "20ch",
+        }}
+      >
+        {title}
+      </h1>
+
+      {description && (
+        <p
+          style={{
+            fontFamily: "var(--font-serif), Georgia, serif",
+            fontStyle: "italic",
+            fontSize: "22px",
+            lineHeight: 1.4,
+            color: "var(--ink-soft)",
+            maxWidth: "780px",
+            margin: "0 0 24px",
+          }}
+        >
+          {description}
+        </p>
+      )}
+
       {heroImage && (
-        <div className="rounded-2xl overflow-hidden mb-6 bg-gray-50">
-          <img src={heroImage} alt={title} className="w-full h-40 md:h-64 object-cover" />
+        <div
+          style={{
+            border: "1px solid var(--ink)",
+            boxShadow: "6px 6px 0 var(--rule-soft)",
+            marginBottom: "28px",
+            background: "#fffdf8",
+          }}
+        >
+          <img
+            src={heroImage}
+            alt={title}
+            style={{
+              display: "block",
+              width: "100%",
+              maxHeight: "380px",
+              objectFit: "cover",
+            }}
+          />
         </div>
       )}
 
-      <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2 leading-tight">{title}</h1>
-      <div className="flex flex-wrap items-center gap-4 mt-6 text-sm text-gray-500">
-        <div className="flex items-center gap-2">
-          <User className="w-4 h-4" />
-          <span className="font-medium text-gray-700">{author}</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <Clock className="w-4 h-4" />
-          <span>{readingTime}</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <Calendar className="w-4 h-4" />
-          <span>
-            {new Date(publishedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
-            {updatedAt && ` · Updated ${new Date(updatedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`}
-          </span>
-        </div>
-      </div>
-      <div className="flex items-center gap-2 mt-4 text-xs text-green-700 bg-green-50 px-3 py-1.5 rounded-full w-fit">
-        <CheckCircle2 className="w-3.5 h-3.5" />
-        <span>Reviewed for accuracy. Based on real experience.</span>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "28px",
+          paddingTop: "16px",
+          borderTop: "1px solid var(--rule)",
+          fontFamily: "var(--font-inter), system-ui, sans-serif",
+          fontSize: "11px",
+          textTransform: "uppercase",
+          letterSpacing: "0.18em",
+          color: "var(--ink-mute)",
+        }}
+      >
+        <span>
+          <span style={{ color: "var(--ink-mute)" }}>By </span>
+          <span style={{ color: "var(--ink)", fontWeight: 600 }}>{author}</span>
+        </span>
+        <span>{readingTime}</span>
+        <span>
+          Published {fmtDate(publishedAt)}
+          {updatedAt && ` · Updated ${fmtDate(updatedAt)}`}
+        </span>
       </div>
     </header>
   );

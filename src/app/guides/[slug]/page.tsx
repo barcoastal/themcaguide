@@ -91,6 +91,7 @@ export default async function GuidePage({ params }: Props) {
           <article className="flex-1 min-w-0 prose prose-base md:prose-lg max-w-none">
             <ArticleHeader
               title={guide.frontmatter.title}
+              description={guide.frontmatter.description}
               readingTime={guide.readingTime}
               publishedAt={guide.frontmatter.publishedAt}
               updatedAt={guide.frontmatter.updatedAt}
