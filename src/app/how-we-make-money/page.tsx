@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "How We Make Money",
@@ -10,10 +11,14 @@ export const metadata: Metadata = {
 
 export default function HowWeMakeMoneyPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <Breadcrumbs items={[{ label: "How We Make Money" }]} />
-      <h1 className="text-4xl font-bold text-gray-900 mb-6">How We Make Money</h1>
-
+      <EditorialHero
+        kicker="Transparency"
+        title="How We Make Money"
+        dek="Full transparency about our revenue sources and how we keep our content unbiased."
+      />
+      <div className="py-12">
       <div className="prose prose-lg max-w-none">
         <p>
           Transparency matters, especially when it comes to financial content. Here is exactly how The MCA Guide earns revenue and how we keep our content honest.
@@ -72,6 +77,7 @@ export default function HowWeMakeMoneyPage() {
           If you have questions about our business model or editorial independence, email us at{" "}
           <a href="mailto:hello@themcaguide.com">hello@themcaguide.com</a>. We are happy to explain any aspect of how we operate.
         </p>
+      </div>
       </div>
     </div>
   );

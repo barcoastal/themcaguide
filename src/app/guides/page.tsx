@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { getAllArticles } from "@/lib/content";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "Guides",
@@ -14,11 +15,13 @@ export default function GuidesPage() {
   const guides = getAllArticles("guide");
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-4xl font-bold text-gray-900 mb-2">MCA Guides</h1>
-      <p className="text-lg text-gray-500 mb-8">
-        In-depth guides covering everything you need to know about merchant cash advances.
-      </p>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <EditorialHero
+        kicker="In-Depth Guides"
+        title="MCA Guides"
+        dek="Comprehensive guides covering everything you need to know about merchant cash advances, written in plain English."
+      />
+      <div className="py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {guides.map((guide) => (
           <Link
@@ -31,6 +34,7 @@ export default function GuidesPage() {
             <p className="text-sm text-gray-400 mt-3">{guide.readingTime}</p>
           </Link>
         ))}
+      </div>
       </div>
     </div>
   );

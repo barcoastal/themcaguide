@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, Search, LifeBuoy } from "lucide-react";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "MCA Blog. Guides for Small Business Owners",
@@ -45,13 +46,14 @@ const categories = [
 
 export default function BlogPage() {
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="text-center mb-14">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900">Where Are You Right Now?</h1>
-        <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">
-          Pick your situation. We'll give you clear, simple guides to help you make the best decision for your business.
-        </p>
-      </div>
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <EditorialHero
+        kicker="MCA Blog"
+        title="Where Are You Right Now?"
+        dek="Pick your situation. We'll give you clear, simple guides to help you make the best decision for your business."
+        align="center"
+      />
+      <div className="py-16">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {categories.map((cat) => {
           const Icon = cat.icon;
@@ -66,6 +68,7 @@ export default function BlogPage() {
             </Link>
           );
         })}
+      </div>
       </div>
     </div>
   );

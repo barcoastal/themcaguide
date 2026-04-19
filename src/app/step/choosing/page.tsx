@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Search, ArrowRight, ArrowLeft, FileText, AlertTriangle, CheckCircle2, XCircle } from "lucide-react";
+import { ArrowRight, ArrowLeft, FileText, AlertTriangle, CheckCircle2, XCircle } from "lucide-react";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "Choosing an MCA. How to Pick the Best Deal",
@@ -29,19 +30,12 @@ export default function ChoosingPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-amber-50 to-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <Search className="w-4 h-4" /> Step 3 of 4
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Choosing an MCA? Protect Yourself.
-          </h1>
-          <p className="mt-6 text-xl text-gray-500 max-w-2xl mx-auto">
-            If an MCA is your only option, here's how to get the best deal and avoid the worst traps.
-          </p>
-        </div>
-      </section>
+      <EditorialHero
+        kicker="Step 3 of 4"
+        title="Choosing an MCA? Protect Yourself."
+        dek="If an MCA is your only option, here's how to get the best deal and avoid the worst traps."
+        align="center"
+      />
 
       {/* Do's and Don'ts */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

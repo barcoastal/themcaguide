@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import { getGlossaryTerms, getGlossaryLetters } from "@/lib/glossary";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "MCA Glossary. Merchant Cash Advance Terms A-Z",
@@ -29,11 +30,14 @@ export default function GlossaryPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={[{ label: "Glossary" }]} />
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">MCA Glossary</h1>
-        <p className="text-lg text-gray-500 mb-8">Key terms and definitions for merchant cash advances.</p>
-
+        <EditorialHero
+          kicker="Reference"
+          title="MCA Glossary"
+          dek="Key terms and definitions for merchant cash advances, A to Z."
+        />
+        <div className="py-8">
         <nav className="flex flex-wrap gap-2 mb-8">
           {letters.map((letter) => (
             <a key={letter} href={`#letter-${letter}`} className="px-3 py-1 bg-gray-100 rounded text-sm font-medium text-gray-700 hover:bg-blue-100 hover:text-blue-800">
@@ -67,6 +71,7 @@ export default function GlossaryPage() {
             </dl>
           </section>
         ))}
+        </div>
       </div>
     </>
   );

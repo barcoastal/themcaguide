@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Heart, Target, Shield, Mail, BookOpen, CheckCircle2 } from "lucide-react";
+import { Heart, Target, Shield, BookOpen } from "lucide-react";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "About The MCA Guide",
@@ -10,8 +11,13 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-4xl font-bold text-gray-900 mb-8">About The MCA Guide</h1>
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <EditorialHero
+        kicker="About Us"
+        title="About The MCA Guide"
+        dek="Free, honest education for small business owners. Written by someone who survived MCA debt."
+      />
+      <div className="py-12">
 
       {/* Bar's story card */}
       <Link href="/about/bar-alezrah" className="group block bg-blue-50 border-2 border-blue-200 rounded-2xl p-6 mb-10 hover:shadow-lg transition-all">
@@ -83,6 +89,7 @@ export default function AboutPage() {
         <p>
           Email: <a href="mailto:hello@themcaguide.com">hello@themcaguide.com</a>
         </p>
+      </div>
       </div>
     </div>
   );

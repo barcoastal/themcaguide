@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { getAllArticles } from "@/lib/content";
-import { LifeBuoy, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "Getting Out of MCA Debt. Your Options Explained",
@@ -16,19 +17,12 @@ export default function GettingOutPage() {
 
   return (
     <div>
-      <section className="bg-gradient-to-br from-red-50 to-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <LifeBuoy className="w-4 h-4" /> Getting Out of MCA Debt
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            You Have Options. Let's Find Yours.
-          </h1>
-          <p className="mt-6 text-xl text-gray-500 max-w-2xl">
-            Take a deep breath. MCA debt is stressful, but it's fixable. Here are your options. from negotiation to settlement to legal help.
-          </p>
-        </div>
-      </section>
+      <EditorialHero
+        kicker="Getting Out of MCA Debt"
+        title="You Have Options. Let's Find Yours."
+        dek="Take a deep breath. MCA debt is stressful, but it's fixable. Here are your options, from negotiation to settlement to legal help."
+        align="center"
+      />
 
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

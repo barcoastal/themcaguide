@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { CheckCircle2 } from "lucide-react";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "Editorial Policy",
@@ -9,8 +9,13 @@ export const metadata: Metadata = {
 
 export default function EditorialPolicyPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-4xl font-bold text-gray-900 mb-6">Editorial Policy</h1>
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <EditorialHero
+        kicker="Our Standards"
+        title="Editorial Policy"
+        dek="How The MCA Guide creates, reviews, and maintains the accuracy of our content."
+      />
+      <div className="py-12">
       <div className="prose prose-lg max-w-none">
         <p>
           The MCA Guide is committed to providing accurate, honest, and helpful information for small business owners. Here is how we create and maintain our content.
@@ -56,6 +61,7 @@ export default function EditorialPolicyPage() {
         <p>
           The MCA Guide is independently owned and operated. We are not affiliated with any MCA company, lender, broker, or financial institution. Our only goal is to help small business owners make informed decisions.
         </p>
+      </div>
       </div>
     </div>
   );

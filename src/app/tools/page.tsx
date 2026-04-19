@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { Calculator, CalendarCheck, TrendingUp, Target, Scale, Percent, DollarSign, Layers, RefreshCw, FileText, ShieldCheck, Clock, CreditCard, Wallet, BarChart3, Building2, FileSearch, Users, Home, Receipt, Rocket, HelpCircle } from "lucide-react";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "Free Business Tools & Calculators",
@@ -43,11 +44,14 @@ const tools = [
 
 export default function ToolsPage() {
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-3">Free Business Tools</h1>
-        <p className="text-lg text-gray-500 max-w-2xl mx-auto">Every tool is 100% free. No sign-up required. Built for small business owners.</p>
-      </div>
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <EditorialHero
+        kicker="Free Tools"
+        title="Free Business Tools"
+        dek="Every tool is 100% free. No sign-up required. Built for small business owners."
+        align="center"
+      />
+      <div className="py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {tools.map((tool) => {
           const Icon = tool.icon;
@@ -59,6 +63,7 @@ export default function ToolsPage() {
             </Link>
           );
         })}
+      </div>
       </div>
     </div>
   );

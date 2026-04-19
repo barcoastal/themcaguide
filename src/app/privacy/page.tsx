@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -10,8 +11,13 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-4xl font-bold text-gray-900 mb-6">Privacy Policy</h1>
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <EditorialHero
+        kicker="Legal"
+        title="Privacy Policy"
+        dek="How we use cookies, analytics, and affiliate links. We do not collect personal information unless you contact us."
+      />
+      <div className="py-12">
       <div className="prose prose-lg prose-blue max-w-none">
         <p><strong>Last updated:</strong> March 25, 2026</p>
         <h2>Information We Collect</h2>
@@ -28,6 +34,7 @@ export default function PrivacyPage() {
         </ul>
         <h2>Contact</h2>
         <p>If you have questions about this privacy policy, contact us at <a href="mailto:hello@themcaguide.com">hello@themcaguide.com</a>.</p>
+      </div>
       </div>
     </div>
   );

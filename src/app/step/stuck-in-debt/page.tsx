@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { LifeBuoy, ArrowRight, ArrowLeft, FileText, Phone, Scale, Handshake, DollarSign, ShieldCheck } from "lucide-react";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "Stuck in MCA Debt? Here's How to Get Out",
@@ -56,19 +57,12 @@ export default function StuckInDebtPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-red-50 to-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <LifeBuoy className="w-4 h-4" /> Step 4 of 4
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Stuck in MCA Debt? You Have Options.
-          </h1>
-          <p className="mt-6 text-xl text-gray-500 max-w-2xl mx-auto">
-            Take a deep breath. You're not alone, and this is fixable. Here's your step-by-step plan to get out.
-          </p>
-        </div>
-      </section>
+      <EditorialHero
+        kicker="Step 4 of 4"
+        title="Stuck in MCA Debt? You Have Options."
+        dek="Take a deep breath. You're not alone, and this is fixable. Here's your step-by-step plan to get out."
+        align="center"
+      />
 
       {/* Steps */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

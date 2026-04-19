@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { getAllArticles } from "@/lib/content";
-import { Search, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import TopLenders from "@/components/home/TopLenders";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "Choosing an MCA. How to Pick the Best Deal",
@@ -17,19 +18,12 @@ export default function ChoosingMcaPage() {
 
   return (
     <div>
-      <section className="bg-gradient-to-br from-blue-50 to-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <Search className="w-4 h-4" /> Choosing an MCA
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Protect Yourself Before Signing
-          </h1>
-          <p className="mt-6 text-xl text-gray-500 max-w-2xl">
-            If an MCA is your only option, at least know how to pick the best deal and avoid the traps.
-          </p>
-        </div>
-      </section>
+      <EditorialHero
+        kicker="If You Really Need an MCA"
+        title="How to Pick the Least Bad Deal"
+        dek="If MCA is truly your only option, here is how to compare offers, spot red flags, and avoid the traps that bury businesses."
+        align="center"
+      />
 
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { Wallet, TrendingUp, FileText, Building2, Gift, CreditCard, ArrowRight } from "lucide-react";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "I Need Cash. Alternatives Before Taking an MCA",
@@ -54,19 +55,12 @@ export default function NeedCashPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-green-50 to-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <Wallet className="w-4 h-4" /> Step 1 of 4
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            I Need Cash for My Business
-          </h1>
-          <p className="mt-6 text-xl text-gray-500 max-w-2xl mx-auto">
-            Before you take an MCA, try these options first. They're cheaper, safer, and better for your business.
-          </p>
-        </div>
-      </section>
+      <EditorialHero
+        kicker="Step 1 of 4"
+        title="I Need Cash for My Business"
+        dek="Before you take an MCA, try these options first. They're cheaper, safer, and better for your business."
+        align="center"
+      />
 
       {/* Options Grid */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

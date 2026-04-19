@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "MCA Laws by State: Know Your Rights in Every State",
@@ -135,16 +136,11 @@ export default function MCALawsByStatePage() {
         <Breadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">MCA Laws by State</h1>
-          <p className="text-lg text-gray-600 max-w-3xl">
-            Merchant cash advance regulations vary dramatically from state to state. Some states
-            require full cost disclosure, licensing, and broker registration. Others have zero
-            MCA-specific protections, leaving business owners to rely on general contract law.
-            Knowing where your state stands can help you negotiate better terms, spot red flags,
-            and protect your business.
-          </p>
-        </div>
+        <EditorialHero
+          kicker="Know Your Rights"
+          title="MCA Laws by State"
+          dek="Merchant cash advance regulations vary dramatically from state to state. Knowing where your state stands can help you negotiate better terms, spot red flags, and protect your business."
+        />
 
         {/* States with Strong Protections */}
         <section className="mb-16">

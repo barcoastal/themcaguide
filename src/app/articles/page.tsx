@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getAllArticles } from "@/lib/content";
 import { ShieldCheck, Search, DoorOpen, BookOpen, Scale, LifeBuoy } from "lucide-react";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "Articles",
@@ -63,13 +64,14 @@ export default function ArticlesPage() {
   const allArticles = getAllArticles("article");
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-3">Learn About MCAs</h1>
-        <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-          Clear, simple articles organized by what you need right now. Pick your situation below.
-        </p>
-      </div>
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <EditorialHero
+        kicker="Articles"
+        title="Learn About MCAs"
+        dek="Clear, simple articles organized by what you need right now. Pick your situation below."
+        align="center"
+      />
+      <div className="py-12">
 
       {/* Blog Categories */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
@@ -172,6 +174,7 @@ export default function ArticlesPage() {
           </section>
         );
       })()}
+      </div>
     </div>
   );
 }

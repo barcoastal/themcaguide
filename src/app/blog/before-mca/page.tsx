@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { getAllArticles } from "@/lib/content";
-import { ShieldCheck, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import EditorialHero from "@/components/layout/EditorialHero";
 
 export const metadata: Metadata = {
   title: "Before You Take an MCA. Better Options",
@@ -16,19 +17,12 @@ export default function BeforeMcaPage() {
 
   return (
     <div>
-      <section className="bg-gradient-to-br from-green-50 to-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <ShieldCheck className="w-4 h-4" /> Before You Take an MCA
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            You Have Better Options
-          </h1>
-          <p className="mt-6 text-xl text-gray-500 max-w-2xl">
-            Before signing an MCA, try these alternatives. They cost less, they're safer, and they won't put your business at risk.
-          </p>
-        </div>
-      </section>
+      <EditorialHero
+        kicker="Before You Take an MCA"
+        title="Is an MCA Even the Right Move?"
+        dek="Before you sign anything, here is how MCAs actually work, what they really cost, and when they make sense (rarely)."
+        align="center"
+      />
 
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, ArrowRight, ArrowLeft, FileText } from "lucide-react";
+import { ArrowRight, ArrowLeft, FileText } from "lucide-react";
+import EditorialHero from "@/components/layout/EditorialHero";
 import HowMcaWorks from "@/components/slideshows/HowMcaWorks";
 import McaCosts from "@/components/slideshows/McaCosts";
 import HowTheyPullMoney from "@/components/slideshows/HowTheyPullMoney";
@@ -14,19 +15,12 @@ export default function WhatIsMcaPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-50 to-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <BookOpen className="w-4 h-4" /> Step 2 of 4
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            What's a Merchant Cash Advance?
-          </h1>
-          <p className="mt-6 text-xl text-gray-500 max-w-2xl mx-auto">
-            Click through these simple slideshows to understand exactly how MCAs work, what they cost, and how they take money from your account.
-          </p>
-        </div>
-      </section>
+      <EditorialHero
+        kicker="Step 2 of 4"
+        title="What's a Merchant Cash Advance?"
+        dek="Click through these simple slideshows to understand exactly how MCAs work, what they cost, and how they take money from your account."
+        align="center"
+      />
 
       {/* Slideshow 1 */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
