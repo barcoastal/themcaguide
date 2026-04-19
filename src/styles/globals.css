@@ -567,5 +567,17 @@
   body.broadsheet main > section:first-child:has(h1.text-center) {
     text-align: center;
   }
+
+  /* Newspaper-style image treatment: desaturate + sepia tint so colorful
+     illustrations read as editorial rather than pastel cartoon. Applies
+     sitewide to article hero images, card thumbnails, and MDX images. */
+  body.broadsheet article img,
+  body.broadsheet a[class*="border"] img {
+    filter: grayscale(0.85) contrast(0.92) sepia(0.18);
+    transition: filter 0.25s;
+  }
+  body.broadsheet a[class*="border"]:hover img {
+    filter: grayscale(0.5) contrast(0.98) sepia(0.08);
+  }
 }
 
