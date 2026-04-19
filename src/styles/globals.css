@@ -428,5 +428,59 @@
   body.broadsheet article {
     background: transparent;
   }
+
+  /* Flatten Tailwind gradient hero sections to paper */
+  body.broadsheet [class*="bg-gradient-to-"] {
+    background-image: none !important;
+  }
+  body.broadsheet .from-red-50,
+  body.broadsheet .from-blue-50,
+  body.broadsheet .from-green-50,
+  body.broadsheet .from-amber-50,
+  body.broadsheet .from-purple-50,
+  body.broadsheet .to-white {
+    --tw-gradient-from: transparent !important;
+    --tw-gradient-to: transparent !important;
+  }
+
+  /* Color-100 category backgrounds (pill chips, borders) */
+  body.broadsheet .bg-blue-100,
+  body.broadsheet .bg-green-100,
+  body.broadsheet .bg-purple-100,
+  body.broadsheet .bg-amber-100,
+  body.broadsheet .bg-orange-100,
+  body.broadsheet .bg-pink-100 {
+    background-color: var(--accent-bg) !important;
+  }
+  body.broadsheet .border-red-100,
+  body.broadsheet .border-red-300,
+  body.broadsheet .border-blue-100,
+  body.broadsheet .border-green-100,
+  body.broadsheet .border-amber-100,
+  body.broadsheet .border-purple-100,
+  body.broadsheet .border-pink-100,
+  body.broadsheet .border-orange-100 {
+    border-color: var(--rule) !important;
+  }
+  body.broadsheet .hover\:border-red-300:hover,
+  body.broadsheet .hover\:border-blue-300:hover {
+    border-color: var(--ink) !important;
+  }
+  body.broadsheet .group-hover\:text-red-700,
+  body.broadsheet .group-hover\:text-blue-700,
+  body.broadsheet .group-hover\:text-green-700 {
+    color: var(--red) !important;
+  }
+
+  /* Pills: editorial squared kicker style */
+  body.broadsheet .rounded-full {
+    border-radius: 2px !important;
+  }
+
+  /* Text color-400 mutes */
+  body.broadsheet .text-gray-400,
+  body.broadsheet .text-slate-400 {
+    color: var(--ink-mute) !important;
+  }
 }
 
