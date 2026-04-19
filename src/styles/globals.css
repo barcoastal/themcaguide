@@ -482,5 +482,25 @@
   body.broadsheet .text-slate-400 {
     color: var(--ink-mute) !important;
   }
+
+  /* Image wrapper divs: remove the light bg behind images so there's no
+     visible gap between image and card border. Targets divs that wrap only
+     an img (blog category cards, article listings). */
+  body.broadsheet a .bg-gray-50:has(> img:only-child),
+  body.broadsheet a .bg-slate-50:has(> img:only-child),
+  body.broadsheet a div:has(> img:only-child) {
+    background: transparent !important;
+    padding: 0 !important;
+  }
+  body.broadsheet a .bg-gray-50 > img:only-child,
+  body.broadsheet a .bg-slate-50 > img:only-child,
+  body.broadsheet a div > img:only-child {
+    display: block;
+  }
+
+  /* Card images touch bottom border, ink separator between image and body */
+  body.broadsheet a[class*="border"] > div:has(> img:only-child) {
+    border-bottom: 1px solid var(--ink);
+  }
 }
 
