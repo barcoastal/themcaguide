@@ -1,0 +1,206 @@
+---
+title: "MCA Software & CRM 2026: Top Tools for Funders"
+description: "MCA origination and CRM platforms compared. Fundingo, MCA Suite, Velocify, Salesforce, and more. Features, pricing, and integrations that matter."
+publishedAt: "2026-04-20"
+updatedAt: "2026-04-20"
+author: "Bar Alezrah"
+category: "choosing-lender"
+heroImage: "/images/articles/merchant-cash-advance-software-guide.webp"
+tags: ["mca software", "mca crm", "merchant cash advance software"]
+---
+
+<div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-8 not-prose">
+<h2 id="key-takeaways" className="text-lg font-bold text-slate-900 mb-3 mt-0">Key Takeaways</h2>
+<ul className="space-y-2 text-slate-800 text-sm">
+<li><strong>MCA tech stack has five layers:</strong> origination and CRM, underwriting and decisioning, bank statement aggregation, servicing and collections, and compliance and reporting.</li>
+<li><strong>Purpose-built MCA platforms:</strong> Fundingo, MCA Suite, LendSaaS, Orgmeter, and Centrex all target funders and ISOs with industry-specific workflows.</li>
+<li><strong>CRM choices:</strong> Salesforce with MCA overlay (Fundingo) is the enterprise standard; Velocify (Genesys) dominates lead-intensive shops; Monday, HubSpot, and custom builds serve smaller operations.</li>
+<li><strong>Bank statement aggregators matter:</strong> Plaid, MX, Decision Logic, and Heron Data each pull and categorize merchant bank data; Heron and Decision Logic are MCA-specialized.</li>
+<li><strong>Cost benchmarks:</strong> Entry-level solo broker stack $200-$600 per month. Mid-market ISO $1,500-$5,000 per month. Established funder $10,000+ per month with custom integrations.</li>
+<li><strong>Build vs buy:</strong> Custom Salesforce builds make sense above $50M in annual originations; turnkey platforms are faster and cheaper below that.</li>
+</ul>
+</div>
+
+The MCA technology stack has matured significantly over the past decade. What used to be spreadsheets and Gmail is now an interconnected set of specialized platforms covering origination, underwriting, servicing, and collections. For a funder or ISO building from scratch, the choices are overwhelming. For an established operation, picking the right tech stack is one of the biggest levers on operational efficiency and deal quality. This guide walks through what MCA software actually needs to do, the purpose-built platforms dominating the space, the CRM options brokers use, the underwriting and bank statement tools that drive decisioning, and real cost benchmarks by funder size. This is a B2B supply-side guide for funders, ISOs, and brokers; merchants evaluating MCAs should see our [best MCA companies](/articles/best-mca-companies) and [MCA broker vs direct funder](/articles/mca-broker-vs-direct-funder) articles.
+
+<h2 id="what-mca-software-does">What MCA Software Needs to Do</h2>
+
+An MCA operation's software stack supports five workflows, each of which can be handled by a dedicated tool or combined into an integrated platform.
+
+**1. Lead capture and CRM.** Bring leads in from web forms, paid channels, ISO submissions, and live transfers. Route leads to reps. Track touch history, pipeline stage, and conversion metrics. At scale, this is also where compliance records (TCPA consent, DNC scrubbing) live.
+
+**2. Origination and application management.** Move a qualified lead from pipeline to submitted application. Collect documents (bank statements, tax returns, owner ID, voided check). Package for underwriting. Handle application workflow and documentation.
+
+**3. Underwriting and decisioning.** Ingest and categorize bank statements. Pull credit bureau data. Calculate key metrics (average monthly deposits, NSFs, deposit count, concentration, merchant history). Apply underwriting rules. Generate term offers (advance amount, factor rate, holdback percentage, term).
+
+**4. Contracting and funding.** Generate contract documents. Collect signatures (e-sig). Verify bank account (Plaid or micro-deposits). Initiate ACH funding. Confirm funding hit the merchant account.
+
+**5. Servicing, collections, and reporting.** Set up ACH debits for daily or weekly holdback. Monitor repayment performance. Flag NSFs and missed payments. Handle collections workflow on defaulted deals. Report to investors, funders, and regulators.
+
+A solo broker at $500K annual origination volume might run this stack with HubSpot or Monday CRM, manual bank statement review, manual contract generation, and a bookkeeping tool tracking funded deals. An established funder at $200M annual volume runs Salesforce with a custom data model, automated decisioning with rules engines, integrated bank statement aggregation, servicing platforms handling thousands of daily ACH events, and custom reporting.
+
+The right stack depends on scale, capital source (your own balance sheet vs syndication vs investor capital), deal flow channel mix, and underwriting philosophy. Most operations migrate up this stack as they grow.
+
+<h2 id="top-origination-platforms">Top MCA Origination Platforms</h2>
+
+Purpose-built MCA origination platforms handle the end-to-end deal flow from lead to funded. Leading options:
+
+**Fundingo.** Salesforce-native platform built specifically for alternative lenders and MCA funders. Extends Salesforce's CRM with origination workflow, bank statement parsing, contract generation, and servicing integrations. Pricing runs higher than most competitors because of the Salesforce license layer, but the flexibility and scale handling are the industry leader. Target: mid-to-large funders and ISOs at $10M+ annual originations.
+
+**MCA Suite.** Purpose-built MCA platform (not Salesforce-native) offering origination, underwriting, servicing, and investor management. More turnkey than Fundingo with faster setup and lower monthly cost. Target: mid-market funders and ISOs.
+
+**LendSaaS.** Cloud-based loan origination and servicing platform with MCA, term loan, and line of credit support. Broader than MCA-only, which helps funders with mixed products. Target: multi-product lenders and funders.
+
+**Orgmeter.** MCA origination and CRM platform focused on ISOs and brokers. Handles submission to multiple funders from one workflow, deal tracking, and commission management. Target: brokers and ISOs handling submissions to multiple funding sources.
+
+**Centrex.** MCA servicing and back-office platform handling ACH, collections, investor reporting, and syndication accounting. More back-office than origination-focused. Target: funders with active servicing operations and syndication partners.
+
+**Bryt Software.** Loan servicing platform with MCA capability. Handles servicing more than origination. Target: smaller funders needing reliable ACH and reporting without heavy CRM overhead.
+
+**Custom Salesforce builds.** Many larger funders build their own Salesforce instances with custom objects, workflows, and integrations. Investment is $200,000 to $1M+ to build and ongoing admin cost, but flexibility is total. Target: established funders at $50M+ annual originations.
+
+Selection considerations: API quality (can the platform integrate with your bank data tools, credit pulls, e-sig, and accounting stack), implementation timeline (weeks for turnkey vs months for Salesforce-native), ongoing support quality, and total cost of ownership.
+
+<h2 id="mca-crms">MCA-Focused CRMs</h2>
+
+Some brokers and funders use general CRMs with MCA customization rather than purpose-built platforms. Leading CRM options:
+
+**Salesforce with MCA overlay.** The enterprise standard. Salesforce Sales Cloud or Financial Services Cloud plus Fundingo or custom build. Per-user license cost ranges from $150 to $500 per user per month depending on edition. The flexibility handles any workflow complexity, but admin and customization investment is meaningful.
+
+**Velocify (Genesys Cloud).** Dialer-plus-CRM built for lead-intensive sales operations. Dominant among MCA brokers buying large volumes of internet and live transfer leads. Handles lead routing, speed-to-lead metrics, auto-dialing, and compliance in one platform. Per-seat pricing typically $150 to $350 per user per month.
+
+**HubSpot.** General CRM with strong marketing automation. Used by smaller brokers and by brokers with strong content marketing channels. Starter pricing around $50 per user per month; Professional and Enterprise tiers run $300 to $1,200 per month for team packages.
+
+**Monday.com.** Visual workflow management with CRM capabilities. Popular with smaller brokers who want flexibility without Salesforce complexity. Pricing $10 to $30 per user per month.
+
+**Pipedrive.** Sales-focused CRM with straightforward pipeline management. Mid-size option for brokers who do not need the full Salesforce ecosystem. Pricing $25 to $100 per user per month.
+
+**BrokerBooks.** Niche MCA-specific CRM for brokers and ISOs. Handles submission to multiple funders, commission tracking, and deal status. Target: small to mid-size brokers.
+
+**Zoho One.** Full business suite including CRM, useful for smaller operations looking for breadth at lower cost. Pricing $37 per user per month for the business suite.
+
+Key CRM selection questions for an MCA operation: does it support the dialer integration you need, does it handle compliance documentation (TCPA consent storage, DNC scrubbing, call recording), does it integrate with your bank data and document tools, and does the vendor understand the MCA regulatory and operational context?
+
+For MCA brokers focused on lead-intensive outbound operations, Velocify or Salesforce are most common. For brokers with heavy ISO and referral flow, HubSpot or Pipedrive can be enough. See our [MCA leads guide](/articles/mca-leads-guide) for the related lead channel economics.
+
+<h2 id="decisioning-tech">Decisioning and Underwriting Tech</h2>
+
+Underwriting is the heart of an MCA operation. The tech stack for decisioning has matured substantially and includes specialty vendors who handle the specific data flows MCA requires.
+
+**Rules engines and decisioning platforms.**
+
+- **Zest AI / Upstart Credit Decisioning.** ML-based decisioning platforms, more common in consumer and small business term loans than in pure MCA.
+- **Experian PowerCurve / Provenir / Alloy.** Enterprise decisioning platforms used by banks and larger funders for workflow orchestration across multiple data sources.
+- **Custom decisioning in Salesforce or Fundingo.** Many mid-market funders code their underwriting rules directly in their CRM platform.
+- **Spreadsheet-based underwriting.** Solo brokers and smaller funders often run scorecards in Excel or Google Sheets with pasted bank statement data.
+
+**Credit bureau pulls.**
+
+- **Experian Business, Equifax Business, D&B.** Commercial credit data sources. Most MCAs also pull personal credit on the guarantor via Experian or Equifax consumer bureaus.
+- **PayNet.** Specialized commercial credit data with small business payment history. Often used by equipment finance and alternative lenders.
+
+**Fraud and identity verification.**
+
+- **Socure, Alloy, Middesk.** Identity and business verification platforms that confirm the business and owner are real before funding.
+- **LexisNexis Risk Solutions.** Business verification and fraud screening for alternative lenders.
+
+**Decisioning economics.** Bureau pulls run $5 to $50 per pull depending on product. Identity verification runs $1 to $10 per check. Bank statement aggregation runs $2 to $25 per account pull depending on vendor. A full underwriting pass on a typical MCA deal costs $10 to $50 in direct data costs. That is small relative to revenue on a funded deal but meaningful at the declined-applications level (where underwriting cost does not produce funding revenue).
+
+The underwriting question most funders get wrong: how much automation vs human judgment. Pure auto-decisioning works at smaller deal sizes and simpler industries; higher deal sizes ($100K+) and complex industries (construction, healthcare, multi-entity businesses) still benefit from human underwriter review.
+
+<h2 id="bank-statement-aggregators">Bank Statement Aggregators (Plaid, MX, Decision Logic)</h2>
+
+Bank statement data is the single most important underwriting input in an MCA decision. Aggregator choice materially affects speed, decline rates, and data quality.
+
+**Plaid.** The largest consumer bank aggregator, now heavily used in small business lending. Broad bank coverage (11,000+ U.S. institutions), strong API, and consumer-grade UX for account connection. Plaid's Assets product provides bank statement data; Plaid's Transactions provides categorized transaction data. Pricing is enterprise-negotiated; expect $0.50 to $3 per account pull at volume. Challenges: some business accounts (especially smaller banks) are not well-supported; statement data quality can vary.
+
+**MX.** Another major aggregator, originally serving the banking and fintech market. Strong data cleansing and categorization. Similar coverage to Plaid. Pricing competitive with Plaid at volume.
+
+**Decision Logic.** MCA-specialized bank statement analyzer. Parses uploaded bank statement PDFs and categorized data into MCA-relevant metrics (average monthly deposits, NSFs, deposit count, concentration, credit card processing volume, existing MCA debits). Unlike Plaid and MX, works with uploaded statements rather than live bank connections, so it handles the many cases where merchants cannot or will not connect live. Pricing typically per-statement ($15 to $40) rather than per-account.
+
+**Heron Data.** Newer MCA-specialized platform with strong transaction categorization specifically tuned for alternative lending. Works with both live connections and uploaded statements. Growing adoption among mid-market MCA funders. Pricing per-pull, competitive with Decision Logic at volume.
+
+**Ocrolus.** PDF and document intelligence platform used for bank statement parsing alongside other document types (tax returns, invoices). Handles the PDF-only use case well.
+
+**The typical MCA underwriting flow.** Prefer live bank connections via Plaid or MX when possible for fresh data and automation. Fall back to uploaded statement parsing via Decision Logic, Heron, or Ocrolus when live connection fails (roughly 30 to 50 percent of submissions). Combine with credit bureau pulls, identity verification, and human underwriter review for final decision.
+
+For merchants wondering what data funders see, the answer is: deposit timing and count, NSF patterns, existing ACH debits, credit card processing volume, and cash flow trends. The [MCA calculator](/tools/mca-calculator) and [daily revenue calculator](/tools/daily-revenue-calculator) show what a merchant's numbers look like from the funder side.
+
+<h2 id="how-to-choose-stack">How to Choose a Stack by Funder Size</h2>
+
+Realistic tech stack recommendations by operation size:
+
+**Solo broker (under $2M annual originations).**
+- CRM: HubSpot Starter ($50/mo) or Monday.com ($20/mo per seat)
+- Origination: manual document collection, spreadsheet underwriting
+- Bank data: manual statement review, occasional Decision Logic pull
+- Funding: direct ACH through bank, simple contract templates
+- Monthly tech cost: $200-$600
+
+**Small ISO / broker ($2M-$20M annual originations).**
+- CRM: HubSpot Professional ($800+/mo) or Velocify ($1,500+/mo) for heavy outbound
+- Origination: Orgmeter or BrokerBooks for submission tracking
+- Bank data: Decision Logic or Heron for statement parsing
+- Submissions: direct integration or email to multiple funders
+- Monthly tech cost: $1,500-$5,000
+
+**Mid-market funder ($20M-$100M annual originations).**
+- CRM: Salesforce with MCA overlay, or MCA Suite/LendSaaS
+- Origination: same platform as CRM
+- Bank data: Plaid + Decision Logic for live + uploaded statements
+- Underwriting: rules engine in CRM, human review for larger deals
+- Servicing: Centrex or MCA Suite for ACH and collections
+- Monthly tech cost: $5,000-$15,000
+
+**Established funder ($100M+ annual originations).**
+- CRM: Salesforce enterprise with custom build or Fundingo
+- Origination and servicing: integrated Salesforce platform
+- Bank data: enterprise Plaid/MX contracts plus Heron or Decision Logic
+- Underwriting: custom ML models plus human review
+- Servicing: custom or Centrex
+- Reporting: custom data warehouse with BI tools
+- Monthly tech cost: $15,000-$50,000+ plus implementation investment of $500K-$2M
+
+**Buy vs build decision.** Turnkey platforms (MCA Suite, LendSaaS, Orgmeter) are the right choice below $50M annual originations because implementation and total cost of ownership are lower than custom Salesforce. Above $50M, the flexibility of Salesforce-native (Fundingo or custom) justifies the higher cost, and competitive differentiation often lives in the specific customizations of the underwriting and deal flow.
+
+<h2 id="cost-benchmarks">Cost Benchmarks</h2>
+
+Rough 2026 market pricing for MCA tech components:
+
+- CRM per seat: $25 (Pipedrive starter) to $500 (Salesforce enterprise) per user per month
+- Bank statement aggregation: $2 (Plaid at volume) to $40 (Decision Logic per PDF) per pull
+- Credit bureau pulls: $5 to $50 per pull depending on bureau and product
+- Identity and business verification: $1 to $10 per check
+- E-sig and document: $20 (DocuSign starter) to $200+ (enterprise) per user per month
+- Origination platform (MCA Suite, LendSaaS): $1,000 to $10,000 per month depending on features and volume
+- Servicing platform (Centrex, Bryt): $500 to $5,000 per month
+- Enterprise Salesforce plus Fundingo: $300 to $800 per user per month plus implementation
+- Custom Salesforce build: $200K to $2M initial, $50K to $500K per year ongoing admin
+
+**Cost per funded deal (full tech stack allocation).**
+
+- Solo broker: $50 to $200 per deal (low volume, mostly manual)
+- Small ISO: $30 to $100 per deal
+- Mid-market funder: $20 to $80 per deal
+- Established funder: $15 to $60 per deal (scale economies)
+
+For context on the broader operation economics, our [MCA leads guide](/articles/mca-leads-guide) covers the lead side, our [best MCA companies](/articles/best-mca-companies) covers the funder landscape, and [how we make money](/how-we-make-money) explains our own editorial structure. For tools the funder side uses in customer-facing conversations, the [MCA calculator](/tools/mca-calculator) and [factor rate to APR calculator](/tools/factor-rate-to-apr) are commonly embedded in broker-facing workflows as well.
+
+<FAQ items={[
+  { question: "What is the best MCA software platform in 2026?", answer: "The 'best' platform depends on operation size. Solo brokers and small ISOs get further with HubSpot, Monday, or Orgmeter at $200-$600 per month. Mid-market funders ($20M-$100M originations) typically run MCA Suite, LendSaaS, or Salesforce with Fundingo at $5,000-$15,000 per month. Established funders above $100M in originations build on Salesforce Enterprise with custom development or Fundingo at $15,000-$50,000 per month. Fundingo is the Salesforce-native leader; MCA Suite is the turnkey leader; Velocify dominates lead-intensive broker operations." },
+  { question: "What is the best CRM for MCA brokers?", answer: "Velocify is the standard for brokers buying large volumes of live transfer and internet leads, because of its dialer and lead routing features. Salesforce with MCA overlay is the enterprise standard with maximum flexibility. HubSpot Professional works well for brokers with content marketing and inbound flow. Monday.com and Pipedrive fit smaller operations that prioritize simplicity over features. BrokerBooks is niche-specific for multi-funder submission tracking. Choice depends on lead channel mix, compliance needs (TCPA consent storage, DNC scrubbing, call recording), and operation scale." },
+  { question: "What is the difference between Plaid, MX, and Decision Logic?", answer: "Plaid and MX are general bank aggregators with live connections to 10,000+ U.S. banks; they are used across fintech, consumer banking, and small business lending. Decision Logic is MCA-specialized and parses uploaded bank statement PDFs into MCA-relevant metrics (deposits, NSFs, existing MCA debits, credit card processing volume). Many funders use Plaid or MX for live connections when possible and fall back to Decision Logic or Heron for uploaded statements when live connection fails. Pricing differs: Plaid/MX are per-account-pull at enterprise rates; Decision Logic is per-statement at $15-$40 each." },
+  { question: "How much does MCA software cost?", answer: "Monthly tech costs scale with operation size. Solo brokers: $200-$600 per month. Small ISO/broker shops: $1,500-$5,000 per month. Mid-market funders ($20M-$100M originations): $5,000-$15,000 per month. Established funders ($100M+): $15,000-$50,000+ per month plus custom implementation of $200K-$2M for Salesforce builds. Cost per funded deal runs $50-$200 at the solo level and $15-$60 at scale. Data costs (bank aggregation, credit bureau pulls, identity verification) add $10-$50 per underwriting pass." },
+  { question: "Should I use Salesforce or a turnkey MCA platform?", answer: "Below $50M in annual originations, turnkey platforms like MCA Suite, LendSaaS, and Orgmeter are faster to implement and cheaper to run. Salesforce implementation runs $200K-$2M with ongoing admin costs. Turnkey platforms launch in weeks at $1,000-$10,000 per month. Above $50M in annual originations, the flexibility of Salesforce (either through Fundingo or custom build) justifies the investment because competitive differentiation lives in the specific customizations of your underwriting, deal flow, and reporting. Very large funders ($500M+) almost always run custom Salesforce." },
+  { question: "What bank statement data do MCA underwriters look at?", answer: "MCA underwriters focus on: average monthly deposits (the proxy for revenue), deposit count per month (daily cash flow consistency), NSF and overdraft frequency (cash flow stability), ending balance patterns, credit card processing deposits (for businesses that accept cards), existing ACH debits (identifying stacked MCAs or other lenders), and large one-time deposits that might not recur. Tools like Decision Logic and Heron Data automate categorization of these metrics from uploaded PDFs or live Plaid/MX connections. The metrics are the foundation of advance amount, factor rate, and holdback decisions." }
+]} />
+
+<AuthorityCitations items={[
+  { label: "SBA small business data and lending resources", href: "https://www.sba.gov/", source: "U.S. Small Business Administration" },
+  { label: "CFPB small business financing resources", href: "https://www.consumerfinance.gov/", source: "Consumer Financial Protection Bureau" },
+  { label: "FTC small business lending guidance", href: "https://www.ftc.gov/business-guidance/resources/small-business-lending", source: "Federal Trade Commission" },
+  { label: "FCC TCPA compliance resources", href: "https://www.fcc.gov/general/telemarketing-and-robocalls", source: "Federal Communications Commission" },
+  { label: "Federal Reserve Small Business Credit Survey", href: "https://www.fedsmallbusiness.org/survey", source: "Federal Reserve Banks" }
+]} />
+
+<EditorialCTA variant="diy-first" />
