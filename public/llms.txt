@@ -155,6 +155,21 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/small-business-grants-guide - Small business grants guide
 - /articles/fix-cashflow-before-mca - Fix cashflow before considering MCA
 
+### Content Gap Batch (April 20, 2026)
+- /articles/doordash-loans-for-dashers - DoorDash loans and cash advances for dashers
+- /articles/loans-for-gig-workers - Loans for gig workers, 1099 contractors, and platform drivers
+- /articles/bitty-advance-review - Bitty Advance MCA review
+- /articles/itria-ventures-review - Itria Ventures MCA review
+- /articles/no-doc-business-loans - No-doc business loan guide
+- /articles/purchase-order-financing-guide - Purchase order financing explained
+- /articles/accounts-receivable-factoring-guide - AR factoring complete guide
+- /articles/best-invoice-factoring-companies - Top invoice factoring companies ranked
+- /articles/invoice-factoring-rates-fees - Invoice factoring fees and rate math
+- /articles/mca-leads-guide - MCA leads for brokers and funders
+- /articles/merchant-cash-advance-software-guide - MCA software and CRM platforms
+- /articles/shopify-capital-review - Shopify Capital review
+- /articles/yellowstone-capital-review - Yellowstone Capital review and regulatory history
+
 ### Tools (30 total)
 - /tools/mca-calculator - MCA cost calculator
 - /tools/factor-rate-to-apr-calculator - Factor rate to APR converter
