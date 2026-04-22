@@ -102,6 +102,10 @@ export default function ArticleHeader({
           <img
             src={heroImage}
             alt={title}
+            width={1200}
+            height={380}
+            fetchPriority="high"
+            decoding="async"
             style={{
               display: "block",
               width: "100%",

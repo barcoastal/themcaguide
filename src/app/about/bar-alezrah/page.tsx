@@ -30,7 +30,7 @@ export default function BarAlezrahPage() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Author header */}
         <div className="flex items-center gap-6 mb-10">
-          <img src="/images/authors/bar-alezrah.jpg" alt="Bar Alezrah" className="w-24 h-24 rounded-full object-cover border-4 border-blue-100" />
+          <img src="/images/authors/bar-alezrah.jpg" alt="Bar Alezrah" width={96} height={96} loading="lazy" decoding="async" className="w-24 h-24 rounded-full object-cover border-4 border-blue-100" />
           <div>
             <h1 className="text-3xl font-bold text-gray-900">Bar Alezrah</h1>
             <p className="text-gray-500 mt-1">Small Business Owner & MCA Educator</p>

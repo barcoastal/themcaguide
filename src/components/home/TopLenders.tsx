@@ -25,6 +25,10 @@ export default function TopLenders() {
                   <img
                     src={lender.logo}
                     alt={`${lender.name} logo`}
+                    width={40}
+                    height={40}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-contain"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;

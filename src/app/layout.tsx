@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Source_Serif_4, Playfair_Display } from "next/font/google";
 import "@/styles/globals.css";
+import "@/styles/broadsheet.css";
 import BroadsheetMasthead from "@/components/layout/BroadsheetMasthead";
 import BroadsheetFooter from "@/components/layout/BroadsheetFooter";
 import Analytics from "@/components/seo/Analytics";

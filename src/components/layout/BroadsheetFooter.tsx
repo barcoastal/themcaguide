@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "@/styles/broadsheet.css";
 
 export default function BroadsheetFooter() {
   return (

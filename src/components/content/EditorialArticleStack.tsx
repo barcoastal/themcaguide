@@ -82,6 +82,10 @@ export default function EditorialArticleStack({
                 <img
                   src={lead.frontmatter.heroImage}
                   alt={lead.frontmatter.title}
+                  width={800}
+                  height={320}
+                  loading="lazy"
+                  decoding="async"
                   style={{ display: "block", width: "100%", maxHeight: "320px", objectFit: "cover" }}
                 />
               </div>

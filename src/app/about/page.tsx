@@ -22,7 +22,7 @@ export default function AboutPage() {
       {/* Bar's story card */}
       <Link href="/about/bar-alezrah" className="group block bg-blue-50 border-2 border-blue-200 rounded-2xl p-6 mb-10 hover:shadow-lg transition-all">
         <div className="flex items-center gap-5">
-          <img src="/images/authors/bar-alezrah.jpg" alt="Bar Alezrah" className="w-20 h-20 rounded-full object-cover border-3 border-blue-200" />
+          <img src="/images/authors/bar-alezrah.jpg" alt="Bar Alezrah" width={80} height={80} loading="lazy" decoding="async" className="w-20 h-20 rounded-full object-cover border-3 border-blue-200" />
           <div>
             <p className="text-sm text-blue-600 font-semibold">The Story Behind This Site</p>
             <h2 className="text-2xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors">Meet Bar Alezrah</h2>

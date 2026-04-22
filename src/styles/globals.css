@@ -29,7 +29,6 @@
     font-size: 17px;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
   }
 
   body.broadsheet h1,
@@ -39,6 +38,7 @@
     font-family: var(--font-playfair), 'Times New Roman', serif;
     letter-spacing: -0.015em;
     color: var(--ink);
+    text-rendering: optimizeLegibility;
   }
 
   body.broadsheet h1 {

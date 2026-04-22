@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "@/styles/broadsheet.css";
 
 const navLinks = [
   { href: "/blog/before-mca", label: "Before MCA" },

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import BroadsheetCalculator from "@/components/home/BroadsheetCalculator";
-import "@/styles/broadsheet.css";
 
 export default function Home() {
   return (

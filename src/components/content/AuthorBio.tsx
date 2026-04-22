@@ -14,7 +14,7 @@ export default function AuthorBio({ author }: { author: Author }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="bg-gray-50 rounded-lg p-6 mt-12 flex gap-4">
-        <img src={author.image} alt={author.name} className="w-16 h-16 rounded-full flex-shrink-0" />
+        <img src={author.image} alt={author.name} width={64} height={64} loading="lazy" decoding="async" className="w-16 h-16 rounded-full flex-shrink-0" />
         <div>
           <p className="font-semibold text-gray-900">{author.name}</p>
           <p className="text-sm text-gray-500">{author.role}</p>
