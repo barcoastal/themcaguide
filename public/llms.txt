@@ -77,10 +77,10 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/mca-debt-relief - 7 Ways to Get Out of MCA Debt
 - /articles/mca-confession-of-judgment - Confession of Judgment explained
 - /articles/mca-contract-red-flags - 8 Red Flags in MCA Contracts
-- /articles/what-happens-default-on-mca - What happens if you default on an MCA
+- /articles/mca-default-what-happens-next - What happens if you default on an MCA
 - /articles/can-you-negotiate-mca-debt - How to negotiate MCA debt
 - /articles/mca-attorney - When to hire an MCA attorney
-- /articles/mca-consolidation - MCA consolidation options
+- /articles/mca-debt-consolidation-guide - MCA consolidation options
 - /articles/mca-settlement-complete-guide - MCA Settlement Complete Guide
 - /articles/when-to-settle-mca-debt - MCA Debt Settlement 2026
 - /articles/best-mca-debt-relief-companies - Best MCA Debt Relief Companies: Reviews
@@ -95,8 +95,8 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/distressed-capital-resources-review - Distressed Capital Resources: Review
 - /articles/reliant-account-management-review - Reliant Account Management: Review
 - /articles/second-wind-consultants-review - Second Wind Consultants: Review
-- /articles/how-to-negotiate-mca-settlement - How to Negotiate an MCA Settlement
-- /articles/mca-settlement-success-rates - MCA Settlement Success Rates: What to Expect
+- /articles/can-you-negotiate-mca-debt - How to Negotiate an MCA Settlement
+- /articles/mca-settlement-complete-guide - MCA Settlement Success Rates: What to Expect
 - /articles/when-to-settle-mca-debt - When to Settle MCA Debt vs Fight It
 - /articles/mca-debt-consolidation-guide - MCA Debt Restructuring Options
 - /articles/mca-restructuring-playbook - MCA Restructuring Playbook
@@ -112,23 +112,23 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/mca-settlement-letter-template - MCA Settlement Letter: Template and Guide
 - /articles/mca-lawsuit-being-sued-playbook - Being Sued by an MCA Company: Playbook
 - /articles/responding-to-mca-lawsuit-complaint - How to Respond to an MCA Lawsuit Complaint
-- /articles/mca-lawsuit-defense-strategies - MCA Lawsuit Defense Strategies
-- /articles/mca-lawsuit-attorney - When to Hire an MCA Lawsuit Attorney
+- /articles/mca-defense-attorney - MCA Lawsuit Defense Strategies
+- /articles/mca-defense-attorney - When to Hire an MCA Lawsuit Attorney
 - /articles/mca-defense-attorney - MCA Defense Attorney: What They Do and When You Need One
 - /articles/mca-debt-settlement-lawyer - MCA Debt Settlement Lawyer: Do You Need One?
-- /articles/mca-attorney-near-me - How to Find an MCA Attorney Near You
+- /articles/mca-attorney - How to Find an MCA Attorney Near You
 - /articles/mca-attorney-california - MCA Attorney in California
 - /articles/mca-attorney-florida - MCA Attorney in Florida
 - /articles/mca-attorney-new-york - MCA Attorney in New York
 - /articles/mca-attorney-texas - MCA Attorney in Texas
-- /articles/new-york-mca-attorney - New York MCA Attorney Guide
+- /articles/mca-attorney-new-york - New York MCA Attorney Guide
 - /articles/mca-debt-settlement-lawyer - New York MCA Debt Attorney
-- /articles/new-york-mca-defense-attorney - New York MCA Defense Attorney
-- /articles/new-york-mca-loan-attorney - New York MCA Loan Attorney
-- /articles/new-york-mca-loan-restructure-attorney - New York MCA Loan Restructure Attorney
-- /articles/mca-loan-attorney - MCA Loan Attorney: When and Why to Hire One
-- /articles/mca-lawyer-cost - How Much Does an MCA Lawyer Cost?
-- /articles/mca-agreement-lawyer-contract-review - MCA Agreement Lawyer: Contract Review Guide
+- /articles/mca-attorney-new-york - New York MCA Defense Attorney
+- /articles/mca-attorney-new-york - New York MCA Loan Attorney
+- /articles/mca-attorney-new-york - New York MCA Loan Restructure Attorney
+- /articles/mca-attorney - MCA Loan Attorney: When and Why to Hire One
+- /articles/mca-attorney - How Much Does an MCA Lawyer Cost?
+- /articles/mca-attorney - MCA Agreement Lawyer: Contract Review Guide
 - /articles/forward-financing-lawsuit-guide - Forward Financing Lawsuit Guide
 - /articles/ondeck-lawsuit-guide - OnDeck Lawsuit Guide
 - /articles/bluevine-lawsuit-guide - Bluevine Lawsuit Guide
@@ -141,7 +141,7 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/mca-factor-rates-explained - Factor rates explained (convert to APR)
 - /articles/mca-holdback-percentage-explained - Holdback percentage explained
 - /articles/hidden-fees-in-mca - Hidden fees in MCA contracts
-- /articles/how-to-negotiate-mca-terms - How to negotiate MCA terms
+- /articles/can-you-negotiate-mca-debt - How to negotiate MCA terms
 - /articles/is-mca-a-loan - Is an MCA legally a loan?
 - /articles/mca-broker-vs-direct-funder - MCA broker vs direct lender vs payment provider
 - /articles/how-much-does-mca-cost - How much does an MCA actually cost

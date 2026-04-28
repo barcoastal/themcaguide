@@ -29,8 +29,8 @@ export default function Page() {
           <li><a href="/articles/can-you-negotiate-mca-debt">MCA Debt Relief vs DIY Settlement</a></li>
           <li><a href="/articles/best-mca-debt-relief-companies">Best MCA Debt Relief Companies</a></li>
           <li><a href="/guides/mca-attorney-complete-guide">MCA Attorney Complete Guide</a></li>
-          <li><a href="/articles/mca-settlement-success-rates">MCA Settlement Success Rates (Data)</a></li>
-          <li><a href="/articles/how-to-negotiate-mca-settlement">How to Negotiate MCA Settlement</a></li>
+          <li><a href="/articles/mca-settlement-complete-guide">MCA Settlement Success Rates (Data)</a></li>
+          <li><a href="/articles/can-you-negotiate-mca-debt">How to Negotiate MCA Settlement</a></li>
         </ul>
       </div>
     </div>

@@ -7,7 +7,7 @@ const VARIANTS: Record<Variant, { heading: string; intro: string; options: Array
     heading: "Your next step",
     intro: "If you're dealing with MCA debt, these are the three paths that actually work. Start with the cheapest option that fits your situation.",
     options: [
-      { label: "DIY negotiation", body: "Free and the most common starting point. Use our negotiation playbook first.", href: "/articles/how-to-negotiate-mca-settlement" },
+      { label: "DIY negotiation", body: "Free and the most common starting point. Use our negotiation playbook first.", href: "/articles/can-you-negotiate-mca-debt" },
       { label: "MCA debt relief company", body: "Paid service that handles negotiation for you. See our side-by-side comparison. Our disclosure: we work with Coastal Debt Resolve, details on /how-we-make-money.", href: "/articles/best-mca-debt-relief-companies" },
       { label: "MCA attorney", body: "Needed when lawsuits are filed or contracts are legally defective. See the attorney guide.", href: "/guides/mca-attorney-complete-guide" },
     ],
@@ -18,7 +18,7 @@ const VARIANTS: Record<Variant, { heading: string; intro: string; options: Array
     options: [
       { label: "Talk to an MCA attorney", body: "If you've been served with a lawsuit or COJ, this is the first call. See what an MCA attorney does and what it costs.", href: "/guides/mca-attorney-complete-guide" },
       { label: "MCA debt relief company", body: "If no lawsuit has been filed yet, a debt relief company can often settle before litigation. Disclosure: /how-we-make-money.", href: "/articles/best-mca-debt-relief-companies" },
-      { label: "DIY negotiation", body: "Works best before default. Full playbook here.", href: "/articles/how-to-negotiate-mca-settlement" },
+      { label: "DIY negotiation", body: "Works best before default. Full playbook here.", href: "/articles/can-you-negotiate-mca-debt" },
     ],
   },
   "review-roundup": {
@@ -27,7 +27,7 @@ const VARIANTS: Record<Variant, { heading: string; intro: string; options: Array
     options: [
       { label: "Compare the top options", body: "Our full side-by-side of debt relief companies. Disclosure: /how-we-make-money.", href: "/articles/best-mca-debt-relief-companies" },
       { label: "Read the evaluation checklist", body: "Six things to verify before signing any debt relief agreement.", href: "/articles/best-mca-debt-relief-companies" },
-      { label: "Try DIY first", body: "Most small MCA debts can be settled without paying a company. Start here.", href: "/articles/how-to-negotiate-mca-settlement" },
+      { label: "Try DIY first", body: "Most small MCA debts can be settled without paying a company. Start here.", href: "/articles/can-you-negotiate-mca-debt" },
     ],
   },
   "collection-default": {
@@ -35,7 +35,7 @@ const VARIANTS: Record<Variant, { heading: string; intro: string; options: Array
     intro: "Collection calls and default are scary. Free options exist. Start with those before paying anyone.",
     options: [
       { label: "Know your rights", body: "What an MCA debt collector can and cannot legally do.", href: "/articles/mca-debt-collection-rules-rights" },
-      { label: "DIY negotiation", body: "Free playbook that works before the lawsuit stage.", href: "/articles/how-to-negotiate-mca-settlement" },
+      { label: "DIY negotiation", body: "Free playbook that works before the lawsuit stage.", href: "/articles/can-you-negotiate-mca-debt" },
       { label: "Get a professional evaluation", body: "If the debt is too big to DIY, compare debt relief options. Disclosure: /how-we-make-money.", href: "/articles/best-mca-debt-relief-companies" },
     ],
   },

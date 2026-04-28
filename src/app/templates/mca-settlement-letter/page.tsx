@@ -90,7 +90,7 @@ export default function Page() {
 
       <div className="rounded-xl border-l-4 border-blue-400 bg-blue-50 p-5 mb-8">
         <h3 className="text-base font-bold text-slate-900 mb-2 mt-0">Realistic settlement range</h3>
-        <p className="text-sm text-slate-800 m-0">MCA settlements typically settle between 40% and 65% of the remaining balance, depending on how far in default you are, your documentation, and the funder. Starting at 35-40% is common. Read our <Link href="/articles/mca-settlement-success-rates" className="underline">MCA Settlement Success Rates</Link> article before you decide what to offer.</p>
+        <p className="text-sm text-slate-800 m-0">MCA settlements typically settle between 40% and 65% of the remaining balance, depending on how far in default you are, your documentation, and the funder. Starting at 35-40% is common. Read our <Link href="/articles/mca-settlement-complete-guide" className="underline">MCA Settlement Success Rates</Link> article before you decide what to offer.</p>
       </div>
 
       <TemplateViewer title="Settlement Letter Template" template={TEMPLATE} />
@@ -116,9 +116,9 @@ export default function Page() {
         <h2>Related resources</h2>
         <ul>
           <li><Link href="/articles/mca-settlement-letter-template">MCA Settlement Letter Template (full article)</Link></li>
-          <li><Link href="/articles/how-to-negotiate-mca-settlement">How to Negotiate MCA Settlement</Link></li>
+          <li><Link href="/articles/can-you-negotiate-mca-debt">How to Negotiate MCA Settlement</Link></li>
           <li><Link href="/articles/mca-settlement-complete-guide">MCA Settlement Complete Guide</Link></li>
-          <li><Link href="/articles/mca-settlement-success-rates">MCA Settlement Success Rates</Link></li>
+          <li><Link href="/articles/mca-settlement-complete-guide">MCA Settlement Success Rates</Link></li>
         </ul>
       </div>
     </div>

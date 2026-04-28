@@ -99,7 +99,7 @@ export default function Page() {
         <ul>
           <li><Link href="/articles/mca-hardship-letter-template">MCA Hardship Letter Template (full article)</Link></li>
           <li><Link href="/articles/mca-restructuring-playbook">MCA Restructuring Playbook</Link></li>
-          <li><Link href="/articles/how-to-negotiate-mca-settlement">How to Negotiate MCA Settlement</Link></li>
+          <li><Link href="/articles/can-you-negotiate-mca-debt">How to Negotiate MCA Settlement</Link></li>
           <li><Link href="/guides/mca-attorney-complete-guide">MCA Attorney Complete Guide</Link></li>
         </ul>
       </div>

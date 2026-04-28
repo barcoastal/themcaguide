@@ -125,7 +125,7 @@ export default function ChoosingPage() {
             { href: "/articles/best-mca-companies", title: "Best MCA Companies Reviewed" },
             { href: "/articles/mca-contract-red-flags", title: "8 Red Flags in MCA Contracts" },
             { href: "/articles/hidden-fees-in-mca", title: "Hidden Fees Nobody Tells You About" },
-            { href: "/articles/how-to-negotiate-mca-terms", title: "How to Negotiate Better Terms" },
+            { href: "/articles/can-you-negotiate-mca-debt", title: "How to Negotiate Better Terms" },
             { href: "/articles/mca-broker-vs-direct-funder", title: "Broker vs Direct Funder" },
           ].map((a) => (
             <Link key={a.href} href={a.href} className="flex items-center gap-3 bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">

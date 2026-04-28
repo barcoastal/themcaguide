@@ -51,7 +51,7 @@ export default function Page() {
             </a>
           </li>
           <li>
-            <a href="/articles/mca-lawsuit-defense-strategies">
+            <a href="/articles/mca-defense-attorney">
               MCA Lawsuit Defense Strategies
             </a>
           </li>

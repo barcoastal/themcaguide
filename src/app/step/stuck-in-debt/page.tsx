@@ -92,7 +92,7 @@ export default function StuckInDebtPage() {
         <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-bold text-red-800 mb-3">Is Your Bank Account Being Frozen?</h2>
           <p className="text-red-700 mb-6">If an MCA company is threatening to freeze your account or has already done it, you need a lawyer NOW. This is time-sensitive.</p>
-          <Link href="/articles/what-happens-default-on-mca" className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-colors">
+          <Link href="/articles/mca-default-what-happens-next" className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-colors">
             Read: What Happens When You Default <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
@@ -125,7 +125,7 @@ export default function StuckInDebtPage() {
           {[
             { href: "/articles/can-you-negotiate-mca-debt", title: "How to Negotiate MCA Debt" },
             { href: "/articles/mca-debt-relief", title: "All Your MCA Debt Relief Options" },
-            { href: "/articles/what-happens-default-on-mca", title: "What Happens If You Default" },
+            { href: "/articles/mca-default-what-happens-next", title: "What Happens If You Default" },
             { href: "/articles/mca-confession-of-judgment", title: "Confession of Judgment Explained" },
             { href: "/articles/mca-ucc-filing-explained", title: "UCC Filings: What They Mean" },
             { href: "/guides/how-to-get-out-of-mca-debt", title: "Full Escape Guide" },

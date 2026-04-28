@@ -144,12 +144,12 @@ export default function Page() {
         <p>If your COJ was entered after August 30, 2019 and you are not a New York resident or business entity, the 2019 CPLR 3218 amendment may render it void on its face. This is a stronger basis for vacatur and some attorneys have had success obtaining vacaturs on this ground without extensive litigation. Confirm the entry date from the court index number.</p>
 
         <h2>Finding an MCA defense attorney</h2>
-        <p>Several attorneys specialize in MCA COJ defense, particularly in New York. Look for attorneys with experience in commercial litigation and MCA or merchant funding matters. Many offer free initial consultations and some work on contingency or flat-fee arrangements for vacatur motions. See our full guide: <Link href="/articles/new-york-mca-defense-attorney">New York MCA Defense Attorney</Link>.</p>
+        <p>Several attorneys specialize in MCA COJ defense, particularly in New York. Look for attorneys with experience in commercial litigation and MCA or merchant funding matters. Many offer free initial consultations and some work on contingency or flat-fee arrangements for vacatur motions. See our full guide: <Link href="/articles/mca-attorney-new-york">New York MCA Defense Attorney</Link>.</p>
 
         <h2>Related resources</h2>
         <ul>
           <li><Link href="/articles/ny-confession-of-judgment-ban-mca">NY Confession of Judgment Ban — MCA (full article)</Link></li>
-          <li><Link href="/articles/new-york-mca-defense-attorney">New York MCA Defense Attorney</Link></li>
+          <li><Link href="/articles/mca-attorney-new-york">New York MCA Defense Attorney</Link></li>
           <li><Link href="/guides/mca-attorney-complete-guide">MCA Attorney Complete Guide</Link></li>
         </ul>
       </div>
