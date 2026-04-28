@@ -26,7 +26,7 @@ const VARIANTS: Record<Variant, { heading: string; intro: string; options: Array
     intro: "Names matter less than process. These six criteria matter more than any star rating.",
     options: [
       { label: "Compare the top options", body: "Our full side-by-side of debt relief companies. Disclosure: /how-we-make-money.", href: "/articles/best-mca-debt-relief-companies" },
-      { label: "Read the evaluation checklist", body: "Six things to verify before signing any debt relief agreement.", href: "/articles/how-to-choose-mca-debt-relief-company" },
+      { label: "Read the evaluation checklist", body: "Six things to verify before signing any debt relief agreement.", href: "/articles/best-mca-debt-relief-companies" },
       { label: "Try DIY first", body: "Most small MCA debts can be settled without paying a company. Start here.", href: "/articles/how-to-negotiate-mca-settlement" },
     ],
   },

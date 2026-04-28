@@ -26,7 +26,7 @@ export default function Page() {
         <p>These are estimates based on typical fee structures. Your actual settlement percentage depends on your specific situation. See our related resources below.</p>
         <h2>Related resources</h2>
         <ul>
-          <li><a href="/articles/mca-debt-relief-vs-diy-settlement">MCA Debt Relief vs DIY Settlement</a></li>
+          <li><a href="/articles/can-you-negotiate-mca-debt">MCA Debt Relief vs DIY Settlement</a></li>
           <li><a href="/articles/best-mca-debt-relief-companies">Best MCA Debt Relief Companies</a></li>
           <li><a href="/guides/mca-attorney-complete-guide">MCA Attorney Complete Guide</a></li>
           <li><a href="/articles/mca-settlement-success-rates">MCA Settlement Success Rates (Data)</a></li>

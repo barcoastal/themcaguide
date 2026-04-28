@@ -124,7 +124,7 @@ export default function StuckInDebtPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { href: "/articles/can-you-negotiate-mca-debt", title: "How to Negotiate MCA Debt" },
-            { href: "/articles/mca-debt-relief-options", title: "All Your MCA Debt Relief Options" },
+            { href: "/articles/mca-debt-relief", title: "All Your MCA Debt Relief Options" },
             { href: "/articles/what-happens-default-on-mca", title: "What Happens If You Default" },
             { href: "/articles/mca-confession-of-judgment", title: "Confession of Judgment Explained" },
             { href: "/articles/mca-ucc-filing-explained", title: "UCC Filings: What They Mean" },

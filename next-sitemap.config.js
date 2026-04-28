@@ -1,6 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: "https://themcaguide.com",
+  outDir: "out",
   generateRobotsTxt: true,
   trailingSlash: false,
   sitemapSize: 7000,

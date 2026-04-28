@@ -82,14 +82,14 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/mca-attorney - When to hire an MCA attorney
 - /articles/mca-consolidation - MCA consolidation options
 - /articles/mca-settlement-complete-guide - MCA Settlement Complete Guide
-- /articles/mca-debt-settlement-2026 - MCA Debt Settlement 2026
-- /articles/mca-debt-relief-reviews - Best MCA Debt Relief Companies: Reviews
+- /articles/when-to-settle-mca-debt - MCA Debt Settlement 2026
+- /articles/best-mca-debt-relief-companies - Best MCA Debt Relief Companies: Reviews
 - /articles/best-mca-debt-relief-companies - Best MCA Debt Relief Companies Ranked
-- /articles/how-to-choose-mca-debt-relief-company - How to Choose an MCA Debt Relief Company
-- /articles/mca-debt-relief-vs-diy-settlement - MCA Debt Relief Company vs DIY Settlement
-- /articles/mca-debt-relief-pros-review - MCA Debt Relief Pros: Review
+- /articles/best-mca-debt-relief-companies - How to Choose an MCA Debt Relief Company
+- /articles/can-you-negotiate-mca-debt - MCA Debt Relief Company vs DIY Settlement
+- /articles/best-mca-debt-relief-companies - MCA Debt Relief Pros: Review
 - /articles/mca-debt-advisors-review - MCA Debt Advisors: Review
-- /articles/mca-debt-advisors-alternatives - MCA Debt Advisors: Alternatives Compared
+- /articles/mca-debt-advisors-review - MCA Debt Advisors: Alternatives Compared
 - /articles/bench-bar-associates-review - Bench Bar Associates: Review
 - /articles/corporate-turnaround-group-review - Corporate Turnaround Group: Review
 - /articles/distressed-capital-resources-review - Distressed Capital Resources: Review
@@ -98,13 +98,13 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/how-to-negotiate-mca-settlement - How to Negotiate an MCA Settlement
 - /articles/mca-settlement-success-rates - MCA Settlement Success Rates: What to Expect
 - /articles/when-to-settle-mca-debt - When to Settle MCA Debt vs Fight It
-- /articles/mca-debt-restructuring - MCA Debt Restructuring Options
+- /articles/mca-debt-consolidation-guide - MCA Debt Restructuring Options
 - /articles/mca-restructuring-playbook - MCA Restructuring Playbook
 - /articles/mca-debt-consolidation-guide - MCA Debt Consolidation Guide
 - /articles/mca-ucc-lien-removal - How to Remove an MCA UCC Lien
 - /articles/mca-default-what-happens-next - MCA Default: What Happens Next
 - /articles/mca-debt-collection-rules-rights - MCA Debt Collection: Your Rights
-- /articles/mca-debt-collector-guide - Dealing With MCA Debt Collectors
+- /articles/mca-debt-collection-rules-rights - Dealing With MCA Debt Collectors
 - /articles/dealing-with-aggressive-mca-collectors - How to Deal With Aggressive MCA Collectors
 - /articles/ny-confession-of-judgment-ban-mca - New York COJ Ban and What It Means for MCA Borrowers
 - /articles/mca-loan-debt-sales - MCA Loan Debt Sales: What Happens When Your Debt Is Sold
@@ -122,7 +122,7 @@ The MCA Guide is a free educational website created by Bar Alezrah, a small busi
 - /articles/mca-attorney-new-york - MCA Attorney in New York
 - /articles/mca-attorney-texas - MCA Attorney in Texas
 - /articles/new-york-mca-attorney - New York MCA Attorney Guide
-- /articles/new-york-mca-debt-attorney - New York MCA Debt Attorney
+- /articles/mca-debt-settlement-lawyer - New York MCA Debt Attorney
 - /articles/new-york-mca-defense-attorney - New York MCA Defense Attorney
 - /articles/new-york-mca-loan-attorney - New York MCA Loan Attorney
 - /articles/new-york-mca-loan-restructure-attorney - New York MCA Loan Restructure Attorney
