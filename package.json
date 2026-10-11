@@ -8,7 +8,9 @@
     "check:content": "node scripts/check-content.mjs",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prebuild": "node scripts/check-images.mjs",
+    "check:images": "node scripts/check-images.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

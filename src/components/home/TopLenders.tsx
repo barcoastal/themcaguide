@@ -2,11 +2,11 @@
 
 const lenders = [
   { name: "OnDeck", logo: "/images/lenders/ondeck.svg", type: "Direct Lender", minRevenue: "$100K/year", speed: "1-3 days", factorRate: "1.09-1.43", note: "One of the largest MCA providers" },
-  { name: "Kabbage (by Amex)", logo: "/images/lenders/kabbage.png", type: "Line of Credit / MCA", minRevenue: "$3K/month", speed: "Minutes", factorRate: "Varies", note: "Now part of American Express" },
+  { name: "Kabbage (by Amex)", logo: "/images/lenders/kabbage.webp", type: "Line of Credit / MCA", minRevenue: "$3K/month", speed: "Minutes", factorRate: "Varies", note: "Now part of American Express" },
   { name: "Fundbox", logo: "/images/lenders/fundbox.svg", type: "Line of Credit", minRevenue: "$30K/year", speed: "Next day", factorRate: "4.66-8.99% per draw", note: "Better option than traditional MCA" },
-  { name: "CAN Capital", logo: "/images/lenders/cancapital.png", type: "Direct MCA", minRevenue: "$4.5K/month", speed: "2-3 days", factorRate: "1.15-1.48", note: "One of the original MCA providers" },
+  { name: "CAN Capital", logo: "/images/lenders/cancapital.webp", type: "Direct MCA", minRevenue: "$4.5K/month", speed: "2-3 days", factorRate: "1.15-1.48", note: "One of the original MCA providers" },
   { name: "Rapid Finance", logo: "/images/lenders/rapidfinance.svg", type: "MCA / Term Loan", minRevenue: "$120K/year", speed: "1-2 days", factorRate: "1.16-1.45", note: "Offers both MCA and traditional loans" },
-  { name: "Credibly", logo: "/images/lenders/credibly.png", type: "MCA / Working Capital", minRevenue: "$15K/month", speed: "1-2 days", factorRate: "1.11-1.45", note: "Works with businesses as young as 6 months" },
+  { name: "Credibly", logo: "/images/lenders/credibly.webp", type: "MCA / Working Capital", minRevenue: "$15K/month", speed: "1-2 days", factorRate: "1.11-1.45", note: "Works with businesses as young as 6 months" },
 ];
 
 export default function TopLenders() {
