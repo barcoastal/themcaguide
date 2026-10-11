@@ -101,7 +101,7 @@ export default function StuckInDebtPage() {
       {/* Payoff calculator */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">How long until you're free?</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">How long until you&apos;re free?</h2>
           <p className="text-gray-500 mb-6">Use our calculator to see your payoff timeline.</p>
           <Link href="/tools/mca-payoff-calculator" className="inline-flex items-center gap-2 px-8 py-4 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition-colors text-lg">
             Open Payoff Calculator <ArrowRight className="w-5 h-5" />
@@ -128,7 +128,7 @@ export default function StuckInDebtPage() {
             { href: "/articles/mca-default-what-happens-next", title: "What Happens If You Default" },
             { href: "/articles/mca-confession-of-judgment", title: "Confession of Judgment Explained" },
             { href: "/articles/mca-ucc-filing-explained", title: "UCC Filings: What They Mean" },
-            { href: "/guides/how-to-get-out-of-mca-debt", title: "Full Escape Guide" },
+            { href: "/guides/mca-debt-relief-2026-guide", title: "Full Escape Guide" },
           ].map((a) => (
             <Link key={a.href} href={a.href} className="flex items-center gap-3 bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow">
               <FileText className="w-5 h-5 text-red-500 flex-shrink-0" />

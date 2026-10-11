@@ -97,7 +97,7 @@ export default function Page() {
 
         <h2>Related resources</h2>
         <ul>
-          <li><Link href="/articles/mca-hardship-letter-template">MCA Hardship Letter Template (full article)</Link></li>
+          <li><Link href="/templates/mca-hardship-letter">MCA Hardship Letter Template (full article)</Link></li>
           <li><Link href="/articles/mca-restructuring-playbook">MCA Restructuring Playbook</Link></li>
           <li><Link href="/articles/can-you-negotiate-mca-debt">How to Negotiate MCA Settlement</Link></li>
           <li><Link href="/guides/mca-attorney-complete-guide">MCA Attorney Complete Guide</Link></li>

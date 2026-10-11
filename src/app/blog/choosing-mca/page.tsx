@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { getAllArticles } from "@/lib/content";
-import TopLenders from "@/components/home/TopLenders";
 import EditorialHero from "@/components/layout/EditorialHero";
 import EditorialArticleStack from "@/components/content/EditorialArticleStack";
 
@@ -21,12 +20,11 @@ export default function ChoosingMcaPage() {
     <div>
       <EditorialHero
         kicker="If You Really Need an MCA"
-        title="How to Pick the Least Bad Deal"
-        dek="If MCA is truly your only option, here is how to compare offers, spot red flags, and avoid the traps that bury businesses."
+        title="Compare the complete offer."
+        dek="Look beyond the factor rate. Compare net funding, payment timing, guarantees, and the terms that apply when receipts fall."
         align="center"
       />
       <EditorialArticleStack articles={articles} kicker="Section · Choosing MCA" />
-      <TopLenders />
     </div>
   );
 }

@@ -1,48 +1,15 @@
 "use client";
-
 import { useState } from "react";
 import { calculateMcaCost } from "@/lib/calculator";
-
-export default function McaCostCalculator() {
-  const [fundingAmount, setFundingAmount] = useState(50000);
-  const [factorRate, setFactorRate] = useState(1.35);
-  const [holdbackPercent, setHoldbackPercent] = useState(15);
-  const [dailyRevenue, setDailyRevenue] = useState(5000);
-
-  const result = calculateMcaCost({ fundingAmount, factorRate, holdbackPercent, dailyRevenue });
-
-  const fmt = (n: number) => n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
-
-  return (
-    <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="space-y-4">
-          <label className="block">
-            <span className="text-sm font-medium text-gray-700">Funding Amount</span>
-            <input type="number" value={fundingAmount} onChange={(e) => setFundingAmount(Number(e.target.value))} className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-lg focus:border-blue-500 focus:ring-blue-500" min={1000} step={1000} />
-          </label>
-          <label className="block">
-            <span className="text-sm font-medium text-gray-700">Factor Rate</span>
-            <input type="number" value={factorRate} onChange={(e) => setFactorRate(Number(e.target.value))} className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-lg focus:border-blue-500 focus:ring-blue-500" min={1.0} max={2.0} step={0.01} />
-          </label>
-          <label className="block">
-            <span className="text-sm font-medium text-gray-700">Holdback Percentage (%)</span>
-            <input type="number" value={holdbackPercent} onChange={(e) => setHoldbackPercent(Number(e.target.value))} className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-lg focus:border-blue-500 focus:ring-blue-500" min={1} max={100} />
-          </label>
-          <label className="block">
-            <span className="text-sm font-medium text-gray-700">Average Daily Revenue</span>
-            <input type="number" value={dailyRevenue} onChange={(e) => setDailyRevenue(Number(e.target.value))} className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-3 text-lg focus:border-blue-500 focus:ring-blue-500" min={100} step={100} />
-          </label>
-        </div>
-        <div className="bg-blue-50 rounded-lg p-6 space-y-4">
-          <h3 className="text-lg font-semibold text-gray-900">Results</h3>
-          <div><p className="text-sm text-gray-500">Total Repayment</p><p className="text-2xl font-bold text-gray-900">{fmt(result.totalRepayment)}</p></div>
-          <div><p className="text-sm text-gray-500">Total Cost of Funding</p><p className="text-2xl font-bold text-red-600">{fmt(result.totalCost)}</p></div>
-          <div><p className="text-sm text-gray-500">Estimated Daily Payment</p><p className="text-xl font-semibold text-gray-900">{fmt(result.dailyPayment)}</p></div>
-          <div><p className="text-sm text-gray-500">Estimated Repayment Period</p><p className="text-xl font-semibold text-gray-900">{result.estimatedDays} days</p></div>
-          <div><p className="text-sm text-gray-500">Effective APR</p><p className="text-xl font-semibold text-orange-600">{result.effectiveAPR.toFixed(1)}%</p></div>
-        </div>
-      </div>
-    </div>
-  );
+const fmt=(n:number)=>n.toLocaleString("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0});
+export default function McaCostCalculator(){
+ const [amount,setAmount]=useState("50000"),[factor,setFactor]=useState("1.35"),[holdback,setHoldback]=useState("15"),[revenue,setRevenue]=useState("5000"),[frequency,setFrequency]=useState("260");
+ const result=calculateMcaCost({fundingAmount:Number(amount),factorRate:Number(factor),holdbackPercent:Number(holdback),dailyRevenue:Number(revenue),paymentsPerYear:Number(frequency)});
+ const valid=[amount,factor,holdback,revenue].every(v=>v.trim()!=="")&&Number.isFinite(result.effectiveAPR);
+ return <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8"><div className="grid grid-cols-1 md:grid-cols-2 gap-7"><div className="space-y-4">{[
+ {label:"Advance amount ($)",value:amount,set:setAmount,min:1,step:1000},
+ {label:"Factor rate",value:factor,set:setFactor,min:1,step:0.01},
+ {label:"Holdback (% of eligible sales)",value:holdback,set:setHoldback,min:0.01,max:100,step:1},
+ {label:"Average sales per payment day ($)",value:revenue,set:setRevenue,min:1,step:100},
+ ].map(f=><label className="block" key={f.label}><span className="text-sm font-medium">{f.label}</span><input className="mt-1 w-full border rounded-lg px-4 py-3" type="number" value={f.value} min={f.min} max={f.max} step={f.step} onChange={e=>f.set(e.target.value)} /></label>)}<label className="block"><span className="text-sm font-medium">Payment frequency assumption</span><select className="mt-1 w-full border rounded-lg px-4 py-3" value={frequency} onChange={e=>setFrequency(e.target.value)}><option value="260">Five payment days/week (260/year)</option><option value="365">Every calendar day (365/year)</option></select></label></div><div className="rounded-lg p-6 space-y-5 bg-[#edf3e6]" aria-live="polite">{valid?<><h2 className="text-xl font-bold">Your estimate</h2>{[["Total contracted payments",fmt(result.totalRepayment)],["Factor charge, before extra fees",fmt(result.totalCost)],["Estimated payment",fmt(result.dailyPayment)],["Payment days",result.estimatedDays.toLocaleString()],["Estimated annualized rate",result.effectiveAPR.toFixed(1)+"%"]].map(([k,v])=><div key={k}><p className="text-xs text-slate-600">{k}</p><p className="text-2xl font-semibold tracking-tight">{v}</p></div>)}</>:<p role="status">Enter positive amounts, a factor rate of at least 1, and a holdback between 0 and 100%.</p>}</div></div><p className="mt-6 text-xs text-slate-600 leading-relaxed">Assumes all advance proceeds are received at funding, constant sales, equally spaced payments starting one period later, and a smaller final payment if needed. Annualized rate = payment-period IRR × {frequency}. The five-day setting spreads 260 payments evenly across a year; it does not model actual weekends or holidays. Excludes additional fees. This is an illustration, not a legally prescribed APR disclosure.</p></div>;
 }

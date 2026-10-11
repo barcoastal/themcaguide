@@ -1,0 +1,686 @@
+[
+  {
+    "name": "Alabama",
+    "slug": "alabama",
+    "resources": [
+      {
+        "label": "Alabama Secretary of State",
+        "url": "https://www.sos.alabama.gov/"
+      },
+      {
+        "label": "Alabama Attorney General",
+        "url": "https://www.alabamaag.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Alaska",
+    "slug": "alaska",
+    "resources": [
+      {
+        "label": "Alaska Department of Natural Resources",
+        "url": "https://dnr.alaska.gov/ssd/recoff/Ucc/search/IndexMenu"
+      },
+      {
+        "label": "Alaska Attorney General",
+        "url": "https://law.alaska.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Arizona",
+    "slug": "arizona",
+    "resources": [
+      {
+        "label": "Arizona Secretary of State",
+        "url": "https://azsos.gov/"
+      },
+      {
+        "label": "Arizona Attorney General",
+        "url": "https://www.azag.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Arkansas",
+    "slug": "arkansas",
+    "resources": [
+      {
+        "label": "Arkansas Secretary of State",
+        "url": "https://www.sos.arkansas.gov/"
+      },
+      {
+        "label": "Arkansas Attorney General",
+        "url": "https://arkansasag.gov/"
+      }
+    ]
+  },
+  {
+    "name": "California",
+    "slug": "california",
+    "resources": [
+      {
+        "label": "California Secretary of State",
+        "url": "https://www.sos.ca.gov/"
+      },
+      {
+        "label": "DFPI",
+        "url": "https://dfpi.ca.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Colorado",
+    "slug": "colorado",
+    "resources": [
+      {
+        "label": "Colorado Attorney General",
+        "url": "https://coag.gov/"
+      },
+      {
+        "label": "Colorado Division of Banking",
+        "url": "https://banking.colorado.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Connecticut",
+    "slug": "connecticut",
+    "resources": [
+      {
+        "label": "Connecticut Secretary of the State",
+        "url": "https://portal.ct.gov/SOTS"
+      },
+      {
+        "label": "Connecticut Attorney General",
+        "url": "https://portal.ct.gov/ag"
+      }
+    ]
+  },
+  {
+    "name": "Delaware",
+    "slug": "delaware",
+    "resources": [
+      {
+        "label": "Delaware Division of Corporations",
+        "url": "https://corp.delaware.gov/"
+      },
+      {
+        "label": "Delaware Attorney General",
+        "url": "https://attorneygeneral.delaware.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Florida",
+    "slug": "florida",
+    "resources": [
+      {
+        "label": "Florida Department of State",
+        "url": "https://dos.fl.gov/"
+      },
+      {
+        "label": "Florida Office of Financial Regulation",
+        "url": "https://flofr.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Georgia",
+    "slug": "georgia",
+    "resources": [
+      {
+        "label": "Georgia Attorney General, Consumer Protection Division",
+        "url": "https://law.georgia.gov/key-issues/consumer-protection"
+      },
+      {
+        "label": "Georgia Department of Banking and Finance",
+        "url": "https://dbf.georgia.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Hawaii",
+    "slug": "hawaii",
+    "resources": [
+      {
+        "label": "Hawaii Bureau of Conveyances",
+        "url": "https://dlnr.hawaii.gov/boc/"
+      },
+      {
+        "label": "Hawaii Office of Consumer Protection",
+        "url": "https://cca.hawaii.gov/ocp/"
+      }
+    ]
+  },
+  {
+    "name": "Idaho",
+    "slug": "idaho",
+    "resources": [
+      {
+        "label": "Idaho Secretary of State",
+        "url": "https://sos.idaho.gov/"
+      },
+      {
+        "label": "Idaho Department of Finance",
+        "url": "https://finance.idaho.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Illinois",
+    "slug": "illinois",
+    "resources": [
+      {
+        "label": "Illinois Secretary of State",
+        "url": "https://www.ilsos.gov/"
+      },
+      {
+        "label": "IDFPR",
+        "url": "https://idfpr.illinois.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Indiana",
+    "slug": "indiana",
+    "resources": [
+      {
+        "label": "Indiana Secretary of State",
+        "url": "https://www.in.gov/sos/"
+      },
+      {
+        "label": "Indiana Attorney General",
+        "url": "https://www.in.gov/attorneygeneral/"
+      }
+    ]
+  },
+  {
+    "name": "Iowa",
+    "slug": "iowa",
+    "resources": [
+      {
+        "label": "Iowa Secretary of State",
+        "url": "https://sos.iowa.gov/"
+      },
+      {
+        "label": "Iowa Attorney General",
+        "url": "https://www.iowaattorneygeneral.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Kansas",
+    "slug": "kansas",
+    "resources": [
+      {
+        "label": "Kansas Secretary of State",
+        "url": "https://www.sos.ks.gov/"
+      },
+      {
+        "label": "Kansas Attorney General",
+        "url": "https://ag.ks.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Kentucky",
+    "slug": "kentucky",
+    "resources": [
+      {
+        "label": "Kentucky Secretary of State",
+        "url": "https://www.sos.ky.gov/"
+      },
+      {
+        "label": "Kentucky DFI",
+        "url": "https://kfi.ky.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Louisiana",
+    "slug": "louisiana",
+    "resources": [
+      {
+        "label": "Louisiana Secretary of State",
+        "url": "https://www.sos.la.gov/"
+      },
+      {
+        "label": "Louisiana OFI",
+        "url": "https://www.ofi.la.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Maine",
+    "slug": "maine",
+    "resources": [
+      {
+        "label": "Maine Secretary of State",
+        "url": "https://www.maine.gov/sos/"
+      },
+      {
+        "label": "Maine Attorney General",
+        "url": "https://www.maine.gov/ag/"
+      }
+    ]
+  },
+  {
+    "name": "Maryland",
+    "slug": "maryland",
+    "resources": [
+      {
+        "label": "Maryland SDAT",
+        "url": "https://dat.maryland.gov/"
+      },
+      {
+        "label": "Maryland Attorney General",
+        "url": "https://www.marylandattorneygeneral.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Massachusetts",
+    "slug": "massachusetts",
+    "resources": [
+      {
+        "label": "Massachusetts Attorney General",
+        "url": "https://www.mass.gov/orgs/office-of-the-attorney-general"
+      },
+      {
+        "label": "Division of Banks",
+        "url": "https://www.mass.gov/orgs/division-of-banks"
+      }
+    ]
+  },
+  {
+    "name": "Michigan",
+    "slug": "michigan",
+    "resources": [
+      {
+        "label": "Michigan Department of State",
+        "url": "https://www.michigan.gov/sos"
+      },
+      {
+        "label": "Michigan Attorney General",
+        "url": "https://www.michigan.gov/ag"
+      }
+    ]
+  },
+  {
+    "name": "Minnesota",
+    "slug": "minnesota",
+    "resources": [
+      {
+        "label": "Minnesota Department of Commerce",
+        "url": "https://mn.gov/commerce/"
+      },
+      {
+        "label": "Minnesota Small Business Development Centers",
+        "url": "https://mn.gov/deed/business/help/sbdc/"
+      }
+    ]
+  },
+  {
+    "name": "Mississippi",
+    "slug": "mississippi",
+    "resources": [
+      {
+        "label": "Mississippi Secretary of State",
+        "url": "https://www.sos.ms.gov/"
+      },
+      {
+        "label": "Department of Banking and Consumer Finance",
+        "url": "https://dbcf.ms.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Missouri",
+    "slug": "missouri",
+    "resources": [
+      {
+        "label": "Missouri Secretary of State",
+        "url": "https://www.sos.mo.gov/"
+      },
+      {
+        "label": "Missouri Attorney General",
+        "url": "https://ago.mo.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Montana",
+    "slug": "montana",
+    "resources": [
+      {
+        "label": "Montana Secretary of State",
+        "url": "https://sosmt.gov/"
+      },
+      {
+        "label": "Montana Attorney General",
+        "url": "https://dojmt.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Nebraska",
+    "slug": "nebraska",
+    "resources": [
+      {
+        "label": "Nebraska Secretary of State",
+        "url": "https://sos.nebraska.gov/"
+      },
+      {
+        "label": "Nebraska Attorney General",
+        "url": "https://ago.nebraska.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Nevada",
+    "slug": "nevada",
+    "resources": [
+      {
+        "label": "Nevada Secretary of State",
+        "url": "https://www.nvsos.gov/"
+      },
+      {
+        "label": "Nevada Attorney General",
+        "url": "https://ag.nv.gov/"
+      }
+    ]
+  },
+  {
+    "name": "New Hampshire",
+    "slug": "new-hampshire",
+    "resources": [
+      {
+        "label": "New Hampshire Secretary of State",
+        "url": "https://www.sos.nh.gov/"
+      },
+      {
+        "label": "New Hampshire Banking Department",
+        "url": "https://www.nh.gov/banking/"
+      }
+    ]
+  },
+  {
+    "name": "New Jersey",
+    "slug": "new-jersey",
+    "resources": [
+      {
+        "label": "NJ Attorney General's Division of Consumer Affairs",
+        "url": "https://www.njconsumeraffairs.gov/"
+      }
+    ]
+  },
+  {
+    "name": "New Mexico",
+    "slug": "new-mexico",
+    "resources": [
+      {
+        "label": "New Mexico Secretary of State",
+        "url": "https://www.sos.nm.gov/"
+      },
+      {
+        "label": "New Mexico Attorney General",
+        "url": "https://www.nmag.gov/"
+      }
+    ]
+  },
+  {
+    "name": "New York",
+    "slug": "new-york",
+    "resources": [
+      {
+        "label": "New York Department of State",
+        "url": "https://www.dos.ny.gov/"
+      },
+      {
+        "label": "New York Department of Financial Services",
+        "url": "https://www.dfs.ny.gov/"
+      }
+    ]
+  },
+  {
+    "name": "North Carolina",
+    "slug": "north-carolina",
+    "resources": [
+      {
+        "label": "North Carolina Secretary of State",
+        "url": "https://www.sosnc.gov/"
+      },
+      {
+        "label": "Commissioner of Banks",
+        "url": "https://www.nccob.gov/"
+      }
+    ]
+  },
+  {
+    "name": "North Dakota",
+    "slug": "north-dakota",
+    "resources": [
+      {
+        "label": "North Dakota Secretary of State",
+        "url": "https://sos.nd.gov/"
+      },
+      {
+        "label": "Bank of North Dakota",
+        "url": "https://bnd.nd.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Ohio",
+    "slug": "ohio",
+    "resources": [
+      {
+        "label": "Ohio Secretary of State",
+        "url": "https://www.ohiosos.gov/"
+      },
+      {
+        "label": "Ohio Attorney General",
+        "url": "https://www.ohioattorneygeneral.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Oklahoma",
+    "slug": "oklahoma",
+    "resources": [
+      {
+        "label": "Oklahoma Secretary of State",
+        "url": "https://www.sos.ok.gov/"
+      },
+      {
+        "label": "Oklahoma Attorney General",
+        "url": "https://www.oag.ok.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Oregon",
+    "slug": "oregon",
+    "resources": [
+      {
+        "label": "Oregon Secretary of State",
+        "url": "https://sos.oregon.gov/"
+      },
+      {
+        "label": "DFR",
+        "url": "https://dfr.oregon.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Pennsylvania",
+    "slug": "pennsylvania",
+    "resources": [
+      {
+        "label": "Pennsylvania Department of State",
+        "url": "https://www.dos.pa.gov/"
+      },
+      {
+        "label": "Pennsylvania Attorney General",
+        "url": "https://www.attorneygeneral.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Rhode Island",
+    "slug": "rhode-island",
+    "resources": [
+      {
+        "label": "Rhode Island Secretary of State",
+        "url": "https://www.sos.ri.gov/"
+      },
+      {
+        "label": "Rhode Island Attorney General",
+        "url": "https://riag.ri.gov/"
+      }
+    ]
+  },
+  {
+    "name": "South Carolina",
+    "slug": "south-carolina",
+    "resources": [
+      {
+        "label": "South Carolina Secretary of State",
+        "url": "https://www.sos.sc.gov/"
+      },
+      {
+        "label": "South Carolina State Board of Financial Institutions",
+        "url": "https://bofi.sc.gov/"
+      }
+    ]
+  },
+  {
+    "name": "South Dakota",
+    "slug": "south-dakota",
+    "resources": [
+      {
+        "label": "South Dakota Secretary of State",
+        "url": "https://sdsos.gov/"
+      },
+      {
+        "label": "South Dakota Division of Banking",
+        "url": "https://dlr.sd.gov/banking/"
+      }
+    ]
+  },
+  {
+    "name": "Tennessee",
+    "slug": "tennessee",
+    "resources": [
+      {
+        "label": "Tennessee Secretary of State",
+        "url": "https://sos.tn.gov/"
+      },
+      {
+        "label": "Tennessee Department of Financial Institutions",
+        "url": "https://www.tn.gov/tdfi.html"
+      }
+    ]
+  },
+  {
+    "name": "Texas",
+    "slug": "texas",
+    "resources": [
+      {
+        "label": "Texas Legislature",
+        "url": "https://capitol.texas.gov/"
+      },
+      {
+        "label": "Texas Attorney General",
+        "url": "https://www.texasattorneygeneral.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Utah",
+    "slug": "utah",
+    "resources": [
+      {
+        "label": "Utah Legislature",
+        "url": "https://le.utah.gov/"
+      },
+      {
+        "label": "Utah Division of Corporations",
+        "url": "https://corporations.utah.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Vermont",
+    "slug": "vermont",
+    "resources": [
+      {
+        "label": "Vermont Secretary of State",
+        "url": "https://sos.vermont.gov/"
+      },
+      {
+        "label": "Vermont Attorney General",
+        "url": "https://ago.vermont.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Virginia",
+    "slug": "virginia",
+    "resources": [
+      {
+        "label": "Virginia State Corporation Commission",
+        "url": "https://www.scc.virginia.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Washington",
+    "slug": "washington",
+    "resources": [
+      {
+        "label": "Washington Secretary of State",
+        "url": "https://www.sos.wa.gov/"
+      },
+      {
+        "label": "Attorney General",
+        "url": "https://www.atg.wa.gov/"
+      }
+    ]
+  },
+  {
+    "name": "West Virginia",
+    "slug": "west-virginia",
+    "resources": [
+      {
+        "label": "West Virginia Division of Financial Institutions",
+        "url": "https://dfi.wv.gov/"
+      },
+      {
+        "label": "West Virginia Attorney General, Consumer Protection",
+        "url": "https://ago.wv.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Wisconsin",
+    "slug": "wisconsin",
+    "resources": [
+      {
+        "label": "Wisconsin DATCP, Consumer Protection",
+        "url": "https://datcp.wi.gov/"
+      }
+    ]
+  },
+  {
+    "name": "Wyoming",
+    "slug": "wyoming",
+    "resources": [
+      {
+        "label": "Wyoming Secretary of State",
+        "url": "https://sos.wyo.gov/"
+      }
+    ]
+  }
+]

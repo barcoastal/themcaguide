@@ -15,12 +15,20 @@ export default function TableOfContents() {
 
   useEffect(() => {
     const elements = document.querySelectorAll("article h2, article h3");
+    const used = new Set<string>();
+    elements.forEach((el, index) => {
+      const base = el.id || (el.textContent || "section").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      let id = base;
+      if (used.has(id)) id = `${base}-${index}`;
+      el.id = id; used.add(id);
+    });
     const items: TocItem[] = Array.from(elements).map((el) => ({
       id: el.id,
       text: el.textContent || "",
       level: el.tagName === "H2" ? 2 : 3,
     }));
-    setHeadings(items);
+    const frame = requestAnimationFrame(() => setHeadings(items));
+    return () => cancelAnimationFrame(frame);
   }, []);
 
   useEffect(() => {
@@ -48,6 +56,8 @@ export default function TableOfContents() {
       {/* Mobile: collapsible top bar */}
       <div className="lg:hidden mb-6">
         <button
+          aria-expanded={isOpen}
+          aria-controls="mobile-article-toc"
           onClick={() => setIsOpen(!isOpen)}
           className="w-full flex items-center justify-between px-4 py-3"
           style={{
@@ -68,6 +78,7 @@ export default function TableOfContents() {
         </button>
         {isOpen && (
           <nav
+            id="mobile-article-toc"
             className="mt-2 p-4"
             style={{ background: "#fffdf8", border: "1px solid var(--ink)" }}
           >

@@ -55,7 +55,7 @@ export default function ChoosingPage() {
           </div>
           <div className="bg-red-50 rounded-2xl p-8 border-2 border-red-200">
             <h2 className="text-2xl font-bold text-red-800 mb-6 flex items-center gap-2">
-              <XCircle className="w-7 h-7" /> DON'T Do This
+              <XCircle className="w-7 h-7" /> DON&apos;T Do This
             </h2>
             <ul className="space-y-4">
               {donts.map((item, i) => (
@@ -99,7 +99,7 @@ export default function ChoosingPage() {
       {/* Calculator CTA */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
         <h2 className="text-2xl font-bold text-gray-900 mb-3">Got an MCA offer? Check the real cost.</h2>
-        <p className="text-gray-500 mb-6">Plug in the numbers and see what you'll actually pay.</p>
+        <p className="text-gray-500 mb-6">Plug in the numbers and see what you&apos;ll actually pay.</p>
         <Link href="/tools/mca-calculator" className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors text-lg">
           Open MCA Calculator <ArrowRight className="w-5 h-5" />
         </Link>
@@ -109,10 +109,10 @@ export default function ChoosingPage() {
       <section className="bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <Link href="/step/what-is-mca" className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-gray-200 text-gray-700 font-medium rounded-xl hover:border-gray-400 transition-colors">
-            <ArrowLeft className="w-4 h-4" /> Back: What's an MCA?
+            <ArrowLeft className="w-4 h-4" /> Back: What&apos;s an MCA?
           </Link>
           <Link href="/step/stuck-in-debt" className="inline-flex items-center gap-2 px-8 py-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-colors text-lg shadow-lg shadow-red-600/25">
-            Next: I'm Stuck in MCA Debt <ArrowRight className="w-5 h-5" />
+            Next: I&apos;m Stuck in MCA Debt <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </section>
@@ -122,7 +122,7 @@ export default function ChoosingPage() {
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Detailed Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
-            { href: "/articles/best-mca-companies", title: "Best MCA Companies Reviewed" },
+            { href: "/blog/choosing-mca", title: "Best MCA Companies Reviewed" },
             { href: "/articles/mca-contract-red-flags", title: "8 Red Flags in MCA Contracts" },
             { href: "/articles/hidden-fees-in-mca", title: "Hidden Fees Nobody Tells You About" },
             { href: "/articles/can-you-negotiate-mca-debt", title: "How to Negotiate Better Terms" },

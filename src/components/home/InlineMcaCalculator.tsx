@@ -134,7 +134,7 @@ export default function InlineMcaCalculator() {
               </div>
               <div className="pt-4 border-t border-gray-200">
                 <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                  Effective APR
+                  Estimated annualized rate
                 </p>
                 <p className="text-3xl font-bold text-orange-600 tabular-nums">
                   {result.effectiveAPR.toFixed(1)}%

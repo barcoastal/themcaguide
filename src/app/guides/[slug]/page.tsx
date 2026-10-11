@@ -1,12 +1,11 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import { getAllArticles, getArticleBySlug, getArticlesByPillar } from "@/lib/content";
+import { getAllArticles, getArticleBySlug } from "@/lib/content";
 import { mdxComponents } from "@/components/mdx/mdx-components";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ArticleHeader from "@/components/content/ArticleHeader";
 import TableOfContents from "@/components/content/TableOfContents";
-import EditorialSidebar from "@/components/content/EditorialSidebar";
 import RelatedArticles from "@/components/content/RelatedArticles";
 import ShareButtons from "@/components/content/ShareButtons";
 import ArticleLayout from "@/components/content/ArticleLayout";
@@ -41,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       modifiedTime: guide.frontmatter.updatedAt,
       images: guide.frontmatter.heroImage
         ? [{ url: guide.frontmatter.heroImage }]
-        : [{ url: "/images/og-image.webp", width: 1200, height: 630, alt: "The MCA Guide" }],
+        : [{ url: "/images/og-guide.png", width: 1200, height: 630, alt: "The MCA Guide" }],
     },
   };
 }
@@ -51,7 +50,7 @@ export default async function GuidePage({ params }: Props) {
   const guide = getArticleBySlug(slug, "guide");
   if (!guide) notFound();
 
-  const relatedArticles = getArticlesByPillar(slug).slice(0, 6);
+  const relatedArticles = getAllArticles("guide").filter(g => g.slug !== slug).slice(0, 3);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -63,7 +62,7 @@ export default async function GuidePage({ params }: Props) {
     author: {
       "@type": "Person",
       name: guide.frontmatter.author,
-      url: "https://themcaguide.com/about",
+      url: "https://themcaguide.com/about/bar-alezrah",
     },
     publisher: {
       "@type": "Organization",
@@ -86,7 +85,7 @@ export default async function GuidePage({ params }: Props) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs items={[{ label: "Guides", href: "/guides" }, { label: guide.frontmatter.title }]} />
 
-        <div className="lg:flex lg:gap-10 xl:gap-12">
+        <div className="article-shell">
           <TableOfContents />
 
           <article className="flex-1 min-w-0 prose prose-base md:prose-lg max-w-none">
@@ -100,6 +99,8 @@ export default async function GuidePage({ params }: Props) {
               heroImage={guide.frontmatter.heroImage}
             />
 
+            {guide.frontmatter.revisionNote && <div className="not-prose review-note"><strong>What changed in this update:</strong> {guide.frontmatter.revisionNote} <a href="/editorial-policy">How we work</a>.</div>}
+
             <MDXRemote source={guide.content} components={mdxComponents} options={{ blockJS: false }} />
 
             <ShareButtons title={guide.frontmatter.title} url={`https://themcaguide.com/guides/${slug}`} />
@@ -109,13 +110,6 @@ export default async function GuidePage({ params }: Props) {
             </div>
           </article>
 
-          <EditorialSidebar
-            readingTime={guide.readingTime}
-            publishedAt={guide.frontmatter.publishedAt}
-            updatedAt={guide.frontmatter.updatedAt}
-            author={guide.frontmatter.author}
-            tags={guide.frontmatter.tags}
-          />
         </div>
 
         <RelatedArticles articles={relatedArticles} />

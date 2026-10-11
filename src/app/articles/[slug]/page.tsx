@@ -6,7 +6,6 @@ import { mdxComponents } from "@/components/mdx/mdx-components";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ArticleHeader from "@/components/content/ArticleHeader";
 import TableOfContents from "@/components/content/TableOfContents";
-import EditorialSidebar from "@/components/content/EditorialSidebar";
 import ShareButtons from "@/components/content/ShareButtons";
 import ArticleLayout from "@/components/content/ArticleLayout";
 
@@ -40,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       modifiedTime: article.frontmatter.updatedAt,
       images: article.frontmatter.heroImage
         ? [{ url: article.frontmatter.heroImage }]
-        : [{ url: "/images/og-image.webp", width: 1200, height: 630, alt: "The MCA Guide" }],
+        : [{ url: "/images/og-guide.png", width: 1200, height: 630, alt: "The MCA Guide" }],
     },
   };
 }
@@ -71,7 +70,7 @@ export default async function ArticlePage({ params }: Props) {
     author: {
       "@type": "Person",
       name: article.frontmatter.author,
-      url: "https://themcaguide.com/about",
+      url: "https://themcaguide.com/about/bar-alezrah",
     },
     publisher: {
       "@type": "Organization",
@@ -94,7 +93,7 @@ export default async function ArticlePage({ params }: Props) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs items={breadcrumbs} />
 
-        <div className="lg:flex lg:gap-10 xl:gap-12">
+        <div className="article-shell">
           <TableOfContents />
 
           <article className="flex-1 min-w-0 prose prose-base md:prose-lg max-w-none">
@@ -110,6 +109,8 @@ export default async function ArticlePage({ params }: Props) {
               heroImage={article.frontmatter.heroImage}
             />
 
+            {article.frontmatter.revisionNote && <div className="not-prose review-note"><strong>What changed in this update:</strong> {article.frontmatter.revisionNote} <a href="/editorial-policy">How we work</a>.</div>}
+
             <MDXRemote source={article.content} components={mdxComponents} options={{ blockJS: false }} />
 
             <ShareButtons title={article.frontmatter.title} url={`https://themcaguide.com/articles/${slug}`} />
@@ -119,13 +120,6 @@ export default async function ArticlePage({ params }: Props) {
             </div>
           </article>
 
-          <EditorialSidebar
-            readingTime={article.readingTime}
-            publishedAt={article.frontmatter.publishedAt}
-            updatedAt={article.frontmatter.updatedAt}
-            author={article.frontmatter.author}
-            tags={article.frontmatter.tags}
-          />
         </div>
       </div>
     </ArticleLayout>

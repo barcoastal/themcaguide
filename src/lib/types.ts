@@ -3,6 +3,7 @@ export interface ArticleFrontmatter {
   description: string;
   publishedAt: string;
   updatedAt?: string;
+  revisionNote?: string;
   author: string;
   pillar?: string;
   category?: "before-mca" | "choosing-lender" | "getting-out" | "mca-basics" | "legal";

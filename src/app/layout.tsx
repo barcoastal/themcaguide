@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Source_Serif_4, Playfair_Display } from "next/font/google";
 import "@/styles/globals.css";
-import "@/styles/broadsheet.css";
+import "@/styles/modern.css";
 import BroadsheetMasthead from "@/components/layout/BroadsheetMasthead";
 import BroadsheetFooter from "@/components/layout/BroadsheetFooter";
 import Analytics from "@/components/seo/Analytics";
@@ -38,17 +38,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "The MCA Guide",
-    images: [{ url: "/images/og-image.webp", width: 1200, height: 630, alt: "The MCA Guide. Free MCA Education for Small Business Owners" }],
+    images: [{ url: "/images/og-guide.png", width: 1200, height: 630, alt: "The MCA Guide. Free MCA Education for Small Business Owners" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/og-image.webp"],
+    images: ["/images/og-guide.png"],
   },
   alternates: {
     canonical: "https://themcaguide.com",
-    languages: {
-      "en-US": "https://themcaguide.com",
-    },
   },
   other: {
     "Content-Security-Policy": "upgrade-insecure-requests",
@@ -63,7 +60,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.svg",
     apple: "/favicon.png",
   },
 };
@@ -105,7 +102,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${sourceSerif.variable} ${playfair.variable}`}>
-      <body className="broadsheet font-sans min-h-screen flex flex-col">
+      <body className="modern-guide font-sans min-h-screen flex flex-col">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
@@ -114,8 +111,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
+        <a className="skip-link" href="#main-content">Skip to content</a>
         <BroadsheetMasthead />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">{children}</main>
         <BroadsheetFooter />
         <Analytics />
       </body>

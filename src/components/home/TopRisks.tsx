@@ -35,7 +35,7 @@ export default function TopRisks() {
             Explore 8 cheaper alternatives to MCAs &rarr;
           </Link>
           <span className="text-gray-300 hidden sm:inline">|</span>
-          <Link href="/guides/how-to-get-out-of-mca-debt" className="text-gray-500 font-medium hover:underline">
+          <Link href="/guides/mca-debt-relief-2026-guide" className="text-gray-500 font-medium hover:underline">
             Already in MCA debt? Get help
           </Link>
         </div>

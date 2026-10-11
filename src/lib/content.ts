@@ -4,6 +4,9 @@ import matter from "gray-matter";
 import readingTime from "reading-time";
 import { Article, ArticleFrontmatter } from "./types";
 
+// Retain source files for editorial history while excluding consolidated routes.
+const redirectSources = new Set(fs.readFileSync(path.join(process.cwd(), "public/_redirects"), "utf8")
+  .split("\n").filter(line => line.startsWith("/")).map(line => line.trim().split(/\s+/)[0]));
 const contentDir = path.join(process.cwd(), "content");
 
 function getContentDir(type: "guide" | "article"): string {
@@ -14,6 +17,7 @@ export function getArticleBySlug(
   slug: string,
   type: "guide" | "article"
 ): Article | null {
+  if (redirectSources.has(`/${type === "guide" ? "guides" : "articles"}/${slug}`)) return null;
   const dir = getContentDir(type);
   const filePath = path.join(dir, `${slug}.mdx`);
 

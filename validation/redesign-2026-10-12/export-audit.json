@@ -1,0 +1,18 @@
+{
+  "pages": 175,
+  "sitemap_urls": 172,
+  "redirects": 81,
+  "errors": [],
+  "broken_links": {},
+  "redirect_links": {
+    "/articles/mca-laws-california": [
+      "/glossary"
+    ],
+    "/articles/mca-consolidation": [
+      "/glossary"
+    ],
+    "/articles/what-happens-default-on-mca": [
+      "/glossary"
+    ]
+  }
+}

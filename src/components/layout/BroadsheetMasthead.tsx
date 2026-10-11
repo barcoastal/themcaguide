@@ -1,39 +1,7 @@
+"use client";
 import Link from "next/link";
-
-const navLinks = [
-  { href: "/blog/before-mca", label: "Before MCA" },
-  { href: "/blog/choosing-mca", label: "If You Need One" },
-  { href: "/blog/getting-out", label: "Stuck in Debt" },
-  { href: "/tools", label: "Tools" },
-  { href: "/guides/mca-debt-relief-2026-guide", label: "Debt Relief" },
-  { href: "/guides/mca-attorney-complete-guide", label: "Attorney Guide" },
-];
-
+import { ArrowUpRight, Menu } from "lucide-react";
+const links = [{ href: "/guides/what-is-mca", label: "MCA basics" }, { href: "/guides/mca-alternatives", label: "Alternatives" }, { href: "/guides/mca-debt-relief-2026-guide", label: "Debt help" }, { href: "/guides", label: "Guides" }, { href: "/about", label: "About" }];
 export default function BroadsheetMasthead() {
-  return (
-    <div className="broadsheet">
-      <header className="masthead">
-        <div className="wrap">
-          <div className="masthead-bar">
-            <span>Vol. I · Independent Publication</span>
-            <span><span className="dot">●</span> Not a Lender · Not a Broker</span>
-            <span>By Bar Alezrah</span>
-          </div>
-          <div className="masthead-title">
-            <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
-              The MCA Guide
-            </Link>
-          </div>
-          <div className="masthead-sub">All the funding facts that are fit to print</div>
-          <nav className="mast-nav">
-            {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      </header>
-    </div>
-  );
+  return <header className="site-header"><div className="site-wrap header-row"><Link href="/" className="brand" aria-label="The MCA Guide home"><span className="brand-mark" aria-hidden="true">m<span>↗</span></span><span>The MCA<span className="brand-second">Guide.</span></span></Link><nav className="desktop-nav" aria-label="Main navigation">{links.map(l => <Link key={l.href} href={l.href}>{l.label}</Link>)}</nav><Link className="header-tool" href="/tools">Free tools <ArrowUpRight size={17} /></Link><details className="mobile-menu"><summary aria-label="Open navigation"><Menu size={25} /></summary><nav aria-label="Mobile navigation" onClick={e => { if ((e.target as HTMLElement).closest("a")) e.currentTarget.closest("details")?.removeAttribute("open"); }}>{links.map(l => <Link key={l.href} href={l.href}>{l.label}</Link>)}<Link href="/tools">Free tools</Link></nav></details></div></header>;
 }
